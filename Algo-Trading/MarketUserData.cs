@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using MarketClient;
 using MarketClient.Utils;
 
+//@author Roy Hershkovitz, Omri Meshulami, Yakir Green
 namespace Algo_Trading
 {
     public class MarketUserData : IMarketClient
@@ -14,8 +15,8 @@ namespace Algo_Trading
         {
             
         }*/
-        private const string Url = "http://ise172.ise.bgu.ac.il";
-        private const string User = "user30";
+        private const string Url = "http://ise172.ise.bgu.ac.il"; // The project great server!1
+        private const string User = "user30"; // Our user name
         private const string PrivateKey = @"-----BEGIN RSA PRIVATE KEY-----
                                             MIICXgIBAAKBgQCWtmbOG8Vr+tkQEzRnpWykuDw/CU69uPJS5Nw1Gi9eXom6a9D4
                                             KIWQvrhArC7aTg1q1A+XgEfKTsz0otqkYtzYgAneHZv4NDThUJerxppWQX+JeQYV
@@ -30,7 +31,7 @@ namespace Algo_Trading
                                             /PZfPeL2EsDjVdOghJHNBVDu5KdPa6IzZsVx9YnQ4xVSexiUegOfuO4fPICP/0mB
                                             zKT296H3cD0+fFOWemuBAkEApKUOEddKJFp51eTuxoIRTGyqFnBIuVhzsa17GiQ8
                                             0cIu7c2z1VplPld/GQOD1R+7RwQwVsG6TmXWID2C5j/4yA==
-                                            -----END RSA PRIVATE KEY-----";
+                                            -----END RSA PRIVATE KEY-----"; // The key to encription
         private Dictionary<String, int> invoice_buy = new Dictionary<String, int>();
         private Dictionary<String, int> invoice_sell = new Dictionary<String, int>();
 
