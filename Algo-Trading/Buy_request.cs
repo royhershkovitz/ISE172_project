@@ -9,7 +9,7 @@ namespace Algo_Trading
     // A class of the user buy request
     public class Buy_request
     {
-        public String type = "buy";
+        public string type = "buy";
         public int price;
         public int amount;
         public int commodity;

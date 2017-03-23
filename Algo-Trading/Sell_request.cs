@@ -9,7 +9,7 @@ namespace Algo_Trading
     // A class of the sell request
     public class Sell_request
     {
-        public String type = "sell";
+        public string type = "sell";
         public int price;
         public int amount;
         public int commodity;

@@ -9,7 +9,7 @@ namespace Algo_Trading
     // A class of the Query_request request
     public class Query_request
     {
-        public String type = "queryBuySell";
+        public string type = "queryBuySell";
         public int id;
 
         public Query_request(int my_id)

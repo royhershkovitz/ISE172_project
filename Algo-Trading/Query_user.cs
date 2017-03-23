@@ -9,7 +9,7 @@ namespace Algo_Trading
     // A class of the Query_user request
     public class Query_user
     {
-        public String type = "queryUser";
+        public string type = "queryUser";
        
         public Query_user()
         {

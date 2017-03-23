@@ -1,4 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Diagnostics;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using MarketClient;
@@ -35,7 +39,18 @@ namespace MarketClientTest
                                             /PZfPeL2EsDjVdOghJHNBVDu5KdPa6IzZsVx9YnQ4xVSexiUegOfuO4fPICP/0mB
                                             zKT296H3cD0+fFOWemuBAkEApKUOEddKJFp51eTuxoIRTGyqFnBIuVhzsa17GiQ8
                                             0cIu7c2z1VplPld/GQOD1R+7RwQwVsG6TmXWID2C5j/4yA==
-                                            -----END RSA PRIVATE KEY-----";        
+                                            -----END RSA PRIVATE KEY-----";
+
+        public static void Main(string[] args)
+        {
+            UnitTest1 test = new UnitTest1();
+            Console.WriteLine("1");
+            test.TestSimpleHTTPPost();
+            Console.WriteLine("2");
+            test.TestObjectBasedHTTPPost();
+            Console.WriteLine("3");
+            Console.Read();
+        }
 
         [TestMethod]
         public void TestSimpleHTTPPost()
@@ -48,7 +63,7 @@ namespace MarketClientTest
             };
             string response = client.SendPostRequest(Url,User,SimpleCtyptoLibrary.CreateToken(User,PrivateKey), request);
             Trace.Write($"Server response is: {response}");
-            Console.WriteLine("TestSimpleHTTPPost " + response);
+            Console.WriteLine($"Server response is: { response}");
         }
 
         [TestMethod]
@@ -58,12 +73,13 @@ namespace MarketClientTest
             // this site doenst accept authentication, it only returns objects.
             string url = "http://ip.jsontest.com/";
             SimpleHTTPClient client = new SimpleHTTPClient();
-            IpAddress ip = new IpAddress {Ip = "8.8.8.8"};
+            //IpAddress ip = new IpAddress {Ip = "8.8.8.8"};
+            IpAddress ip = new IpAddress { Ip = "8.8.8" };
             IpAddress response = client.SendPostRequest<IpAddress,IpAddress>(url, null, null, ip);
             Assert.IsNotNull(response);
             Assert.IsNotNull(response.Ip);
             Trace.Write($"Server response is: {response.Ip}");
-            Console.WriteLine("TestObjectBasedHTTPPost " + response);
+            Console.WriteLine($"Server response is: {response.Ip}");
         }
 
         private class IpAddress

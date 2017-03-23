@@ -9,7 +9,7 @@ namespace Algo_Trading
     // A class of the user cancel request
     public class Cancel_request
     {
-        public String type = "cancelBuySell";
+        public string type = "cancelBuySell";
         public int id;
 
         public Cancel_request(int my_id)

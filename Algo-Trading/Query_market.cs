@@ -9,7 +9,7 @@ namespace Algo_Trading
     // A class of the Query_market request
     public class Query_market
     {
-        public String type = "queryMarket";
+        public string type = "queryMarket";
         public int id;
         public Query_market(int my_id)
         {

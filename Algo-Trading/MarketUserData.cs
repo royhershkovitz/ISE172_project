@@ -3,20 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using MarketClient;
+using MarketClient; //-> the non-static method problem
 using MarketClient.Utils;
+//using MarketClientTest;
 
-//@author Roy Hershkovitz, Omri Meshulami, Yakir Green
 namespace Algo_Trading
 {
-    public class MarketUserData : IMarketClient
-    {
-       /* public static void Main(string[] args)
-        {
-            
-        }*/
-        private const string Url = "http://ise172.ise.bgu.ac.il"; // The project great server!1
-        private const string User = "user30"; // Our user name
+    public class MarketUserData : IMarketClient    {
+      
+        private const string Url = "http://ise172.ise.bgu.ac.il";
+        private const string User = "user30";
         private const string PrivateKey = @"-----BEGIN RSA PRIVATE KEY-----
                                             MIICXgIBAAKBgQCWtmbOG8Vr+tkQEzRnpWykuDw/CU69uPJS5Nw1Gi9eXom6a9D4
                                             KIWQvrhArC7aTg1q1A+XgEfKTsz0otqkYtzYgAneHZv4NDThUJerxppWQX+JeQYV
@@ -31,55 +27,105 @@ namespace Algo_Trading
                                             /PZfPeL2EsDjVdOghJHNBVDu5KdPa6IzZsVx9YnQ4xVSexiUegOfuO4fPICP/0mB
                                             zKT296H3cD0+fFOWemuBAkEApKUOEddKJFp51eTuxoIRTGyqFnBIuVhzsa17GiQ8
                                             0cIu7c2z1VplPld/GQOD1R+7RwQwVsG6TmXWID2C5j/4yA==
-                                            -----END RSA PRIVATE KEY-----"; // The key to encription
-        private Dictionary<String, int> invoice_buy = new Dictionary<String, int>();
-        private Dictionary<String, int> invoice_sell = new Dictionary<String, int>();
+                                            -----END RSA PRIVATE KEY-----";       
 
-        //visual part
-         public static void Main(string[] args)
-         {
-             //to do - cmd visual main - questions and respones
-         }
-         
-        /*static void Main(string[] args)
-        {
-            Console.WriteLine("start unit test");
-            MarketClientTest.UnitTest1 test = new MarketClientTest.UnitTest1();
-            Console.WriteLine("omg");
-            test.TestObjectBasedHTTPPost();
-            Console.WriteLine("1");
-            test.TestSimpleHTTPPost();
-            Console.WriteLine("2");
-            Console.Read();
-        }*/
+        protected static Dictionary<String, int> invoice_buy = new Dictionary<String, int>();
+        protected static Dictionary<String, int> invoice_sell = new Dictionary<String, int>();
+
+        public static void main()
+        {//visual part
+            Console.WriteLine("1 - Sell request\n2 - Buy request\n3 - Cancel request\n4 - Query sell/buy request\n5 - Query user request\n6 - Query market request\n-1 - exit");
+            int choose = int.Parse(Console.ReadLine());
+            while (choose != -1)
+            {
+
+                if (choose == 1)
+                {
+                    Console.WriteLine("/*Sell request*/");
+                    Console.WriteLine("Insert price");
+                    int price = int.Parse(Console.ReadLine());
+                    Console.WriteLine("Insert commodity");
+                    int commodity = int.Parse(Console.ReadLine());
+                    Console.WriteLine("Insert amount");
+                    int amount = int.Parse(Console.ReadLine());
+                    int respone = SendSellRequest(price, commodity, amount);
+                    Console.WriteLine("respone: " + respone);
+                }
+                if (choose == 2)
+                {
+                    Console.WriteLine("/*Buy request*/");
+                    Console.WriteLine("Insert price");
+                    int price = int.Parse(Console.ReadLine());
+                    Console.WriteLine("Insert commodity");
+                    int commodity = int.Parse(Console.ReadLine());
+                    Console.WriteLine("Insert amount");
+                    int amount = int.Parse(Console.ReadLine());
+                    int respone = SendBuyRequest(price, commodity, amount);
+                    Console.WriteLine("respone: " + respone);
+                }
+                if (choose == 3)
+                {
+                    Console.WriteLine("/*Cancel request*/");
+                    Console.WriteLine("Insert id");
+                    int id = int.Parse(Console.ReadLine());
+                    MarketClient.DataEntries.IMarketItemQuery respone = SendQueryBuySellRequest(id);
+                    Console.WriteLine("respone: " + respone);
+                }
+                if (choose == 4)
+                {
+                    Console.WriteLine("/*Query sell/buy request*/");
+                    Console.WriteLine("Insert id");
+                    int id = int.Parse(Console.ReadLine());
+                    MarketClient.DataEntries.IMarketItemQuery respone = SendQueryBuySellRequest(id);
+                    Console.WriteLine("respone: " + respone);
+                }
+                if (choose == 5)
+                {
+                    Console.WriteLine("/*Query user request*/");
+                    MarketClient.DataEntries.IMarketUserData respone = SendQueryUserRequest();
+                    Console.WriteLine("respone: " + respone);
+                }
+                if (choose == 6)
+                {
+                    Console.WriteLine("/*Query market request*/");
+                    Console.WriteLine("Insert commodity");
+                    int commodity = int.Parse(Console.ReadLine());
+                    MarketClient.DataEntries.IMarketCommodityOffer respone = SendQueryMarketRequest(commodity);
+                    Console.WriteLine("respone: " + respone);
+                }
+                Console.WriteLine("/*End task*/");
+                Console.WriteLine("1 - Sell request\n2 - Buy request\n3 - Cancel request\n4 - Query sell/buy request\n5 - Query user request\n6 - Query market request\n-1 - exit");
+                choose = int.Parse(Console.ReadLine());
+            }
+        }
 
         // get price, commodity and amont (integer)
         // create a 'Buy_request' class, and send it to the server, returns the server's respone
-        public int SendBuyRequest(int price, int commodity, int amount)
+          int IMarketClient.SendBuyRequest(int price, int commodity, int amount)
        {
            Buy_request item = new Buy_request(amount, price, commodity);
            SimpleHTTPClient client = new SimpleHTTPClient();
            String id = client.SendPostRequest(Url, User, SimpleCtyptoLibrary.CreateToken(User, PrivateKey), item);
            Console.WriteLine("id" + id);
            invoice_buy.Add(id, commodity);
-           return Int32.Parse(id);
+           return int.Parse(id);
        }
 
         // get price, commodity and amont (integer)
         // create a 'Sell_request' class, and send it to the server, returns the server's respone
-        public int SendSellRequest(int price, int commodity, int amount)
+           int IMarketClient.SendSellRequest(int price, int commodity, int amount)
        {
            Sell_request item = new Sell_request(amount, price, commodity);
            SimpleHTTPClient client = new SimpleHTTPClient();
            String id = client.SendPostRequest(Url, User, SimpleCtyptoLibrary.CreateToken(User, PrivateKey), item);
            Console.WriteLine("id" + id);
            invoice_sell.Add(id, commodity);
-           return Int32.Parse(id);           
+           return int.Parse(id);           
        }
 
         // get an id (integer)
-        // create a 'Query_request' class, and send it to the server, returns the server's respone
-        public MarketClient.DataEntries.IMarketItemQuery SendQueryBuySellRequest(int id)
+        // create a 'Query_request' class(Query sell/buy request), and send it to the server, returns the server's respone
+           MarketClient.DataEntries.IMarketItemQuery IMarketClient.SendQueryBuySellRequest(int id)
        {
            Query_request item = new Query_request(id);
            SimpleHTTPClient client = new SimpleHTTPClient();
@@ -90,7 +136,7 @@ namespace Algo_Trading
 
         // doens't get anything
         // create a 'Query_user' class, and send it to the server, returns the server's respone
-        public MarketClient.DataEntries.IMarketUserData SendQueryUserRequest()
+           MarketClient.DataEntries.IMarketUserData IMarketClient.SendQueryUserRequest()
        {
            Query_user item = new Query_user();
            SimpleHTTPClient client = new SimpleHTTPClient();
@@ -101,7 +147,7 @@ namespace Algo_Trading
 
         // get an id (integer)
         // create a 'Query_market' class, and send it to the server, returns the server's respone
-        public MarketClient.DataEntries.IMarketCommodityOffer SendQueryMarketRequest(int commodity)
+           MarketClient.DataEntries.IMarketCommodityOffer IMarketClient.SendQueryMarketRequest(int commodity)
        {
            Query_market item = new Query_market(commodity);
            SimpleHTTPClient client = new SimpleHTTPClient();
@@ -112,7 +158,7 @@ namespace Algo_Trading
 
         // get an id (integer)
         // create a 'Cancel_request' class, and send it to the server, returns the server's respone
-        public bool SendCancelBuySellRequest(int id)
+           bool IMarketClient.SendCancelBuySellRequest(int id)
        {
            Cancel_request item = new Cancel_request(id);
            SimpleHTTPClient client = new SimpleHTTPClient();
