@@ -1,0 +1,14 @@
+D:\Documents\אוניבסיטת בן גוריון - הנדסת תוכנה\סמסטר ב\מבוא להנדסת תוכנה\פרויקט\marketClient-master (1)\marketClient-master\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+D:\Documents\אוניבסיטת בן גוריון - הנדסת תוכנה\סמסטר ב\מבוא להנדסת תוכנה\פרויקט\marketClient-master (1)\marketClient-master\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+D:\Documents\אוניבסיטת בן גוריון - הנדסת תוכנה\סמסטר ב\מבוא להנדסת תוכנה\פרויקט\marketClient-master (1)\marketClient-master\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+D:\Documents\אוניבסיטת בן גוריון - הנדסת תוכנה\סמסטר ב\מבוא להנדסת תוכנה\פרויקט\marketClient-master (1)\marketClient-master\ConsoleApplication1\bin\Debug\MarketClient.dll
+D:\Documents\אוניבסיטת בן גוריון - הנדסת תוכנה\סמסטר ב\מבוא להנדסת תוכנה\פרויקט\marketClient-master (1)\marketClient-master\ConsoleApplication1\bin\Debug\MarketClientTest.dll
+D:\Documents\אוניבסיטת בן גוריון - הנדסת תוכנה\סמסטר ב\מבוא להנדסת תוכנה\פרויקט\marketClient-master (1)\marketClient-master\ConsoleApplication1\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\Documents\אוניבסיטת בן גוריון - הנדסת תוכנה\סמסטר ב\מבוא להנדסת תוכנה\פרויקט\marketClient-master (1)\marketClient-master\ConsoleApplication1\bin\Debug\Newtonsoft.Json.dll
+D:\Documents\אוניבסיטת בן גוריון - הנדסת תוכנה\סמסטר ב\מבוא להנדסת תוכנה\פרויקט\marketClient-master (1)\marketClient-master\ConsoleApplication1\bin\Debug\BouncyCastle.Crypto.dll
+D:\Documents\אוניבסיטת בן גוריון - הנדסת תוכנה\סמסטר ב\מבוא להנדסת תוכנה\פרויקט\marketClient-master (1)\marketClient-master\ConsoleApplication1\bin\Debug\MarketClientTest.pdb
+D:\Documents\אוניבסיטת בן גוריון - הנדסת תוכנה\סמסטר ב\מבוא להנדסת תוכנה\פרויקט\marketClient-master (1)\marketClient-master\ConsoleApplication1\bin\Debug\MarketClient.pdb
+D:\Documents\אוניבסיטת בן גוריון - הנדסת תוכנה\סמסטר ב\מבוא להנדסת תוכנה\פרויקט\marketClient-master (1)\marketClient-master\ConsoleApplication1\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+D:\Documents\אוניבסיטת בן גוריון - הנדסת תוכנה\סמסטר ב\מבוא להנדסת תוכנה\פרויקט\marketClient-master (1)\marketClient-master\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+D:\Documents\אוניבסיטת בן גוריון - הנדסת תוכנה\סמסטר ב\מבוא להנדסת תוכנה\פרויקט\marketClient-master (1)\marketClient-master\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+D:\Documents\אוניבסיטת בן גוריון - הנדסת תוכנה\סמסטר ב\מבוא להנדסת תוכנה\פרויקט\marketClient-master (1)\marketClient-master\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
