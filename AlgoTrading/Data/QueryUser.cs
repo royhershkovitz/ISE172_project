@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 namespace AlgoTrading 
 {
     // A class of the Query_user request
-    public class Query_user
+    public class QueryUser
     {
         public string type { get; private set; }
-        public Query_user()
+        public QueryUser()
         {
             type = "queryUser";
         }

@@ -1,5 +1,5 @@
 ﻿using System.Windows;
-[assembly: log4net.Config.XmlConfigurator(Watch = true)]//Important: put it in the startup class, define before use log
+[assembly: log4net.Config.XmlConfigurator(Watch = true)]//Important: put it in the startup class, define before use log, should appear just once!!
 
 namespace PresentationLayer
 {
@@ -12,6 +12,8 @@ namespace PresentationLayer
         // opens the main menu page
         public MainWindow()
         {
+
+            log4net.GlobalContext.Properties["Counter"] = new AlgoTrading.Data.LOG.Counter();//Optional: define counter in xaml - overall to count logs call, define before use log                     
             InitializeComponent();
             Content = new mainMenu();
         }

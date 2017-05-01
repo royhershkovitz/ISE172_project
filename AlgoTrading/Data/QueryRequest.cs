@@ -2,15 +2,15 @@
 
 namespace AlgoTrading 
 {
-    // A class of the user cancel request
-    public class Cancel_request
+    // A class of the Query_request request
+    public class QueryRequest
     {
         public string type { get; private set; }
         public int id { get; private set; }
 
-        public Cancel_request(int my_id)
+        public QueryRequest(int my_id)
         {
-            type = "cancelBuySell"; 
+            type = "queryBuySell";
             id = my_id;
         }
 

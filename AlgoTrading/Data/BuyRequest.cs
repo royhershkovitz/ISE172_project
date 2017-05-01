@@ -3,13 +3,13 @@
 namespace AlgoTrading 
 {
     // A class of the user buy request
-    public class Buy_request
+    public class BuyRequest
     {
         public string type { get; private set; }
         public int price { get; private set; }
         public int amount { get; private set; }
         public int commodity { get; private set; }        
-        public Buy_request(int my_amount, int my_price, int my_commodity)
+        public BuyRequest(int my_amount, int my_price, int my_commodity)
         { 
             type = "buy";
             amount = my_amount;
