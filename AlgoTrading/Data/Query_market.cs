@@ -6,17 +6,17 @@ namespace AlgoTrading
     public class Query_market
     {
         public string type { get; private set; }
-        public int id { get; private set; }
+        public int commodity { get; private set; }
         public Query_market(int my_id)
         {
             type = "queryMarket";
-            id = my_id;
+            commodity = my_id;
         }
 
         override
         public string ToString()
         {
-            return String.Format("type: {0}, id: {1}", type, id);
+            return String.Format("type: {0}, commodity: {1}", type, commodity);
         }
     }
 }

@@ -47,7 +47,7 @@ namespace MarketClient.Utils
         private static string RSASignWithSHA256(string message, string privateKey)
         {
             RSACryptoServiceProvider rsaAlgo = new RSACryptoServiceProvider();
-            //rsaAlgo.ImportParameters(ExtractRSAPrivateKey(privateKey));
+            rsaAlgo.ImportParameters(ExtractRSAPrivateKey(privateKey));
             return Convert.ToBase64String(rsaAlgo.SignData(Encoding.UTF8.GetBytes(message), "SHA256"));
         }
     }

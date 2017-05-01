@@ -11,7 +11,7 @@ namespace AlgoTrading
         override
         public string ToString()
         {
-            return String.Format("ask: {0}, id: {1}", ask, bid);
+            return String.Format("ask: {0}, bid: {1}", ask, bid);
         }
     }
 }
