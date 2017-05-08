@@ -70,6 +70,8 @@
     <Compile Include="Data\LOG\Counter.cs" />
     <Compile Include="Data\LOG\LogExample.cs" />
     <Compile Include="Data\LOG\LogHelper.cs" />
+    <Compile Include="Data\QueryMarketRequest.cs" />
+    <Compile Include="Data\QueryUserRequests.cs" />
     <Compile Include="Presntation\MarketClientOptions.cs" />
     <Compile Include="Data\MarketCommodityOffer.cs" />
     <Compile Include="Data\MarketItemQuery.cs" />

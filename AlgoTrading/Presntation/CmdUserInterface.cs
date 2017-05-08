@@ -14,7 +14,8 @@ namespace AlgoTrading
             int choose = -1;
             while (choose != 0)
             {
-                Console.WriteLine("1 - Sell request\n2 - Buy request\n3 - Cancel request\n4 - Query sell/buy request\n5 - Query user request\n6 - Query market request\n0 - exit");
+                Console.WriteLine("1 - Sell request\n2 - Buy request\n3 - Cancel request\n4 - Query sell/buy request\n"+
+                    "5 - Query user request\n6 - Query market request\n7 - Query all market request\n8 - Query user requests request\n0 - exit");
                 choose = readIntString();
                 Console.Clear();
                 if (choose == 1)
@@ -75,6 +76,18 @@ namespace AlgoTrading
                     Console.WriteLine("Insert commodity");
                     int commodity = readIntString();
                     MarketClient.DataEntries.IMarketCommodityOffer response = UserOptions.SendQueryMarketRequest(commodity);
+                    Console.WriteLine("Response: " + response);
+                }
+                if (choose == 7)
+                {
+                    Console.WriteLine("/*Query all market active request*/");
+                    String response = UserOptions.SendQueryUserRequests();
+                    Console.WriteLine("Response: " + response);
+                }
+                if (choose == 8)
+                {
+                    Console.WriteLine("/*Query user requests request*/");
+                    String response = UserOptions.SendQueryMarketRequest();
                     Console.WriteLine("Response: " + response);
                 }
                 Console.WriteLine("/*End task*/");

@@ -56,5 +56,10 @@ namespace MarketClient
         /// <exception cref="MarketException">error is throw in case of invalid request or invalid parameter.</exception>
         bool SendCancelBuySellRequest(int id);
 
+        // creates a 'QueryUserRequests' class, and send it to the server, returns the server's response
+        string SendQueryUserRequests();
+
+        // creates a 'QueryMarketRequest' class, and send it to the server, returns the server's response
+        string SendQueryMarketRequest();
     }
 }
