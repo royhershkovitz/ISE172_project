@@ -46,12 +46,6 @@ namespace AlgoTrading
                 {
                     Console.WriteLine("/*Cancel request*/");
                     Console.WriteLine("Insert id");
-                    string input = Console.ReadLine();
-                    while (!checkedIntInput(input))
-                    {
-                        Console.WriteLine("please insert just integer numbers");
-                        input = Console.ReadLine();
-                    }
                     int id = readIntString();
                     bool response = UserOptions.SendCancelBuySellRequest(id);
                     Console.WriteLine("Response is: " + response);
@@ -103,7 +97,16 @@ namespace AlgoTrading
                 Console.WriteLine("please insert just integer chars");
                 input = tirmSpaces(Console.ReadLine());
             }
-            return int.Parse(input);
+            try
+            {
+                return int.Parse(input);
+            }
+            catch
+            {
+                Console.WriteLine("please insert just integer chars, without pressing 'ENTER'");
+                return readIntString();
+            }
+            
         }
 
         private static string tirmSpaces(string input)
@@ -177,13 +180,7 @@ namespace AlgoTrading
                 if (choose == 3)
                 {
                     Console.WriteLine("/*Cancel request*/");
-                    Console.WriteLine("Insert id");
-                    string input = Console.ReadLine();
-                    while (!checkedIntInput(input))
-                    {
-                        Console.WriteLine("please insert just integer numbers");
-                        input = Console.ReadLine();
-                    }
+                    Console.WriteLine("Insert id");                    
                     int id = readIntString();
                     bool response = UserOptions.SendCancelBuySellRequest(id);
                     Console.WriteLine("Response is: " + response);
