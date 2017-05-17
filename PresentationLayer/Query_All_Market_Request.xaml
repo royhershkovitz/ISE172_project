@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:PresentationLayer"
         Background="AliceBlue"
         mc:Ignorable="d"
-        Title="Query_All_Market_Request" Height="500" Width="700">
+        Title="QueryAllMarketRequest" Height="500" Width="700">
     <Grid HorizontalAlignment="Left" Width="872">
         <Button x:Name="back" Content="Back" HorizontalAlignment="Left" Margin="316,445,0,0" VerticalAlignment="Top" Width="75" Click="back_Click"/>
         <TextBox x:Name="Result" HorizontalAlignment="Left" Height="380" Margin="23,21,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="641" ScrollViewer.CanContentScroll="True"/>

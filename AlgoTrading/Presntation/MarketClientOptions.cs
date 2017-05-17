@@ -5,6 +5,7 @@ using System.Threading;
 using AlgoTrading.Data;
 using System.IO;
 using System.Text;
+using System.Diagnostics;
 
 namespace AlgoTrading
 {
@@ -35,6 +36,17 @@ namespace AlgoTrading
         //Important: Declare an instance for log4net, define before use log
         //private static readonly log4net.ILog Log = LogHelper.getLogger();// just if you dont want to define one, by yourseld
         private double sec = 0.1;
+        private bool _isAMA;
+        public MarketClientOptions()
+        {
+            _isAMA = false;
+        }
+
+        //defines if ama uses this user 
+        public MarketClientOptions(bool isAMA)
+        {
+            _isAMA = isAMA;
+        }
 
         // gets price, commodity and amont (integer)
         // creates a 'BuyRequest' class, and send it to the server, returns the server's response
@@ -57,11 +69,46 @@ namespace AlgoTrading
            if (ServerResponseCheck(id))
            {
                num = int.Parse(id);
-               addToHistory("BuyRequest:" + id + ":valid");//type:id:status
+               Data.DataTypes.HistoryWriter.addSpecipicDataToHistory("BuyRequest", num, _isAMA, price+":"+commodity+":"+amount);
                Log.Info(String.Format("User add buy request, id: {0}, details: price {1}, {2}, {3}", num, price, commodity, amount));               
             }
            return num;
         }
+
+        //cancels every active request
+        public bool deleteEveryActiveRequest()
+        {
+            log4net.ILog Log = LogHelper.getLogger();
+            QueryUserRequestsRequest request = ((QueryUserRequestsRequest) SendQueryUserRequests());
+            List<QueryUserUnit> myActiveActions = request.list;
+            bool output = true;
+            try
+            {
+                int tActions = 2;
+                foreach (QueryUserUnit QUU in myActiveActions)
+                {
+                    output = output & SendCancelBuySellRequest(QUU.id);// check if we delete every one of them
+                    Trace.WriteLine(tActions + ", deleted " + QUU.id + "? " + output);
+                    Thread.Sleep(TimeSpan.FromSeconds(0.1));
+                    if (tActions == 19)//server cooldown
+                        {
+                            Trace.WriteLine("waiting");
+                            tActions = 0;
+                            Thread.Sleep(TimeSpan.FromSeconds(10));
+                        }
+                    tActions++;
+                }
+            }
+            catch (Exception e)
+            {
+                Log.Fatal("Program crushed, Exception: " + e + ", Message: " + e.Message);
+                Thread.Sleep(TimeSpan.FromSeconds(sec)); // Sleep some secs after writing on HardDrive
+                //Console.WriteLine("Exception: " + e + ", Message: " + e.Message);
+                output = false;
+            }
+            return output;
+        } 
+               
 
         // gets price, commodity and amont (integer)
         // creates a 'SellRequest' class, and send it to the server, returns the server's response
@@ -84,7 +131,7 @@ namespace AlgoTrading
            if (ServerResponseCheck(id))
            {
                num = int.Parse(id);
-               addToHistory("SellRequest:" + id + ":valid");//type:id:status
+               Data.DataTypes.HistoryWriter.addSpecipicDataToHistory("SellRequest", num, _isAMA, price + ":" + commodity + ":" + amount);
                Log.Info(String.Format("User add sell request, id: {0}, details: price {1}, {2}, {3}", num, price, commodity, amount));
             }
            return num;                   
@@ -171,6 +218,7 @@ namespace AlgoTrading
              if (ServerResponseCheck(response))
              {
                 check = response == "Ok";
+                Data.DataTypes.HistoryWriter.cancelOldRequest(id);
                 Log.Info("Action " + id + ", been canceled = " + check);
                 //if(check)
                     //invoice_buy.Remove(id.ToString());        
@@ -184,21 +232,20 @@ namespace AlgoTrading
             log4net.ILog Log = LogHelper.getLogger();
             QueryUserRequests item = new QueryUserRequests();
             QueryUserRequestsRequest response = new QueryUserRequestsRequest();
-            List<QueryUserUnit> list;
-
+            List<QueryUserUnit> list = new List<QueryUserUnit>();
             try
             {
                 list = client.SendPostRequest<QueryUserRequests, List<QueryUserUnit>>(Url, User, token, item);
                 response.setList(list);
-                return response;
+                Log.Info("SendQueryUserRequests been preformed");                
             }
             catch (Exception e)
             {
                 Log.Fatal("Program crushed, Exception: " + e + ", Message: " + e.Message);
                 Thread.Sleep(TimeSpan.FromSeconds(sec)); // Sleep some secs after writing on HardDrive
-                //Console.WriteLine("Exception: " + e + ", Message: " + e.Message);
-                return null;
-            }            
+                //Console.WriteLine("Exception: " + e + ", Message: " + e.Message);                
+            }
+            return response;
 
         }
 
@@ -208,21 +255,20 @@ namespace AlgoTrading
             log4net.ILog Log = LogHelper.getLogger();
             QueryMarketRequest item = new QueryMarketRequest();
             MarketAll response = new MarketAll();
-            List<MarketUnit> list;
+            List<MarketUnit> list = new List<MarketUnit>();
             try
             {
                 list = client.SendPostRequest<QueryMarketRequest, List<MarketUnit>>(Url, User, token, item);
                 response.setList(list);
-                return response;
+                Log.Info("SendQueryMarketRequest been preformed");                
             }
             catch (Exception e)
             {
                 Log.Fatal("Program crushed, Exception: " + e + ", Message: " + e.Message);
                 Thread.Sleep(TimeSpan.FromSeconds(sec)); // Sleep some secs after writing on HardDrive
                 //Console.WriteLine("Exception: " + e + ", Message: " + e.Message);
-                return null;
             }
-          
+            return response;
         }
 
         // Gets a String response from the server
@@ -242,78 +288,16 @@ namespace AlgoTrading
             return output;
         }
 
-        // add the string 'information' to the file
-        public void addToHistory(String information)
-        {
-            string path = @"C:\Logs\UserActionsLog.txt";
-            try
-            {
-                // Delete the file if it exists.
-                if (File.Exists(path))
-                {
-                    using (StreamWriter sW = File.AppendText(path))
-                    {
-                        // Add some information to the file.
-                        sW.WriteLine("");
-                        sW.WriteLine(""+information);
-                    }
-                }
-                else
-                {
-                    // Create the file.
-                    using (FileStream fs = File.Create(path))
-                    {
-                        Byte[] info = new UTF8Encoding(true).GetBytes("" + information);
-                        // Add some information to the file.
-                        fs.Write(info, 0, info.Length);
-                    }
-                }
-            }
-
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.ToString());
-            }
-            Console.Read();
-        }
-
-        // read the text from file
-        public string readMyHistory()
-        {
-            //string path = @"..\logs\UserActionsLog.txt";
-            string path = @"C:\Logs\UserActionsLog.txt";
-            string output = "";
-            try
-            {
-                // Delete the file if it exists.
-                if (File.Exists(path))
-                {
-                    // Open the stream and read it back.
-                    using (StreamReader sR = File.OpenText(path))
-                    {
-                        string ourText = "";
-                        while ((ourText = sR.ReadLine()) != null)
-                            output = output + "\n" + ourText;
-                    }
-                }
-            }
-
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.ToString());
-            }
-            return output;
-        }
-
         //returns the user funds
         public float getFunds()
         {
-            log4net.ILog Log = LogHelper.getMethodLogger("getFunds");
+            log4net.ILog Log = LogHelper.getLogger();
             QueryUser item = new QueryUser();
             MarketUserData response = null;
             try
             {
                 response = client.SendPostRequest<QueryUser, MarketUserData>(Url, User, token, item);
+                Log.Info("Asked funds");
             }
             catch (Exception e)
             {

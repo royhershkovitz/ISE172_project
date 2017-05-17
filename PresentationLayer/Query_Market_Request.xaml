@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:PresentationLayer"
         Background="AliceBlue"
         mc:Ignorable="d"
-        Title="Query_Market_Request" Height="500" Width="700">
+        Title="QueryMarketRequest" Height="500" Width="700">
     <Grid>
         <Label x:Name="label" Content="Enter Commodity:" HorizontalAlignment="Left" Margin="295,91,0,0" VerticalAlignment="Top"/>
         <Label Content="response" HorizontalAlignment="Left" Margin="312,251,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18"/>

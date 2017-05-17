@@ -20,10 +20,12 @@ namespace PresentationLayer
     /// </summary>
     public partial class Cancel_Request : Page
     {
+        MarketClientOptions UserOptions;
         public Cancel_Request()
         {
             InitializeComponent();
             this.WindowTitle = this.Title;
+            UserOptions = new MarketClientOptions();
         }
 
         private void Back_Click(object sender, RoutedEventArgs e)
@@ -32,12 +34,21 @@ namespace PresentationLayer
         }
 
         private void Send_Click(object sender, RoutedEventArgs e)
-        {
-            MarketClientOptions UserOptions = new MarketClientOptions();
+        {            
             bool check = UserOptions.SendCancelBuySellRequest(int.Parse(idInput.Text));
             if (check) Result.Content = "Canceled Succesfully!";
             else Result.Content = "Wrong id";
 
+        }
+
+        //delete all the user active requests
+        private void delete_All_Click(object sender, RoutedEventArgs e)
+        {
+            //delete.Content = System.Drawing.Color.Pink;
+            Result.Content = "Canceling..";
+            bool check = UserOptions.deleteEveryActiveRequest();
+            if (check) Result.Content = "Canceled all Succesfully!";
+            else Result.Content = "Has issue to cancel all the request";
         }
     }
 }

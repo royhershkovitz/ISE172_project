@@ -15,9 +15,7 @@ namespace AlgoTrading
         {
             string dicToString = "";
             foreach (KeyValuePair<string, Object> kvp in request)
-                dicToString = dicToString + string.Format("{0}: {1}", kvp.Key, kvp.Value.ToString()) + " | "; //string.Format("Key = {0}, Value = {1}, ", kvp.Key, kvp.Value); 
-            if (dicToString != null && dicToString.Length > 0)
-                dicToString.Substring(0, dicToString.Length - 1);
+                dicToString = dicToString + string.Format(", {0}: {1}", kvp.Key, kvp.Value.ToString()); //string.Format("Key = {0}, Value = {1}, ", kvp.Key, kvp.Value);             
             return dicToString;
         }
 

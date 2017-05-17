@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:PresentationLayer"
         mc:Ignorable="d"
         Background="AliceBlue"
-        Title="Query_User_Requests_Request" Height="500" Width="700">
+        Title="QueryUserRequestsRequest" Height="500" Width="700">
     <Grid Margin="0,0,0,64">
         <Button x:Name="Back" Content="Back" HorizontalAlignment="Left" Margin="559,424,0,-40" VerticalAlignment="Top" Width="75" Click="Back_Click" ScrollViewer.CanContentScroll="True" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="396" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="662" ScrollViewer.CanContentScroll="True" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto"/>

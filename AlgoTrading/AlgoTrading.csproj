@@ -58,6 +58,7 @@
       <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="nunit.framework, Version=3.6.1.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
       <HintPath>..\packages\NUnit.3.6.1\lib\net45\nunit.framework.dll</HintPath>
       <Private>True</Private>
@@ -72,24 +73,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Data\BuyRequest.cs" />
-    <Compile Include="Data\CancelRequest.cs" />
+    <Compile Include="Data\DataTypes\BuyRequest.cs" />
+    <Compile Include="Data\DataTypes\CancelRequest.cs" />
+    <Compile Include="Data\DataTypes\HistoryWriter.cs" />
     <Compile Include="Data\LOG\Counter.cs" />
     <Compile Include="Data\LOG\LogExample.cs" />
     <Compile Include="Data\LOG\LogHelper.cs" />
-    <Compile Include="Data\QueryMarketRequest.cs" />
-    <Compile Include="Data\QueryUserRequests.cs" />
-    <Compile Include="Data\MarketUnit.cs" />
-    <Compile Include="Data\MarketAll.cs" />
+    <Compile Include="Data\DataTypes\QueryMarketRequest.cs" />
+    <Compile Include="Data\DataTypes\QueryUserRequests.cs" />
+    <Compile Include="Data\DataTypes\MarketUnit.cs" />
+    <Compile Include="Data\DataTypes\MarketAll.cs" />
     <Compile Include="Logic\myAIAlgorithem.cs" />
     <Compile Include="Presntation\MarketClientOptions.cs" />
-    <Compile Include="Data\MarketCommodityOffer.cs" />
-    <Compile Include="Data\MarketItemQuery.cs" />
-    <Compile Include="Data\MarketUserData.cs" />
-    <Compile Include="Data\QueryMarket.cs" />
-    <Compile Include="Data\QueryRequest.cs" />
-    <Compile Include="Data\QueryUser.cs" />
-    <Compile Include="Data\SellRequest.cs" />
+    <Compile Include="Data\DataTypes\MarketCommodityOffer.cs" />
+    <Compile Include="Data\DataTypes\MarketItemQuery.cs" />
+    <Compile Include="Data\DataTypes\MarketUserData.cs" />
+    <Compile Include="Data\DataTypes\QueryMarket.cs" />
+    <Compile Include="Data\DataTypes\QueryRequest.cs" />
+    <Compile Include="Data\DataTypes\QueryUser.cs" />
+    <Compile Include="Data\DataTypes\SellRequest.cs" />
     <Compile Include="Presntation\CmdUserInterface.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -97,8 +99,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Data\QueryUserUnit.cs" />
-    <Compile Include="Data\QueryUserRequestsRequest.cs" />
+    <Compile Include="Data\DataTypes\QueryUserUnit.cs" />
+    <Compile Include="Data\DataTypes\QueryUserRequestsRequest.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Illuminati.ico" />

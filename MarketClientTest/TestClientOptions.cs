@@ -1,6 +1,7 @@
 ﻿using AlgoTrading;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
+using System.Diagnostics;
 
 namespace MarketClientTest
 {
@@ -38,26 +39,27 @@ namespace MarketClientTest
         public void SendSellRequest()//1
         {
             //check is working
-            Assert.AreNotSame(UserOptions.SendSellRequest(1, 1, 1), -1);
+            //Assert.AreNotEqual(UserOptions.SendSellRequest(1, 1, 1), -1);
 
             //anti crasher
-            Assert.AreSame(UserOptions.SendSellRequest(1, 1, 999), -1);
-            Assert.AreSame(UserOptions.SendSellRequest(1, 999, 1), -1);
-            Assert.AreSame(UserOptions.SendSellRequest(999, 1, 1), -1);
-            Assert.AreSame(UserOptions.SendSellRequest(-1, -1, -1), -1);
+            //Trace.WriteLine(UserOptions.SendSellRequest(1, 1, -1));
+            Assert.AreEqual(UserOptions.SendSellRequest(1, 1, -1), -1);
+            Assert.AreEqual(UserOptions.SendSellRequest(1, 10, 1), -1);
+            Assert.AreEqual(UserOptions.SendSellRequest(10000, 1, 1), -1);
+            Assert.AreEqual(UserOptions.SendSellRequest(-1, -1, -1), -1);
         }
 
         [TestMethod]
         public void sendBuyRequest()//2
         {
             //check is working
-            Assert.AreNotSame(UserOptions.SendBuyRequest(1, 1, 1), -1);
+            Assert.AreNotEqual(UserOptions.SendBuyRequest(1, 1, 1), -1);
 
             //anti crasher
-            Assert.AreSame(UserOptions.SendBuyRequest(1, 1, 999), -1);
-            Assert.AreSame(UserOptions.SendBuyRequest(1, 999, 1), -1);
-            Assert.AreSame(UserOptions.SendBuyRequest(999, 1, 1), -1);
-            Assert.AreSame(UserOptions.SendBuyRequest(-1, -1, -1), -1);
+            Assert.AreEqual(UserOptions.SendBuyRequest(1, 1, -1), -1);
+            Assert.AreEqual(UserOptions.SendBuyRequest(1, 10, 1), -1);
+            Assert.AreEqual(UserOptions.SendBuyRequest(10000, 1, 1), -1);
+            Assert.AreEqual(UserOptions.SendBuyRequest(-1, -1, -1), -1);
         }
 
         [TestMethod]
@@ -65,10 +67,10 @@ namespace MarketClientTest
         {
             //check is working
             int id = UserOptions.SendSellRequest(1, 1, 1);
-            Assert.AreSame(UserOptions.SendCancelBuySellRequest(id), true);
+            Assert.AreEqual(UserOptions.SendCancelBuySellRequest(id), true);
 
             //anti crasher
-            Assert.AreSame(UserOptions.SendCancelBuySellRequest(-1), false);
+            Assert.AreEqual(UserOptions.SendCancelBuySellRequest(-1), false);
         }
 
         [TestMethod]
@@ -76,34 +78,34 @@ namespace MarketClientTest
         {
             //check is working
             int id = UserOptions.SendSellRequest(1, 1, 1);
-            Assert.AreNotSame(UserOptions.SendQueryBuySellRequest(id), "1, 1, 1");//???????
+           // Assert.AreNotEqual(UserOptions.SendQueryBuySellRequest(id), "1, 1, 1");//???????
 
             //anti crasher
-            Assert.AreSame(UserOptions.SendQueryBuySellRequest(-1), null);
+            Assert.AreEqual(UserOptions.SendQueryBuySellRequest(-1), null);
         }
 
         [TestMethod]
         public void SendQueryUserRequest()//5
         {
             //check is working
-            Assert.AreNotSame(UserOptions.SendQueryUserRequest(), null);
+            Assert.AreNotEqual(UserOptions.SendQueryUserRequest(), null);
         }
 
         [TestMethod]
         public void SendQueryMarketRequest()//6
         {
             //check is working
-            Assert.AreNotSame(UserOptions.SendQueryMarketRequest(1), null);
+            Assert.AreNotEqual(UserOptions.SendQueryMarketRequest(1), null);
 
             //anti crasher
-            Assert.AreSame(UserOptions.SendQueryMarketRequest(-1), null);
+            Assert.AreEqual(UserOptions.SendQueryMarketRequest(-1), null);
         }
 
         [TestMethod]
         public void SendQueryUserRequests()//7
         {
             //check is working
-            Assert.AreNotSame(UserOptions.SendQueryUserRequests(), null);
+            Assert.AreNotEqual(UserOptions.SendQueryUserRequests(), null);
         }
 
         [TestMethod]
@@ -111,9 +113,9 @@ namespace MarketClientTest
         {
             //check is working
             int id = UserOptions.SendSellRequest(1, 1, 1);
-            Assert.AreNotSame(UserOptions.SendQueryMarketRequest(id), null);//id is exsist
-            Assert.AreNotSame(UserOptions.delleteEveryActiveRequest(1, 1, 1), -1);//delete id
-            Assert.AreSame(UserOptions.SendQueryMarketRequest(id), null);//id should not exsist
+            Assert.AreNotEqual(UserOptions.SendQueryMarketRequest(id), null);//id is exsist
+            Assert.AreEqual(UserOptions.deleteEveryActiveRequest(), true);//delete id
+            Assert.AreEqual(UserOptions.SendQueryMarketRequest(id), null);//id should not exsist
 
             //anti crasher
             //TO-DO some inputs and outputs
@@ -122,6 +124,7 @@ namespace MarketClientTest
         /*
          * need to fix test
          * add ama user requests
+         * make gui butiful with ouput log and good parsing
          * update history when canceling
          */
     }

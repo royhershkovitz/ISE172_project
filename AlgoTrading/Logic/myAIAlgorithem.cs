@@ -12,7 +12,7 @@ namespace AlgoTrading.Logic
     {
         private bool running = true;
         private bool midRun = false;
-        private MarketClientOptions UserOptions = new MarketClientOptions();
+        private MarketClientOptions UserOptions = new MarketClientOptions(true);
         public myAIAlgorithem()
         {
         }

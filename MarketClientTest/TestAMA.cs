@@ -3,6 +3,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using AlgoTrading;
 using System.Diagnostics;
 using System;
+using System.Timers;
 
 namespace TestClientOptions
     {
@@ -28,8 +29,10 @@ namespace TestClientOptions
             public void testAlgorithem()
             {
                 float funds = UserOptions.getFunds();
-                Thread newThread = new Thread(new ThreadStart(stopRun));
-                newThread.Start();
+                System.Timers.Timer myTimer = new System.Timers.Timer(2000);
+                // Hook up the Elapsed event for the timer. 
+                myTimer.Elapsed += OnTimedEvent;
+                myTimer.Enabled = true;
                 aI.runAlgorithemAI();
                 float fundsAfter = UserOptions.getFunds();
                 Assert.IsTrue(funds > fundsAfter);
@@ -37,9 +40,12 @@ namespace TestClientOptions
             }
         
             //how to work with Nunit -> //https://piazza.com/class_profile/get_resource/iztt8b0ie121hg/j169adn32ky6n0
-            private void stopRun(){
-                Thread.Sleep(6000);
+            private void OnTimedEvent(Object source, ElapsedEventArgs e)
+        {
+                Console.WriteLine("wait");
+                Console.WriteLine("aborting");
                 aI.stopAlgorithemAI();//need to define
+                Console.WriteLine("stopped");
             }
         }
 }

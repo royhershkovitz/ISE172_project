@@ -1,17 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 using AlgoTrading;
 using System.Diagnostics;
 using System.Timers;
@@ -27,15 +17,18 @@ namespace PresentationLayer
         private Thread _run = null;
         private AlgoTrading.Logic.myAIAlgorithem _ama = null;
         private MarketClientOptions _UserOptions = new MarketClientOptions();
-        System.Timers.Timer myTimer;
-        private float startValue;
+        private System.Timers.Timer myTimer;
+        private log4net.ILog log;
+        private float startFunds;
         //constructor
         public AI()
-        {           
+        {
+
+            log = log4net.LogManager.GetLogger("");
             InitializeComponent();
             this.WindowTitle = this.Title;
-            startValue = _UserOptions.getFunds();
-            myFunds.Text = startValue.ToString();
+            startFunds = _UserOptions.getFunds();
+            myFunds.Text = startFunds.ToString();
             //the timer will auto update the user funds
             myTimer = new System.Timers.Timer(10000);
             // Hook up the Elapsed event for the timer. 
@@ -56,9 +49,11 @@ namespace PresentationLayer
         {
             if (_ama != null) {
                 if (_run != null && _run.IsAlive)
-                {
+                {                    
                     myTimer.Enabled = false;
                     myStatus.Text = "Please wait..";//why it is unreachable code?
+                    log.Info("AI A");
+                    Thread.Sleep(TimeSpan.FromSeconds(0.01));
                     _ama.stopAlgorithemAI();
                     Trace.WriteLine("stop pressed");
                     while (_ama.canAbortThread())
@@ -78,7 +73,7 @@ namespace PresentationLayer
         public void updateFunds()
         {
             float tValue = _UserOptions.getFunds();
-            float revenue = tValue-startValue;
+            float revenue = tValue-startFunds;
             myFunds.Text = tValue.ToString() + ", revenue " + revenue;
         }
 
@@ -94,6 +89,8 @@ namespace PresentationLayer
         {
             if (_run == null || !_run.IsAlive) {
                 myStatus.Text = "Runnig";
+                log.Info("AI started");
+                Thread.Sleep(TimeSpan.FromSeconds(0.01));
                 myTimer.Enabled = true;
                 _ama = new AlgoTrading.Logic.myAIAlgorithem();//this);                
                 _run = new Thread(new ThreadStart(_ama.runAlgorithemAI));

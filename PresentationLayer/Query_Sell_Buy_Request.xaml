@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:PresentationLayer"
         mc:Ignorable="d"
         Background="AliceBlue"
-        Title="Query_Sell_Buy_Request" Height="500" Width="700">
+        Title="QuerySellBuyRequest" Height="500" Width="700">
     <Grid>
         <Label x:Name="Q" Content="Enter ID:" HorizontalAlignment="Left" Margin="294,32,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
         <Label Content="response" HorizontalAlignment="Left" Margin="307,221,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18"/>

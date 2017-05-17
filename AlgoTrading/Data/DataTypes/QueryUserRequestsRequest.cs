@@ -19,9 +19,11 @@ namespace AlgoTrading
         {
             string listToString = "";
             for (int i = 0; i < list.Count; i++)
-                listToString += "ID: " + ((QueryUserUnit)(list[i])).getID() + " - " + ((QueryUserUnit)(list[i])).toString() + " " + "\n";
-            if (listToString != null && listToString.Length > 0)
-                listToString.Substring(0, listToString.Length - 1);
+            { 
+                listToString += "ID: " + ((QueryUserUnit)(list[i])).getID() + ((QueryUserUnit)(list[i])).toString() + "\n";                
+            }
+            if (listToString.Length > 0)
+                listToString = listToString.Substring(0, listToString.Length - 3);
             return listToString;
 
         }

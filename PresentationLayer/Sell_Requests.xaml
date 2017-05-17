@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:PresentationLayer"
         mc:Ignorable="d"
         Background="AliceBlue"
-        Title="Buy_Request" Height="500" Width="700">
+        Title="SellRequest" Height="500" Width="700">
     <Grid>
         <Button x:Name="Send" Content="Send" HorizontalAlignment="Left" Margin="53,267,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold" Click="Send_Click"/>
         <Button x:Name="Back" Content="Back" HorizontalAlignment="Left" Margin="548,326,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold" Click="Back_Click"/>

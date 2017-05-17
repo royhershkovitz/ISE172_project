@@ -26,7 +26,7 @@ namespace PresentationLayer
             this.WindowTitle = this.Title;
             MarketClientOptions UserOptions = new MarketClientOptions();
             MarketAll response = (MarketAll)UserOptions.SendQueryMarketRequest();
-            String convert = response.toString();
+            string convert = response.toString();
             Result.Text = convert;
         
         }
