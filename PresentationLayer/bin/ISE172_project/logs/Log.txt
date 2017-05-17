@@ -1,0 +1,7 @@
+1) - Level - INFO,  Message -  User add buy request, id: 6124174, details: price 1, 1, 1 
+ UTC Date - 2017-05-17 09:20:41,610 
+ Date - 12:20:41,610 
+ Timestamp - 8346 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Presntation\MarketClientOptions.cs.SendBuyRequest : 61] 
+  

@@ -53,10 +53,16 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="TestAMA.cs" />
+    <Compile Include="TestClientOptions.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AlgoTrading\AlgoTrading.csproj">
+      <Project>{A7EBC6D3-4EA5-45B5-943B-21C98494A07D}</Project>
+      <Name>AlgoTrading</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MarketClient\MarketClient.csproj">
       <Project>{371e8ea8-ce7a-4ab2-85e5-eac135df4a26}</Project>
       <Name>MarketClient</Name>

@@ -74,15 +74,11 @@ namespace AlgoTrading
                 }
                 if (choose == 7)
                 {
-                    Console.WriteLine("/*Query all market active request*/");
-                    String response = UserOptions.SendQueryUserRequests();
-                    Console.WriteLine("Response: " + response);
+
                 }
                 if (choose == 8)
                 {
-                    Console.WriteLine("/*Query user requests request*/");
-                    String response = UserOptions.SendQueryMarketRequest();
-                    Console.WriteLine("Response: " + response);
+
                 }
                 Console.WriteLine("/*End task*/");
             }

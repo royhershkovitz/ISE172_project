@@ -1,0 +1,16 @@
+﻿<Page x:Class="PresentationLayer.Query_User_Requests_Request"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PresentationLayer"
+        mc:Ignorable="d"
+        Background="AliceBlue"
+        Title="Query_User_Requests_Request" Height="500" Width="700">
+    <Grid Margin="0,0,0,64">
+        <Button x:Name="Back" Content="Back" HorizontalAlignment="Left" Margin="559,424,0,-40" VerticalAlignment="Top" Width="75" Click="Back_Click" ScrollViewer.CanContentScroll="True" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="396" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="662" ScrollViewer.CanContentScroll="True" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+        <TextBox x:Name="Result" HorizontalAlignment="Left" Height="374" Margin="21,22,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="637" ScrollViewer.CanContentScroll="True"/>
+
+    </Grid>
+</Page>

@@ -2,6 +2,7 @@
 using MarketClient.Utils;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using System.Diagnostics;
 
 public class SimpleHTTPClient
     {
@@ -46,7 +47,7 @@ public class SimpleHTTPClient
             using (var client = new HttpClient())
             {
                 var result = client.PostAsync(url, content).Result;//comunicate with the server
-                var responseContent = result?.Content?.ReadAsStringAsync().Result;
+                var responseContent = result.Content.ReadAsStringAsync().Result;
                 return responseContent;
             }
         }
@@ -59,6 +60,7 @@ public class SimpleHTTPClient
             }
             try
             {
+                Trace.WriteLine(response);
                 return JsonConvert.DeserializeObject<T>(response, new JsonSerializerSettings
                 {
                     Error = delegate {

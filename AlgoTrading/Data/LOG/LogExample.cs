@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Threading;
 
+
 namespace AlgoTrading.Data.LOG
 {
     class LogExample

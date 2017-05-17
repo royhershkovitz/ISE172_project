@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>AlgoTrading</RootNamespace>
     <AssemblyName>AlgoTrading</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFrameworkProfile />
@@ -50,6 +50,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Illuminati.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
       <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
@@ -76,6 +79,9 @@
     <Compile Include="Data\LOG\LogHelper.cs" />
     <Compile Include="Data\QueryMarketRequest.cs" />
     <Compile Include="Data\QueryUserRequests.cs" />
+    <Compile Include="Data\MarketUnit.cs" />
+    <Compile Include="Data\MarketAll.cs" />
+    <Compile Include="Logic\myAIAlgorithem.cs" />
     <Compile Include="Presntation\MarketClientOptions.cs" />
     <Compile Include="Data\MarketCommodityOffer.cs" />
     <Compile Include="Data\MarketItemQuery.cs" />
@@ -91,14 +97,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Tests\TestAMA.cs" />
-    <Compile Include="Tests\TestClientOptions.cs" />
+    <Compile Include="Data\QueryUserUnit.cs" />
+    <Compile Include="Data\QueryUserRequestsRequest.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="packages.config" />
+    <Content Include="Illuminati.ico" />
+    <Content Include="packages.xml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MarketClient\MarketClient.csproj">
@@ -106,9 +110,7 @@
       <Name>MarketClient</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Logic\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -126,6 +128,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

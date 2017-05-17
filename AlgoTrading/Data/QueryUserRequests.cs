@@ -18,7 +18,7 @@ namespace AlgoTrading.Data
         override
         public string ToString()
         {
-            return "type: "+type;
+            return "Type: "+type;
         }
     }
 

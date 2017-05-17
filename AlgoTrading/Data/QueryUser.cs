@@ -18,7 +18,7 @@ namespace AlgoTrading
         override
         public string ToString()
         {
-            return String.Format("type: {0}", type);
+            return String.Format("Type: {0}", type);
         }
     }
 }

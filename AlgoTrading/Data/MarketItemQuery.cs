@@ -13,7 +13,7 @@ namespace AlgoTrading
         override
         public string ToString()
         {
-            return String.Format("amount {0}, price: {1}, type: {2}, user: {3}, commodity: {4}", type, amount, price, user, commodity);
+            return String.Format("Amount: {0}, Price: {1}, Type: {2}, User: {3}, Commodity: {4}", amount,price,type, user, commodity);
         }
     }
 

@@ -12,10 +12,9 @@ namespace PresentationLayer
         // opens the main menu page
         public MainWindow()
         {
-
             log4net.GlobalContext.Properties["Counter"] = new AlgoTrading.Data.LOG.Counter();//Optional: define counter in xaml - overall to count logs call, define before use log                     
             InitializeComponent();
-            Content = new mainMenu();
+            Content = new MainMenu();
         }
 
         // These function close the progran

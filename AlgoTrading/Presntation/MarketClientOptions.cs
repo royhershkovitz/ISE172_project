@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using MarketClient;
 using System.Threading;
 using AlgoTrading.Data;
+using System.IO;
+using System.Text;
 
 namespace AlgoTrading
 {
@@ -10,7 +12,7 @@ namespace AlgoTrading
     {
 
         private SimpleHTTPClient client = new SimpleHTTPClient();
-
+        
         //private string token = "OSZUIiYeNQHAbfPULVVVqTEXCO9Bc6hLH/EtXzmcqf2OIyiQP2Y2vu1gjvAqvPhN/FoFbLV0vcdYpS8nRzfrHL3JvDPFIAIufmZSD42WDlw9lbeZ7QrUYYDNsILCALIRxCpc8FxsbAYqzRi/wWcvBC971Zel2+MXb5r+8c3F5Uk=";
         private string token = MarketClient.Utils.SimpleCtyptoLibrary.CreateToken(User, PrivateKey);
         private const string Url = "http://ise172.ise.bgu.ac.il";//:8008";
@@ -32,16 +34,13 @@ namespace AlgoTrading
                                             -----END RSA PRIVATE KEY-----";
         //Important: Declare an instance for log4net, define before use log
         //private static readonly log4net.ILog Log = LogHelper.getLogger();// just if you dont want to define one, by yourseld
-
         private double sec = 0.1;
 
-        protected static Dictionary<String, int> invoice_buy = new Dictionary<String, int>();
-        protected static Dictionary<String, int> invoice_sell = new Dictionary<String, int>();
         // gets price, commodity and amont (integer)
         // creates a 'BuyRequest' class, and send it to the server, returns the server's response
         public int SendBuyRequest(int price, int commodity, int amount)
         {
-           log4net.ILog Log = LogHelper.getMethodLogger("SendBuyRequest");
+           log4net.ILog Log = LogHelper.getLogger();
            BuyRequest item = new BuyRequest(amount, price, commodity);
            string id = null;
            try
@@ -49,7 +48,7 @@ namespace AlgoTrading
                 id = client.SendPostRequest(Url, User, token, item);
            }
            catch (Exception e)
-           {                
+           {      
                 Log.Fatal("Program crushed, Exception: " + e + ", Message: " + e.Message);
                 Thread.Sleep(TimeSpan.FromSeconds(sec)); // Sleep some secs after writing on HardDrive
                 //Console.WriteLine("Exception: " + e + ", Message: " + e.Message);
@@ -57,10 +56,9 @@ namespace AlgoTrading
            int num = -1;
            if (ServerResponseCheck(id))
            {
-
-               invoice_buy.Add(id, commodity);
                num = int.Parse(id);
-               Log.Info(String.Format("User add sell request, id: {0}, details: price {1}, {2}, {3}", num, price, commodity, amount));
+               addToHistory("BuyRequest:" + id + ":valid");//type:id:status
+               Log.Info(String.Format("User add buy request, id: {0}, details: price {1}, {2}, {3}", num, price, commodity, amount));               
             }
            return num;
         }
@@ -69,7 +67,7 @@ namespace AlgoTrading
         // creates a 'SellRequest' class, and send it to the server, returns the server's response
         public int SendSellRequest(int price, int commodity, int amount)
         {
-           log4net.ILog Log = LogHelper.getMethodLogger("SendSellRequest");
+           log4net.ILog Log = LogHelper.getLogger();
            SellRequest item = new SellRequest(amount, price, commodity);
            string id = null;
            try
@@ -85,9 +83,9 @@ namespace AlgoTrading
             int num = -1;
            if (ServerResponseCheck(id))
            {
-               invoice_sell.Add(id, commodity);
                num = int.Parse(id);
-               Log.Info(String.Format("User add buy request, id: {0}, details: price {1}, {2}, {3}", num, price, commodity, amount));
+               addToHistory("SellRequest:" + id + ":valid");//type:id:status
+               Log.Info(String.Format("User add sell request, id: {0}, details: price {1}, {2}, {3}", num, price, commodity, amount));
             }
            return num;                   
        }
@@ -96,7 +94,7 @@ namespace AlgoTrading
         // creates a 'QueryRequest' class(Query sell/buy request), and send it to the server, returns the server's response
         public MarketClient.DataEntries.IMarketItemQuery SendQueryBuySellRequest(int id)
        {
-            log4net.ILog Log = LogHelper.getMethodLogger("SendQueryBuySellRequest");
+            log4net.ILog Log = LogHelper.getLogger();
             QueryRequest item = new QueryRequest(id);
             MarketItemQuery response = null;
             try
@@ -116,7 +114,7 @@ namespace AlgoTrading
         // creates a 'QueryUser' class, and send it to the server, returns the server's response
         public MarketClient.DataEntries.IMarketUserData SendQueryUserRequest()
        {
-            log4net.ILog Log = LogHelper.getMethodLogger("SendQueryUserRequest");
+            log4net.ILog Log = LogHelper.getLogger();
             QueryUser item = new QueryUser();
             MarketUserData response = null;
             try
@@ -136,7 +134,7 @@ namespace AlgoTrading
         // creates a 'QueryMarket' class, and send it to the server, returns the server's response
         public MarketClient.DataEntries.IMarketCommodityOffer SendQueryMarketRequest(int commodity)
        {
-           log4net.ILog Log = LogHelper.getMethodLogger("SendQueryMarketRequest");
+           log4net.ILog Log = LogHelper.getLogger();
            QueryMarket item = new QueryMarket(commodity);
            MarketCommodityOffer response = null;
            try
@@ -156,7 +154,7 @@ namespace AlgoTrading
         // creates a 'CancelRequest' class, and send it to the server, returns the server's response
         public bool SendCancelBuySellRequest(int id)
         {
-             log4net.ILog Log = LogHelper.getMethodLogger("SendCancelBuySellRequest");
+             log4net.ILog Log = LogHelper.getLogger();
              CancelRequest item = new CancelRequest(id);
              string response = null;            
              try
@@ -174,59 +172,64 @@ namespace AlgoTrading
              {
                 check = response == "Ok";
                 Log.Info("Action " + id + ", been canceled = " + check);
-                if(check)
-                    invoice_buy.Remove(id.ToString());        
+                //if(check)
+                    //invoice_buy.Remove(id.ToString());        
              }
              return check;     
         }
 
         // creates a 'QueryUserRequests' class, and send it to the server, returns the server's response
-        public string SendQueryUserRequests()
+        public MarketClient.DataEntries.IQueryUserRequestsRequest SendQueryUserRequests()
         {
-            log4net.ILog Log = LogHelper.getMethodLogger("SendQueryUserRequests");
+            log4net.ILog Log = LogHelper.getLogger();
             QueryUserRequests item = new QueryUserRequests();
-            string response = null;
+            QueryUserRequestsRequest response = new QueryUserRequestsRequest();
+            List<QueryUserUnit> list;
+
             try
             {
-                response = client.SendPostRequest(Url, User, token, item);
+                list = client.SendPostRequest<QueryUserRequests, List<QueryUserUnit>>(Url, User, token, item);
+                response.setList(list);
+                return response;
             }
             catch (Exception e)
             {
                 Log.Fatal("Program crushed, Exception: " + e + ", Message: " + e.Message);
                 Thread.Sleep(TimeSpan.FromSeconds(sec)); // Sleep some secs after writing on HardDrive
                 //Console.WriteLine("Exception: " + e + ", Message: " + e.Message);
+                return null;
             }            
-            if (ServerResponseCheck(response))
-                Log.Info("User use method SendQueryMarketRequest succesfully");
-            return response;
+
         }
 
         // creates a 'QueryMarketRequest' class, and send it to the server, returns the server's response
-        public string SendQueryMarketRequest()
+        public MarketClient.DataEntries.IMarketAll SendQueryMarketRequest()
         {
-            log4net.ILog Log = LogHelper.getMethodLogger("SendQueryMarketRequest");
+            log4net.ILog Log = LogHelper.getLogger();
             QueryMarketRequest item = new QueryMarketRequest();
-            string response = null;
+            MarketAll response = new MarketAll();
+            List<MarketUnit> list;
             try
             {
-                response = client.SendPostRequest(Url, User, token, item);
+                list = client.SendPostRequest<QueryMarketRequest, List<MarketUnit>>(Url, User, token, item);
+                response.setList(list);
+                return response;
             }
             catch (Exception e)
             {
                 Log.Fatal("Program crushed, Exception: " + e + ", Message: " + e.Message);
                 Thread.Sleep(TimeSpan.FromSeconds(sec)); // Sleep some secs after writing on HardDrive
                 //Console.WriteLine("Exception: " + e + ", Message: " + e.Message);
+                return null;
             }
-            if (ServerResponseCheck(response))
-                Log.Info("User use method SendQueryMarketRequest succesfully");
-            return response;
+          
         }
 
         // Gets a String response from the server
         // Checks the meaning of the server 'response' returns true if the 'response' is not an error massage, else print the massage and returns false
         private bool ServerResponseCheck(string response)
         {
-            log4net.ILog Log = LogHelper.getMethodLogger("ServerResponseCheck");
+            log4net.ILog Log = LogHelper.getLogger();
             bool output = true;
             if (response == "No price or commodity type/amount" | response == "Bad commodity" | response == "Bad amount" | response == "No query id" | response == "No commodity" |
                 response == "No auth key" | response == "No user or auth token" | response == "Verification failure" | response == "No type key" | response == "Bad request type" |
@@ -238,5 +241,88 @@ namespace AlgoTrading
             }
             return output;
         }
+
+        // add the string 'information' to the file
+        public void addToHistory(String information)
+        {
+            string path = @"C:\Logs\UserActionsLog.txt";
+            try
+            {
+                // Delete the file if it exists.
+                if (File.Exists(path))
+                {
+                    using (StreamWriter sW = File.AppendText(path))
+                    {
+                        // Add some information to the file.
+                        sW.WriteLine("");
+                        sW.WriteLine(""+information);
+                    }
+                }
+                else
+                {
+                    // Create the file.
+                    using (FileStream fs = File.Create(path))
+                    {
+                        Byte[] info = new UTF8Encoding(true).GetBytes("" + information);
+                        // Add some information to the file.
+                        fs.Write(info, 0, info.Length);
+                    }
+                }
+            }
+
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
+            Console.Read();
+        }
+
+        // read the text from file
+        public string readMyHistory()
+        {
+            //string path = @"..\logs\UserActionsLog.txt";
+            string path = @"C:\Logs\UserActionsLog.txt";
+            string output = "";
+            try
+            {
+                // Delete the file if it exists.
+                if (File.Exists(path))
+                {
+                    // Open the stream and read it back.
+                    using (StreamReader sR = File.OpenText(path))
+                    {
+                        string ourText = "";
+                        while ((ourText = sR.ReadLine()) != null)
+                            output = output + "\n" + ourText;
+                    }
+                }
+            }
+
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
+            return output;
+        }
+
+        //returns the user funds
+        public float getFunds()
+        {
+            log4net.ILog Log = LogHelper.getMethodLogger("getFunds");
+            QueryUser item = new QueryUser();
+            MarketUserData response = null;
+            try
+            {
+                response = client.SendPostRequest<QueryUser, MarketUserData>(Url, User, token, item);
+            }
+            catch (Exception e)
+            {
+                Log.Fatal("Program crushed, Exception: " + e + ", Message: " + e.Message);
+                Thread.Sleep(TimeSpan.FromSeconds(sec)); // Sleep some secs after writing on HardDrive
+                //Console.WriteLine("Exception: " + e + ", Message: " + e.Message);
+            }
+            return response.funds;
+        }
+
     }
 }

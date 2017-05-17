@@ -1,0 +1,21 @@
+1) - Level - INFO,  Message -  User add buy request, id: 6123759, details: price 1, 1, 1 
+ UTC Date - 2017-05-17 09:18:36,765 
+ Date - 12:18:36,765 
+ Timestamp - 10220 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Presntation\MarketClientOptions.cs.SendBuyRequest : 61] 
+  
+2) - Level - INFO,  Message -  User add buy request, id: 6123763, details: price 1, 1, 1 
+ UTC Date - 2017-05-17 09:18:39,059 
+ Date - 12:18:39,059 
+ Timestamp - 12514 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Presntation\MarketClientOptions.cs.SendBuyRequest : 61] 
+  
+1) - Level - INFO,  Message -  User add buy request, id: 6123912, details: price 1, 1, 1 
+ UTC Date - 2017-05-17 09:19:23,136 
+ Date - 12:19:23,136 
+ Timestamp - 6899 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Presntation\MarketClientOptions.cs.SendBuyRequest : 61] 
+  

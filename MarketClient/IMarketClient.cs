@@ -1,5 +1,6 @@
 ﻿using MarketClient.DataEntries;
 using MarketClient.Utils;
+using System.Collections.Generic;
 
 namespace MarketClient
 {
@@ -57,9 +58,10 @@ namespace MarketClient
         bool SendCancelBuySellRequest(int id);
 
         // creates a 'QueryUserRequests' class, and send it to the server, returns the server's response
-        string SendQueryUserRequests();
 
         // creates a 'QueryMarketRequest' class, and send it to the server, returns the server's response
-        string SendQueryMarketRequest();
+        IMarketAll SendQueryMarketRequest();
+
+        IQueryUserRequestsRequest SendQueryUserRequests();
     }
 }
