@@ -73,6 +73,7 @@ namespace PresentationLayer
         public void updateFunds()
         {
             float tValue = _UserOptions.getFunds();
+            Thread.Sleep(TimeSpan.FromSeconds(0.01));
             float revenue = tValue-startFunds;
             myFunds.Text = tValue.ToString() + ", revenue " + revenue;
         }

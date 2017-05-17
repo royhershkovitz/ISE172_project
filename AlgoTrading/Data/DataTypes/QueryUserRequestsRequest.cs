@@ -22,8 +22,6 @@ namespace AlgoTrading
             { 
                 listToString += "ID: " + ((QueryUserUnit)(list[i])).getID() + ((QueryUserUnit)(list[i])).toString() + "\n";                
             }
-            if (listToString.Length > 0)
-                listToString = listToString.Substring(0, listToString.Length - 3);
             return listToString;
 
         }
