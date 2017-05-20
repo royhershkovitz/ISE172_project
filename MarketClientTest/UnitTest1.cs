@@ -1,18 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Diagnostics;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using MarketClient;
 using MarketClient.Utils;
+using TestClientOptions;
 
 namespace MarketClientTest
 {
     [TestClass]
     public class UnitTest1
-    {
+    { 
         /*static void Main(string[] args)
         {
             Console.WriteLine("start unit test");
@@ -40,8 +36,7 @@ namespace MarketClientTest
                                             zKT296H3cD0+fFOWemuBAkEApKUOEddKJFp51eTuxoIRTGyqFnBIuVhzsa17GiQ8
                                             0cIu7c2z1VplPld/GQOD1R+7RwQwVsG6TmXWID2C5j/4yA==
                                             -----END RSA PRIVATE KEY-----";
-
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
             UnitTest1 test = new UnitTest1();
             Console.WriteLine("1");
@@ -49,6 +44,34 @@ namespace MarketClientTest
             Console.WriteLine("2");
             test.TestObjectBasedHTTPPost();
             Console.WriteLine("3");
+            Console.Read();
+            TestAMA test2 = new TestAMA();
+            //test2.Init();
+            Console.WriteLine("1");
+            test2.TestAlgorithem();
+            Console.WriteLine("2");
+            Console.Read();
+            TestClientOptions test3 = new TestClientOptions();
+            //test3.Init();
+            Console.WriteLine("1");
+            test3.SendSellRequest();
+            Console.WriteLine("2");
+            test3.SendBuyRequest();
+            Console.WriteLine("3");
+            test3.SendCancelBuySellRequest();
+            Console.WriteLine("4");
+            test3.SendQueryBuySellRequest();
+            Console.WriteLine("5");
+            test3.SendQueryUserRequest();
+            Console.WriteLine("6");
+            test3.SendQueryUserRequests();
+            Console.WriteLine("7");
+            test3.SendQueryMarketRequest();
+            Console.WriteLine("8");
+            test3.DeleteEveryActiveRequest();
+            Console.WriteLine("9");
+            test3.DeleteEveryAMAActiveRequest();
+            Console.WriteLine("end test");
             Console.Read();
         }
 

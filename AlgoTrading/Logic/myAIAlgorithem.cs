@@ -16,40 +16,49 @@ namespace AlgoTrading.Logic
         public myAIAlgorithem()
         {
         }
-        public void stopAlgorithemAI()
+
+        //This function is for the use of other classes to stop the algorithm
+        public void StopAlgorithemAI()
         {
             running = false;
         }
-        public bool canAbortThread()
+
+        //This function check if it possible to stop the AI.
+        public bool CanAbortThread()
         {
             return midRun;
         }
-        public void runAlgorithemAI()
+        public void RunAlgorithemAI()
         {
             while (running)
             {
                 Trace.WriteLine("\n\nbuy");
+                //Buying all possible commodities for a cheap price
                 for (int i = 0; i < 9; i++)//missing commodity 9
                 {
                     int price = 1;
                     int commodity = i;
                     int amount = 1;
                     UserOptions.SendBuyRequest(price, commodity, amount);
-                    Thread.Sleep(TimeSpan.FromSeconds(0.01));
+                    Thread.Sleep(TimeSpan.FromSeconds(0.1));
                 }
 
                 Trace.WriteLine("sell");
+                //Selling them for more.
                 for (int i = 0; i < 9; i++)
                 {
                     int price = 15;
                     int commodity = i;
                     int amount = 1;
                     UserOptions.SendSellRequest(price, commodity, amount);
-                    Thread.Sleep(TimeSpan.FromSeconds(0.01));
+                    Thread.Sleep(TimeSpan.FromSeconds(0.1));
                     Trace.WriteLine(i);
                 }
-                Trace.WriteLine("sleep");
-                Thread.Sleep(TimeSpan.FromSeconds(10));
+                if (running)
+                {
+                    Trace.WriteLine("sleep");
+                    Thread.Sleep(TimeSpan.FromSeconds(8.2));//10-0.1*18 = 8.2
+                }
                 Trace.WriteLine("keeprunning: " + running);               
             }
             midRun = true;

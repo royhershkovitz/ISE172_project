@@ -25,13 +25,13 @@ namespace PresentationLayer
             InitializeComponent();
             this.WindowTitle = this.Title;
             MarketClientOptions UserOptions = new MarketClientOptions();
-            MarketAll response = (MarketAll)UserOptions.SendQueryMarketRequest();
-            string convert = response.toString();
+            AlgoTrading.Data.MarketAll response = (AlgoTrading.Data.MarketAll)UserOptions.SendQueryMarketRequest();
+            string convert = response.ToString();
             Result.Text = convert;
         
         }
 
-        private void back_Click(object sender, RoutedEventArgs e)
+        private void Back_Click(object sender, RoutedEventArgs e)
         {
             ((Window)this.Parent).Content = new Requests();
         }

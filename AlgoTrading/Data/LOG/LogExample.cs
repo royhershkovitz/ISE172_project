@@ -7,7 +7,7 @@ namespace AlgoTrading.Data.LOG
     class LogExample
     {
         //Important: Declare an instance for log4net, define before use log
-        private static readonly log4net.ILog Log = LogHelper.getMethodLogger("main");
+        private static readonly log4net.ILog Log = LogHelper.GetMethodLogger("main");
         //log4net.LogManager.GetLogger("Program.cs");//System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
         //static void Main(string[] args)

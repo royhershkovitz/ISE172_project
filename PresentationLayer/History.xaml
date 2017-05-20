@@ -6,8 +6,53 @@
       mc:Ignorable="d" 
       Background="White"
 	  Title="History" Height="500" Width="700">
-    <Grid >
-        <Button x:Name="back" Content="Back" HorizontalAlignment="Left" Margin="310,455,0,0" VerticalAlignment="Top" Width="75" Click="back_Click"/>        
-        <TextBox x:Name="Result" HorizontalAlignment="Left" Height="393" Margin="23,21,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="650" ScrollViewer.CanContentScroll="True"/>
+    <Grid>
+        <Label Content="Grouping options" Margin="550,110,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="25"/>
+
+        <DataGrid Margin="10,10,195,63" ItemsSource="{Binding _historyList}"
+                CanUserReorderColumns="True"
+                CanUserResizeColumns="True"
+                CanUserResizeRows="False"
+                CanUserSortColumns="True"
+                AlternatingRowBackground="Coral"  AlternationCount="2">
+            <DataGrid.GroupStyle>
+                <GroupStyle>
+                    <GroupStyle.ContainerStyle>
+                        <Style TargetType="{x:Type GroupItem}">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type GroupItem}">
+                                        <Expander>
+                                            <Expander.Header>
+                                                <StackPanel Orientation="Horizontal">
+                                                    <!--TextBlock Text="{Binding Path=x, ElementName=FuckOff}"/> x:Name="FuckOff"
+                                                    <TextBlock Text=" - "/>-->
+                                                    <TextBlock Text="{Binding Path=Name}"/>
+                                                    <TextBlock Text=", " />
+                                                    <TextBlock Text="{Binding Path=ItemCount}"/>
+                                                    <TextBlock Text=" Items"/>
+                                                </StackPanel>
+                                            </Expander.Header>
+                                            <ItemsPresenter />
+                                        </Expander>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </GroupStyle.ContainerStyle>
+                </GroupStyle>
+            </DataGrid.GroupStyle>
+        </DataGrid>
+
+        <Button x:Name="B_Back" Content="Back" HorizontalAlignment="Left" Margin="292,442,0,0" VerticalAlignment="Top" Width="108" Height="33" FontSize="22" Click="Back_Click"/>
+
+        <CheckBox Content="Type" HorizontalAlignment="Left" Margin="570,143,0,0" VerticalAlignment="Top" IsChecked="{Binding Path=_type}"/>
+        <CheckBox Content="Price" HorizontalAlignment="Left" Margin="570,163,0,0" VerticalAlignment="Top" IsChecked="{Binding Path=_price}"/>
+        <CheckBox Content="Amount" HorizontalAlignment="Left" Margin="570,203,0,0" VerticalAlignment="Top" IsChecked="{Binding Path=_amount}"/>
+        <CheckBox Content="commudity" HorizontalAlignment="Left" Margin="570,183,0,0" VerticalAlignment="Top" IsChecked="{Binding Path=_commodity}"/>
+        <CheckBox Content="Is ama" HorizontalAlignment="Left" Margin="570,223,0,0" VerticalAlignment="Top" IsChecked="{Binding Path=_IsAma}"/>
+        <CheckBox Content="Validation" HorizontalAlignment="Left" Margin="570,243,0,0" VerticalAlignment="Top" IsChecked="{Binding Path=_validation}"/>
+        <Button Content="Apply grouping" FontSize="12" HorizontalAlignment="Left" Margin="553,279,0,0" VerticalAlignment="Top" Width="100" Height="33" Click="ApplyGrouping"/>
+
     </Grid>
 </Page>

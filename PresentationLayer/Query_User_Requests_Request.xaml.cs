@@ -27,8 +27,8 @@ namespace PresentationLayer
             InitializeComponent();
             this.WindowTitle = this.Title;
             MarketClientOptions UserOptions = new MarketClientOptions();
-            QueryUserRequestsRequest response = (QueryUserRequestsRequest)UserOptions.SendQueryUserRequests();
-            Result.Text = response.toString();
+            AlgoTrading.Data.QueryUserRequestsRequest response = (AlgoTrading.Data.QueryUserRequestsRequest)UserOptions.SendQueryUserRequests();
+            Result.Text = response.ToString();
             
             
         }

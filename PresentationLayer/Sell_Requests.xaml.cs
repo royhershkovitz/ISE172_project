@@ -23,7 +23,7 @@ namespace PresentationLayer
         public Sell_Requests()
         {
             InitializeComponent();
-            this.WindowTitle = this.Title;
+            WindowTitle = Title;
         }
 
         private void Back_Click(object sender, RoutedEventArgs e)
@@ -37,7 +37,9 @@ namespace PresentationLayer
             int price = int.Parse(Iprice.Text);
             int amount = int.Parse(Iamount.Text);
             int commodity = int.Parse(ICommodity.Text);
-            Result.Content = "Your id is: " + (UserOptions.SendSellRequest(price, commodity, amount)).ToString();
+            int response = UserOptions.SendSellRequest(price, commodity, amount);
+            if (response != -1) Result.Content = "Your id is: " + response;
+            else Result.Content = "Error has been occured";
         }
     }
 }

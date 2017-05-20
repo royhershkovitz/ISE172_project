@@ -4,26 +4,29 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AlgoTrading
+namespace AlgoTrading.Data
 {
     public class MarketUnit : MarketClient.DataEntries.IMarketUnit
     {
-        public Dictionary<string, int> info { get; set; }
+        //A class represnting a unit that will be initialized by the server, this unit will be a part of a list in the MarketAll class.
+        public Dictionary<string, int> Info { get; set; }
         public int id;
 
-        public string toString()
+        public int GetID()
         {
-            string dicToString="";
-            foreach (KeyValuePair<string, int> kvp in info)
-            {
-                dicToString = dicToString + string.Format(", {0}: {1}", kvp.Key, kvp.Value); //string.Format("Key = {0}, Value = {1}, ", kvp.Key, kvp.Value);                 
-            }
-            return dicToString;
+            return id;
         }
 
-        public int getID()
+        //Returns this class string which represent the class
+        override
+        public string ToString()
         {
-            return this.id;
+            string dicToString="";
+            foreach (KeyValuePair<string, int> kvp in Info)
+            {
+                dicToString = dicToString + string.Format(", {0}: {1}", kvp.Key, kvp.Value);
+            }
+            return dicToString;
         }
     }
 }

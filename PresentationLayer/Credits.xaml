@@ -8,9 +8,9 @@
         Background="AliceBlue"
         Title="Credits" Height="500" Width="700">
     <Grid>
-        <Label x:Name="L_headLine" Content="Team Rocket" HorizontalAlignment="Left" Margin="128,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="72"/>
-        <Label x:Name="L_Yakir" Content="Yakir Green" HorizontalAlignment="Left" Margin="244,126,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="36"/>
-        <Label x:Name="L_Roy" Content="Roy Hershkovitz" HorizontalAlignment="Left" Margin="207,184,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="36"/>
+        <Label x:Name="L_headLine" Content="Team Rocket" HorizontalAlignment="Left" Margin="128,10" VerticalAlignment="Top" FontWeight="Bold" FontSize="72"/>
+        <Label x:Name="L_Yakir" Content="Yakir Green" HorizontalAlignment="Left" Margin="244,126" VerticalAlignment="Top" FontWeight="Bold" FontSize="36"/>
+        <Label x:Name="L_Roy" Content="Roy Hershkovitz" HorizontalAlignment="Left" Margin="207,184" VerticalAlignment="Top" FontWeight="Bold" FontSize="36"/>
         <Label x:Name="L_Omri" Content="Omri Meshulami" HorizontalAlignment="Left" Margin="201,242,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="36"/>
         <Button x:Name="B_Back" Content="Back" HorizontalAlignment="Left" Margin="288,319,0,0" VerticalAlignment="Top" Width="108" Height="33" FontWeight="Bold" FontSize="22" Click="B_Back_Click"/>
 

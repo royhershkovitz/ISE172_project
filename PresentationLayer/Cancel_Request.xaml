@@ -13,7 +13,9 @@
         <Label Content="response" HorizontalAlignment="Left" Margin="309,202,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18"/>
         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="47" Margin="212,236,0,0" Stroke="Black" VerticalAlignment="Top" Width="293"/>
         <Button x:Name="Send" Content="Send" HorizontalAlignment="Left" Margin="320,155,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold" Click="Send_Click"/>
-        <Button x:Name="delete" Content="delete all the active requests" HorizontalAlignment="Left" Margin="35,409,0,0" VerticalAlignment="Top" Width="191" FontWeight="Bold" Click="delete_All_Click" Height="62"/>
+        <Button x:Name="delete" Content="delete all the active requests" HorizontalAlignment="Left" Margin="35,409,0,0" VerticalAlignment="Top" Width="191" FontWeight="Bold" Click="Delete_All_Click" Height="62"/>
+        <Button x:Name="Ama_Delete" Content="delete all the ama active requests" HorizontalAlignment="Left" Margin="490,409,0,0" VerticalAlignment="Top" Width="190" FontWeight="Bold" Height="62" Click="Ama_Delete_Click"/>
+        <Button x:Name="UnAma_Delete" Content="delete all the unama active requests" HorizontalAlignment="Left" Margin="259,409,0,0" VerticalAlignment="Top" Width="191" FontWeight="Bold" Height="62" Click="UnAma_Delete_Click"/>
         <Label x:Name="Result" Content="" HorizontalAlignment="Left" Margin="259,236,0,0" VerticalAlignment="Top" Width="214" Height="47"/>
         <Button x:Name="Back" Content="Back" HorizontalAlignment="Left" Margin="543,326,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold" Click="Back_Click"/>
 

@@ -1,21 +1,1477 @@
-1) - Level - INFO,  Message -  User add buy request, id: 6123759, details: price 1, 1, 1 
- UTC Date - 2017-05-17 09:18:36,765 
- Date - 12:18:36,765 
- Timestamp - 10220 
- User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Presntation\MarketClientOptions.cs.SendBuyRequest : 61] 
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-05-20 12:56:38,466 
+ Date - 15:56:38,466 
+ Timestamp - 99 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [MainWindow.cs..ctor : 17] 
   
-2) - Level - INFO,  Message -  User add buy request, id: 6123763, details: price 1, 1, 1 
- UTC Date - 2017-05-17 09:18:39,059 
- Date - 12:18:39,059 
- Timestamp - 12514 
- User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Presntation\MarketClientOptions.cs.SendBuyRequest : 61] 
+2) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 12:56:39,674 
+ Date - 15:56:39,674 
+ Timestamp - 1307 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
   
-1) - Level - INFO,  Message -  User add buy request, id: 6123912, details: price 1, 1, 1 
- UTC Date - 2017-05-17 09:19:23,136 
- Date - 12:19:23,136 
- Timestamp - 6899 
- User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Presntation\MarketClientOptions.cs.SendBuyRequest : 61] 
+3) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 12:56:39,782 
+ Date - 15:56:39,782 
+ Timestamp - 1415 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+4) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-05-20 12:56:39,884 
+ Date - 15:56:39,884 
+ Timestamp - 1517 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 25] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-05-20 12:57:01,539 
+ Date - 15:57:01,539 
+ Timestamp - 99 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 12:57:02,708 
+ Date - 15:57:02,708 
+ Timestamp - 1268 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+3) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 12:57:02,814 
+ Date - 15:57:02,814 
+ Timestamp - 1374 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+4) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-05-20 12:57:02,916 
+ Date - 15:57:02,916 
+ Timestamp - 1477 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 25] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-05-20 12:57:47,669 
+ Date - 15:57:47,669 
+ Timestamp - 86 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 12:57:48,881 
+ Date - 15:57:48,881 
+ Timestamp - 1298 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+3) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 12:57:48,990 
+ Date - 15:57:48,990 
+ Timestamp - 1407 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+4) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-05-20 12:57:49,092 
+ Date - 15:57:49,092 
+ Timestamp - 1509 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 25] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-05-20 13:03:44,593 
+ Date - 16:03:44,593 
+ Timestamp - 115 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 13:03:46,005 
+ Date - 16:03:46,005 
+ Timestamp - 1527 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+3) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 13:03:46,111 
+ Date - 16:03:46,111 
+ Timestamp - 1633 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+4) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-05-20 13:03:46,213 
+ Date - 16:03:46,213 
+ Timestamp - 1735 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 25] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-05-20 15:16:00,882 
+ Date - 18:16:00,882 
+ Timestamp - 105 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 15:16:02,591 
+ Date - 18:16:02,591 
+ Timestamp - 1814 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+3) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 15:16:02,698 
+ Date - 18:16:02,698 
+ Timestamp - 1921 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+4) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-05-20 15:16:02,806 
+ Date - 18:16:02,806 
+ Timestamp - 2029 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 25] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-05-20 15:16:21,553 
+ Date - 18:16:21,553 
+ Timestamp - 94 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 15:16:23,302 
+ Date - 18:16:23,302 
+ Timestamp - 1843 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+3) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 15:16:23,411 
+ Date - 18:16:23,411 
+ Timestamp - 1952 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+4) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-05-20 15:16:23,514 
+ Date - 18:16:23,514 
+ Timestamp - 2055 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 25] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-05-20 15:17:27,930 
+ Date - 18:17:27,930 
+ Timestamp - 59 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 15:17:29,103 
+ Date - 18:17:29,103 
+ Timestamp - 1232 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+3) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 15:17:29,210 
+ Date - 18:17:29,210 
+ Timestamp - 1339 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+4) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-05-20 15:17:29,313 
+ Date - 18:17:29,313 
+ Timestamp - 1441 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 25] 
+  
+5) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-05-20 15:17:32,055 
+ Date - 18:17:32,055 
+ Timestamp - 4184 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 25] 
+  
+6) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-05-20 15:17:33,208 
+ Date - 18:17:33,208 
+ Timestamp - 5337 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 25] 
+  
+7) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-05-20 15:17:34,887 
+ Date - 18:17:34,887 
+ Timestamp - 7016 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 25] 
+  
+8) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-05-20 15:17:35,896 
+ Date - 18:17:35,896 
+ Timestamp - 8025 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 25] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-05-20 15:18:14,070 
+ Date - 18:18:14,070 
+ Timestamp - 172 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 15:18:15,408 
+ Date - 18:18:15,408 
+ Timestamp - 1510 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+3) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 15:18:15,513 
+ Date - 18:18:15,513 
+ Timestamp - 1615 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+4) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-05-20 15:18:15,616 
+ Date - 18:18:15,616 
+ Timestamp - 1718 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 25] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-05-20 15:19:21,589 
+ Date - 18:19:21,589 
+ Timestamp - 75 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 15:19:23,703 
+ Date - 18:19:23,703 
+ Timestamp - 2189 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+3) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 15:19:23,810 
+ Date - 18:19:23,810 
+ Timestamp - 2296 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+4) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-05-20 15:19:23,913 
+ Date - 18:19:23,913 
+ Timestamp - 2399 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 25] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-05-20 15:20:43,729 
+ Date - 18:20:43,729 
+ Timestamp - 126 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 15:20:45,129 
+ Date - 18:20:45,129 
+ Timestamp - 1526 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+3) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 15:20:45,235 
+ Date - 18:20:45,235 
+ Timestamp - 1632 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+4) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-05-20 15:20:45,344 
+ Date - 18:20:45,344 
+ Timestamp - 1741 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 25] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-05-20 15:22:00,783 
+ Date - 18:22:00,783 
+ Timestamp - 152 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 15:22:01,988 
+ Date - 18:22:01,988 
+ Timestamp - 1357 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+3) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 15:22:02,099 
+ Date - 18:22:02,099 
+ Timestamp - 1468 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+4) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-05-20 15:22:02,201 
+ Date - 18:22:02,201 
+ Timestamp - 1570 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 25] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-05-20 15:22:22,369 
+ Date - 18:22:22,369 
+ Timestamp - 96 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 15:22:24,292 
+ Date - 18:22:24,292 
+ Timestamp - 2019 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+3) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 15:22:24,402 
+ Date - 18:22:24,402 
+ Timestamp - 2128 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+4) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-05-20 15:22:24,519 
+ Date - 18:22:24,519 
+ Timestamp - 2246 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 25] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-05-20 15:24:09,853 
+ Date - 18:24:09,853 
+ Timestamp - 87 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 15:24:15,469 
+ Date - 18:24:15,469 
+ Timestamp - 5703 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+3) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 15:24:15,575 
+ Date - 18:24:15,575 
+ Timestamp - 5810 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+4) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-05-20 15:24:15,681 
+ Date - 18:24:15,681 
+ Timestamp - 5915 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 25] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-05-20 15:24:33,535 
+ Date - 18:24:33,535 
+ Timestamp - 142 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 15:24:38,137 
+ Date - 18:24:38,137 
+ Timestamp - 4744 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+3) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 15:24:38,267 
+ Date - 18:24:38,267 
+ Timestamp - 4874 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+4) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-05-20 15:24:38,369 
+ Date - 18:24:38,369 
+ Timestamp - 4976 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 25] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-05-20 15:29:52,810 
+ Date - 18:29:52,810 
+ Timestamp - 97 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-05-20 15:30:04,121 
+ Date - 18:30:04,121 
+ Timestamp - 122 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 15:30:05,117 
+ Date - 18:30:05,117 
+ Timestamp - 1117 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+3) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 15:30:05,226 
+ Date - 18:30:05,226 
+ Timestamp - 1227 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+4) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-05-20 15:30:05,330 
+ Date - 18:30:05,330 
+ Timestamp - 1330 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 25] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-05-20 15:37:31,598 
+ Date - 18:37:31,598 
+ Timestamp - 94 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 15:37:32,751 
+ Date - 18:37:32,751 
+ Timestamp - 1247 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+3) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 15:37:32,861 
+ Date - 18:37:32,861 
+ Timestamp - 1357 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+4) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-05-20 15:37:32,964 
+ Date - 18:37:32,964 
+ Timestamp - 1460 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 25] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-05-20 15:44:00,680 
+ Date - 18:44:00,680 
+ Timestamp - 105 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 15:44:02,763 
+ Date - 18:44:02,763 
+ Timestamp - 2188 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+3) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 15:44:02,869 
+ Date - 18:44:02,869 
+ Timestamp - 2294 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+4) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-05-20 15:44:02,971 
+ Date - 18:44:02,971 
+ Timestamp - 2396 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 25] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-05-20 15:46:21,658 
+ Date - 18:46:21,658 
+ Timestamp - 118 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 15:46:22,860 
+ Date - 18:46:22,860 
+ Timestamp - 1319 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+3) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 15:46:22,966 
+ Date - 18:46:22,966 
+ Timestamp - 1425 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+4) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-05-20 15:46:23,068 
+ Date - 18:46:23,068 
+ Timestamp - 1527 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 25] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-05-20 15:47:02,457 
+ Date - 18:47:02,457 
+ Timestamp - 112 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 15:47:03,621 
+ Date - 18:47:03,621 
+ Timestamp - 1276 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+3) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 15:47:03,732 
+ Date - 18:47:03,732 
+ Timestamp - 1387 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+4) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-05-20 15:47:03,834 
+ Date - 18:47:03,834 
+ Timestamp - 1489 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 25] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-05-20 15:53:11,462 
+ Date - 18:53:11,462 
+ Timestamp - 105 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 15:53:14,399 
+ Date - 18:53:14,399 
+ Timestamp - 3041 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+3) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 15:53:14,511 
+ Date - 18:53:14,511 
+ Timestamp - 3153 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+4) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-05-20 15:53:14,616 
+ Date - 18:53:14,616 
+ Timestamp - 3258 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 25] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-05-20 15:53:42,889 
+ Date - 18:53:42,889 
+ Timestamp - 65 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 15:53:44,251 
+ Date - 18:53:44,251 
+ Timestamp - 1427 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+3) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 15:53:44,359 
+ Date - 18:53:44,359 
+ Timestamp - 1535 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+4) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-05-20 15:53:44,463 
+ Date - 18:53:44,463 
+ Timestamp - 1639 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 25] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-05-20 15:53:53,058 
+ Date - 18:53:53,058 
+ Timestamp - 119 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 15:53:54,341 
+ Date - 18:53:54,341 
+ Timestamp - 1403 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+3) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 15:53:54,451 
+ Date - 18:53:54,451 
+ Timestamp - 1512 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+4) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-05-20 15:53:54,565 
+ Date - 18:53:54,565 
+ Timestamp - 1626 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 25] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-05-20 15:54:41,392 
+ Date - 18:54:41,392 
+ Timestamp - 87 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 15:54:43,196 
+ Date - 18:54:43,196 
+ Timestamp - 1891 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+3) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 15:54:43,305 
+ Date - 18:54:43,305 
+ Timestamp - 2000 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+4) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-05-20 15:54:43,421 
+ Date - 18:54:43,421 
+ Timestamp - 2116 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 25] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-05-20 15:54:52,864 
+ Date - 18:54:52,864 
+ Timestamp - 84 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 15:54:53,828 
+ Date - 18:54:53,828 
+ Timestamp - 1048 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+3) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 15:54:53,937 
+ Date - 18:54:53,937 
+ Timestamp - 1157 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+4) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-05-20 15:54:54,041 
+ Date - 18:54:54,041 
+ Timestamp - 1261 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 25] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-05-20 15:55:30,048 
+ Date - 18:55:30,048 
+ Timestamp - 96 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 15:55:31,026 
+ Date - 18:55:31,026 
+ Timestamp - 1074 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+3) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 15:55:31,134 
+ Date - 18:55:31,134 
+ Timestamp - 1182 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+4) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-05-20 15:55:31,236 
+ Date - 18:55:31,236 
+ Timestamp - 1284 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 25] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-05-20 15:55:40,394 
+ Date - 18:55:40,394 
+ Timestamp - 94 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 15:55:41,494 
+ Date - 18:55:41,494 
+ Timestamp - 1195 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+3) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 15:55:41,605 
+ Date - 18:55:41,605 
+ Timestamp - 1305 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+4) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-05-20 15:55:41,708 
+ Date - 18:55:41,708 
+ Timestamp - 1409 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 25] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-05-20 15:56:22,514 
+ Date - 18:56:22,514 
+ Timestamp - 83 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 15:56:23,729 
+ Date - 18:56:23,729 
+ Timestamp - 1298 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+3) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 15:56:23,842 
+ Date - 18:56:23,842 
+ Timestamp - 1410 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+4) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-05-20 15:56:23,945 
+ Date - 18:56:23,945 
+ Timestamp - 1514 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 25] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-05-20 15:56:54,740 
+ Date - 18:56:54,740 
+ Timestamp - 114 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 15:56:55,911 
+ Date - 18:56:55,911 
+ Timestamp - 1286 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+3) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 15:56:56,024 
+ Date - 18:56:56,024 
+ Timestamp - 1398 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+4) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-05-20 15:56:56,127 
+ Date - 18:56:56,127 
+ Timestamp - 1501 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 25] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-05-20 15:57:18,198 
+ Date - 18:57:18,198 
+ Timestamp - 86 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 15:57:19,289 
+ Date - 18:57:19,289 
+ Timestamp - 1176 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+3) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 15:57:19,399 
+ Date - 18:57:19,399 
+ Timestamp - 1287 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+4) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-05-20 15:57:19,519 
+ Date - 18:57:19,519 
+ Timestamp - 1406 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 25] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-05-20 15:57:36,100 
+ Date - 18:57:36,100 
+ Timestamp - 108 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 15:57:39,435 
+ Date - 18:57:39,435 
+ Timestamp - 3443 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+3) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 15:57:39,542 
+ Date - 18:57:39,542 
+ Timestamp - 3550 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+4) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-05-20 15:57:39,646 
+ Date - 18:57:39,646 
+ Timestamp - 3654 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 25] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-05-20 15:57:53,267 
+ Date - 18:57:53,267 
+ Timestamp - 116 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 15:57:54,476 
+ Date - 18:57:54,476 
+ Timestamp - 1326 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+3) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 15:57:54,584 
+ Date - 18:57:54,584 
+ Timestamp - 1434 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+4) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-05-20 15:57:54,700 
+ Date - 18:57:54,700 
+ Timestamp - 1549 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 25] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-05-20 15:58:19,251 
+ Date - 18:58:19,251 
+ Timestamp - 90 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 15:58:20,247 
+ Date - 18:58:20,247 
+ Timestamp - 1086 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+3) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 15:58:20,357 
+ Date - 18:58:20,357 
+ Timestamp - 1196 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+4) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-05-20 15:58:20,460 
+ Date - 18:58:20,460 
+ Timestamp - 1300 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 25] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-05-20 15:58:29,625 
+ Date - 18:58:29,625 
+ Timestamp - 98 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 15:58:30,485 
+ Date - 18:58:30,485 
+ Timestamp - 958 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+3) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 15:58:30,591 
+ Date - 18:58:30,591 
+ Timestamp - 1064 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+4) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-05-20 15:58:30,695 
+ Date - 18:58:30,695 
+ Timestamp - 1168 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 25] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-05-20 16:09:28,059 
+ Date - 19:09:28,059 
+ Timestamp - 126 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 16:09:29,192 
+ Date - 19:09:29,192 
+ Timestamp - 1260 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+3) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 16:09:29,303 
+ Date - 19:09:29,303 
+ Timestamp - 1370 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+4) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-05-20 16:09:29,407 
+ Date - 19:09:29,407 
+ Timestamp - 1474 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 25] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-05-20 16:09:42,665 
+ Date - 19:09:42,665 
+ Timestamp - 111 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 16:09:43,831 
+ Date - 19:09:43,831 
+ Timestamp - 1277 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+3) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 16:09:43,939 
+ Date - 19:09:43,939 
+ Timestamp - 1385 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+4) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-05-20 16:09:44,043 
+ Date - 19:09:44,043 
+ Timestamp - 1490 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 25] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-05-20 16:10:14,523 
+ Date - 19:10:14,523 
+ Timestamp - 91 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 16:10:15,582 
+ Date - 19:10:15,582 
+ Timestamp - 1150 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+3) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 16:10:15,688 
+ Date - 19:10:15,688 
+ Timestamp - 1256 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+4) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-05-20 16:10:15,791 
+ Date - 19:10:15,791 
+ Timestamp - 1359 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 25] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-05-20 16:10:26,559 
+ Date - 19:10:26,559 
+ Timestamp - 111 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 16:10:27,672 
+ Date - 19:10:27,672 
+ Timestamp - 1224 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+3) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 16:10:27,780 
+ Date - 19:10:27,780 
+ Timestamp - 1332 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+4) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-05-20 16:10:27,883 
+ Date - 19:10:27,883 
+ Timestamp - 1436 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 25] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-05-20 16:10:38,063 
+ Date - 19:10:38,063 
+ Timestamp - 89 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 16:10:39,041 
+ Date - 19:10:39,041 
+ Timestamp - 1067 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+3) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 16:10:39,147 
+ Date - 19:10:39,147 
+ Timestamp - 1173 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+4) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-05-20 16:10:39,249 
+ Date - 19:10:39,249 
+ Timestamp - 1275 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 25] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-05-20 16:10:55,526 
+ Date - 19:10:55,526 
+ Timestamp - 84 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 16:10:56,825 
+ Date - 19:10:56,825 
+ Timestamp - 1382 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+3) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 16:10:56,932 
+ Date - 19:10:56,932 
+ Timestamp - 1490 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+4) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-05-20 16:10:57,042 
+ Date - 19:10:57,042 
+ Timestamp - 1600 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 25] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-05-20 16:11:12,427 
+ Date - 19:11:12,427 
+ Timestamp - 79 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 16:11:13,599 
+ Date - 19:11:13,599 
+ Timestamp - 1251 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+3) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 16:11:13,706 
+ Date - 19:11:13,706 
+ Timestamp - 1358 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+4) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-05-20 16:11:13,810 
+ Date - 19:11:13,810 
+ Timestamp - 1462 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 25] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-05-20 16:11:21,245 
+ Date - 19:11:21,245 
+ Timestamp - 96 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 16:11:22,216 
+ Date - 19:11:22,216 
+ Timestamp - 1067 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+3) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 16:11:22,324 
+ Date - 19:11:22,324 
+ Timestamp - 1175 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+4) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-05-20 16:11:22,426 
+ Date - 19:11:22,426 
+ Timestamp - 1278 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 25] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-05-20 16:13:31,521 
+ Date - 19:13:31,521 
+ Timestamp - 94 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 16:13:32,543 
+ Date - 19:13:32,543 
+ Timestamp - 1116 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+3) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 16:13:32,649 
+ Date - 19:13:32,649 
+ Timestamp - 1222 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+4) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-05-20 16:13:32,753 
+ Date - 19:13:32,753 
+ Timestamp - 1326 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 25] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-05-20 16:13:41,001 
+ Date - 19:13:41,001 
+ Timestamp - 85 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 16:13:41,933 
+ Date - 19:13:41,933 
+ Timestamp - 1017 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+3) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 16:13:42,042 
+ Date - 19:13:42,042 
+ Timestamp - 1126 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+4) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-05-20 16:13:42,144 
+ Date - 19:13:42,144 
+ Timestamp - 1228 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 25] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-05-20 16:13:58,347 
+ Date - 19:13:58,347 
+ Timestamp - 97 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 16:13:59,377 
+ Date - 19:13:59,377 
+ Timestamp - 1126 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+3) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 16:13:59,486 
+ Date - 19:13:59,486 
+ Timestamp - 1236 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+4) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-05-20 16:13:59,590 
+ Date - 19:13:59,590 
+ Timestamp - 1340 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 25] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-05-20 16:14:23,659 
+ Date - 19:14:23,659 
+ Timestamp - 110 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 16:14:24,850 
+ Date - 19:14:24,850 
+ Timestamp - 1301 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+3) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 16:14:24,960 
+ Date - 19:14:24,960 
+ Timestamp - 1411 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+4) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-05-20 16:14:25,064 
+ Date - 19:14:25,064 
+ Timestamp - 1515 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 25] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-05-20 16:14:36,426 
+ Date - 19:14:36,426 
+ Timestamp - 117 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 16:14:37,328 
+ Date - 19:14:37,328 
+ Timestamp - 1019 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+3) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 16:14:37,435 
+ Date - 19:14:37,435 
+ Timestamp - 1126 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+4) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-05-20 16:14:37,537 
+ Date - 19:14:37,537 
+ Timestamp - 1228 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 25] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-05-20 16:14:45,870 
+ Date - 19:14:45,870 
+ Timestamp - 101 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 16:14:46,729 
+ Date - 19:14:46,729 
+ Timestamp - 960 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+3) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 16:14:46,836 
+ Date - 19:14:46,836 
+ Timestamp - 1066 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+4) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-05-20 16:14:46,939 
+ Date - 19:14:46,939 
+ Timestamp - 1169 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 25] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-05-20 16:14:54,217 
+ Date - 19:14:54,217 
+ Timestamp - 100 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 16:14:58,125 
+ Date - 19:14:58,125 
+ Timestamp - 4008 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+3) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 16:14:58,233 
+ Date - 19:14:58,233 
+ Timestamp - 4117 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+4) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-05-20 16:14:58,338 
+ Date - 19:14:58,338 
+ Timestamp - 4221 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 25] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-05-20 16:15:42,954 
+ Date - 19:15:42,954 
+ Timestamp - 111 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 16:15:45,158 
+ Date - 19:15:45,158 
+ Timestamp - 2315 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+3) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 16:15:45,265 
+ Date - 19:15:45,265 
+ Timestamp - 2422 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+4) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-05-20 16:15:45,369 
+ Date - 19:15:45,369 
+ Timestamp - 2526 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 25] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-05-20 16:35:37,446 
+ Date - 19:35:37,446 
+ Timestamp - 106 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-05-20 16:44:53,641 
+ Date - 19:44:53,641 
+ Timestamp - 86 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 16:44:56,212 
+ Date - 19:44:56,212 
+ Timestamp - 2658 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+3) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-05-20 16:44:56,323 
+ Date - 19:44:56,323 
+ Timestamp - 2769 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+  
+4) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-05-20 16:44:56,428 
+ Date - 19:44:56,428 
+ Timestamp - 2873 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [F:\documents\Visual Studio 2017\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 26] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-05-20 16:45:11,673 
+ Date - 19:45:11,673 
+ Timestamp - 90 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-05-20 16:45:20,752 
+ Date - 19:45:20,752 
+ Timestamp - 65 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-05-20 16:52:11,102 
+ Date - 19:52:11,102 
+ Timestamp - 145 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-05-20 16:53:05,373 
+ Date - 19:53:05,373 
+ Timestamp - 96 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-05-20 16:59:35,027 
+ Date - 19:59:35,027 
+ Timestamp - 86 
+ User - DESKTOP-HGR2I9K\User 
+ Method - [MainWindow.cs..ctor : 17] 
   

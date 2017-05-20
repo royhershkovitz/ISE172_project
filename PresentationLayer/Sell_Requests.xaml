@@ -7,17 +7,17 @@
         mc:Ignorable="d"
         Background="AliceBlue"
         Title="SellRequest" Height="500" Width="700">
-    <Grid>
-        <Button x:Name="Send" Content="Send" HorizontalAlignment="Left" Margin="53,267,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold" Click="Send_Click"/>
-        <Button x:Name="Back" Content="Back" HorizontalAlignment="Left" Margin="548,326,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold" Click="Back_Click"/>
-        <Label x:Name="q1" Content="Enter a price:" HorizontalAlignment="Left" Margin="26,32,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18"/>
-        <Label x:Name="q2" Content="Entrer an amount:" HorizontalAlignment="Left" Margin="26,113,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18"/>
-        <Label x:Name="q3" Content="Enter commdity:" HorizontalAlignment="Left" Margin="26,180,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18"/>
-        <Label Content="response" HorizontalAlignment="Left" Margin="485,98,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18"/>
-        <TextBox x:Name="Iprice" HorizontalAlignment="Left" Height="23" Margin="26,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="Iamount" HorizontalAlignment="Left" Height="23" Margin="26,152,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="ICommodity" HorizontalAlignment="Left" Height="23" Margin="27,229,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="49" Margin="444,137,0,0" Stroke="Black" VerticalAlignment="Top" Width="179"/>
-        <Label x:Name="Result" Content="" HorizontalAlignment="Left" Margin="463,149,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.493,0.592" Width="142"/>
+    <Grid Margin="0,0,0,0">
+        <Label Content="Enter a price:" HorizontalAlignment="Left" Margin="142,123,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18"/>
+        <Label Content="Enter an amount:" HorizontalAlignment="Left" Margin="141,190,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18"/>
+        <Label Content="Enter a commodity:" HorizontalAlignment="Left" Margin="142,257,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18"/>
+        <Label Content="Response" HorizontalAlignment="Left" Margin="450,190,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18"/>
+        <TextBox x:Name="Iprice" HorizontalAlignment="Left" Height="23" Margin="142,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155" />
+        <TextBox x:Name="Iamount" HorizontalAlignment="Left" Height="23" Margin="142,229,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155" />
+        <TextBox x:Name="ICommodity" HorizontalAlignment="Left" Height="23" Margin="142,296,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155" />
+        <Button x:Name="B_Send" Content="Send" HorizontalAlignment="Left" Margin="142,400,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold" FontSize="14" Click="Send_Click"/>
+        <Button x:Name="B_Back" Content="Back" HorizontalAlignment="Left" Margin="473,400,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold" FontSize="14" Click="Back_Click"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="31" Margin="450,229,0,0" Stroke="Black" VerticalAlignment="Top" Width="149"/>
+        <Label x:Name="Result" Content="" HorizontalAlignment="Left" Margin="450,234,0,0" VerticalAlignment="Top" FontWeight="Bold" Width="149" FontSize="12"/>
     </Grid>
 </Page>

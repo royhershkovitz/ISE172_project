@@ -4,13 +4,14 @@
          Background="AliceBlue"
         Title="AI" Height="500" Width="700">
     <Grid>
-        <Button Content="stop algorithm" HorizontalAlignment="Left" Margin="87,154,0,0" VerticalAlignment="Top" Width="111" Click="stop"/>
+        <Button Content="Stop algorithm" HorizontalAlignment="Left" Margin="87,154,0,0" VerticalAlignment="Top" Width="111" Click="Stop"/>
         <Label Content="the amazing algorithm, status: " HorizontalAlignment="Left" Margin="212,53,0,0" VerticalAlignment="Top" Width="175"/>
         <TextBox x:Name="myStatus" Background="AliceBlue" BorderThickness="0" HorizontalAlignment="Left" Height="23" Margin="392,56,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Button Content="run algorithm" HorizontalAlignment="Left" Margin="522,154,0,0" VerticalAlignment="Top" Width="111" Click="start"/>
-        <Button Content="back" HorizontalAlignment="Left" Margin="289,216,0,0" VerticalAlignment="Top" Width="75" Click="back"/>
-        <TextBox x:Name="myFunds" Background="AliceBlue" BorderThickness="0" HorizontalAlignment="Left" Height="23" Margin="240,303,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="173"/>
+        <Button Content="Run algorithm" HorizontalAlignment="Left" Margin="522,154,0,0" VerticalAlignment="Top" Width="111" Click="Start"/>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="289,216,0,0" VerticalAlignment="Top" Width="75" Click="Back"/>
+        <TextBox x:Name="myFunds" Background="AliceBlue" BorderThickness="0" HorizontalAlignment="Center"  VerticalAlignment="Center" Height="23" Margin="242,303,285,174" Text="--" Width="173" RenderTransformOrigin="0.508,-1.81"/>
         <Label Content="funds" HorizontalAlignment="Left" Margin="311,272,0,0" VerticalAlignment="Top" Width="53"/>
-
+        <Label  Content="Time left:" FontSize="24" HorizontalAlignment="Left" Margin="458,441,0,0" VerticalAlignment="Top" Width="107" Height="37"/>
+        <TextBox  x:Name="TimeLeft" Text="--" FontSize="24" HorizontalAlignment="Left" Margin="565,445,0,0" VerticalAlignment="Top" Width="107" Height="37"/>
     </Grid>
 </Page>
