@@ -69,7 +69,7 @@ namespace AlgoTrading
            if (ServerResponseCheck(id))
            {
                parsedID = int.Parse(id);
-               Data.History.HistoryWriter.AddSpecipicDataToHistory("BuyRequest", parsedID, _isAMA, price + "," + commodity + "," + amount);
+               Data.History.HistoryWriter.AddSpecipicDataToHistory("Buy", parsedID, _isAMA, price + "," + commodity + "," + amount);
                Log.Info(String.Format("User add buy request, id: {0}, details: price {1}, {2}, {3}", parsedID, price, commodity, amount));               
             }
            return parsedID;
@@ -96,7 +96,7 @@ namespace AlgoTrading
            if (ServerResponseCheck(id))
            {
                parsedID = int.Parse(id);
-               Data.History.HistoryWriter.AddSpecipicDataToHistory("SellRequest", parsedID, _isAMA, price + "," + commodity + "," + amount);
+               Data.History.HistoryWriter.AddSpecipicDataToHistory("Sell", parsedID, _isAMA, price + "," + commodity + "," + amount);
                Log.Info(String.Format("User add sell request, id: {0}, details: price {1}, {2}, {3}", parsedID, price, commodity, amount));
             }
            return parsedID;                   
@@ -283,7 +283,7 @@ namespace AlgoTrading
             return DeleteTheseActiveRequest(myActiveActions); 
         }
 
-        //cancels every AMA active request
+        //Cancels every AMA active request
         public bool DeleteEveryAMAActiveRequest()
         {
             QueryUserRequestsRequest request = ((QueryUserRequestsRequest)SendQueryUserRequests());
@@ -298,7 +298,7 @@ namespace AlgoTrading
             return DeleteTheseActiveRequest(myActiveActions);
         }
 
-        //cancels every UnAMA active request
+        //Cancels every UnAMA active request
         public bool DeleteEveryUnAMAActiveRequest()
         {
             QueryUserRequestsRequest request = ((QueryUserRequestsRequest)SendQueryUserRequests());
@@ -313,14 +313,14 @@ namespace AlgoTrading
             return DeleteTheseActiveRequest(myActiveActions);
         }
 
-        //fets a list, cancels the request in the list
+        //Gets a list, cancels the request in the list
         private bool DeleteTheseActiveRequest(List<QueryUserUnit> myActiveActions)
         {
             log4net.ILog Log = LogHelper.GetLogger();
             bool output = true;
             try
             {
-                int tActions = 2;
+                int tActions = 1;
                 foreach (QueryUserUnit QUU in myActiveActions)
                 {
                     output = output & SendCancelBuySellRequest(QUU.id);// check if we delete every one of them
@@ -330,7 +330,7 @@ namespace AlgoTrading
                     {
                         Trace.WriteLine("waiting");
                         tActions = 0;
-                        Thread.Sleep(TimeSpan.FromSeconds(10));
+                        Thread.Sleep(TimeSpan.FromSeconds(10-19*sec));
                     }
                     tActions++;
                 }

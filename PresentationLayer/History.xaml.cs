@@ -6,9 +6,6 @@ using System.Windows.Data;
 
 namespace PresentationLayer
 {
-    /// <summary>
-    /// Interaction logic for History.xaml
-    /// </summary>
     public partial class History : Page
     {
         public ListCollectionView _historyList { get; set; }
@@ -23,17 +20,9 @@ namespace PresentationLayer
         public History()
         {
             InitializeComponent();
-            HistoryWriter.AddSpecipicDataToHistory("buy", 1, false, "2,3,4");
-            HistoryWriter.AddSpecipicDataToHistory("sell", 2, true, "4,5,6");
             WindowTitle = Title;           
             DataContext = this;
             _historyList = new ListCollectionView(HistoryDataBase.GetAllHistory());
-            //    _historyList.GroupDescriptions.Add(new PropertyGroupDescription("Type"));            
-            //    _historyList.GroupDescriptions.Add(new PropertyGroupDescription("Commodity"));            
-            //    _historyList.GroupDescriptions.Add(new PropertyGroupDescription("Amount"));           
-            //    _historyList.GroupDescriptions.Add(new PropertyGroupDescription("Price"));           
-            //    _historyList.GroupDescriptions.Add(new PropertyGroupDescription("IsAma"));          
-            //    _historyList.GroupDescriptions.Add(new PropertyGroupDescription("Validation"));
         }
     
         private void Back_Click(object sender, RoutedEventArgs e)
@@ -43,14 +32,8 @@ namespace PresentationLayer
 
         private void ApplyGrouping(object sender, RoutedEventArgs e)
         {
-            System.Diagnostics.Trace.WriteLine(_type + " " + _price + " " + _commodity + " " + _amount + " " + _IsAma + " " + _validation);
+            //System.Diagnostics.Trace.WriteLine(_type + " " + _price + " " + _commodity + " " + _amount + " " + _IsAma + " " + _validation);
             _historyList.GroupDescriptions.Clear();
-            //_historyList.GroupDescriptions.Add(new PropertyGroupDescription("Type"));
-            //_historyList.GroupDescriptions.Add(new PropertyGroupDescription("Commodity"));
-            //_historyList.GroupDescriptions.Add(new PropertyGroupDescription("Amount"));
-            //_historyList.GroupDescriptions.Add(new PropertyGroupDescription("Price"));
-            //_historyList.GroupDescriptions.Add(new PropertyGroupDescription("IsAma"));
-            //_historyList.GroupDescriptions.Add(new PropertyGroupDescription("Validation"));
             if (_type)
                 _historyList.GroupDescriptions.Add(new PropertyGroupDescription("Type"));
             if (_commodity)
@@ -63,7 +46,7 @@ namespace PresentationLayer
                 _historyList.GroupDescriptions.Add(new PropertyGroupDescription("IsAma"));
             if (_validation)
                 _historyList.GroupDescriptions.Add(new PropertyGroupDescription("Validation"));
-            System.Diagnostics.Trace.WriteLine(_type + " " + _price + " " + _commodity + " " + _amount + " " + _IsAma + " " + _validation);
+            //System.Diagnostics.Trace.WriteLine(_type + " " + _price + " " + _commodity + " " + _amount + " " + _IsAma + " " + _validation);
 
         }
     }

@@ -18,7 +18,7 @@ namespace AlgoTrading.Data.History
         // add the string 'information' to the file
         public static void AddSpecipicDataToHistory(string type, int id, bool isAMA, string details)
         {
-            Trace.WriteLine(id + "," + type + "," + details + "," + isAMA + ",valid");
+            //Trace.WriteLine("Add to history "+id + "," + type + "," + details + "," + isAMA + ",valid");
             AddToHistory(id+","+type+","+ details+","+isAMA+",valid");
         }
 

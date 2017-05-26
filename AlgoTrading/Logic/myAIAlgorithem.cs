@@ -1,21 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 
 namespace AlgoTrading.Logic
 {
+    //This class can run on thread multiple times
     public class myAIAlgorithem
     {
+        //We will use it to Abort the while loop, and to know if we finish the loop
         private bool running = true;
-        private bool midRun = false;
         private MarketClientOptions UserOptions = new MarketClientOptions(true);
-        public myAIAlgorithem()
-        {
-        }
 
         //This function is for the use of other classes to stop the algorithm
         public void StopAlgorithemAI()
@@ -23,11 +17,6 @@ namespace AlgoTrading.Logic
             running = false;
         }
 
-        //This function check if it possible to stop the AI.
-        public bool CanAbortThread()
-        {
-            return midRun;
-        }
         public void RunAlgorithemAI()
         {
             while (running)
@@ -59,9 +48,9 @@ namespace AlgoTrading.Logic
                     Trace.WriteLine("sleep");
                     Thread.Sleep(TimeSpan.FromSeconds(8.2));//10-0.1*18 = 8.2
                 }
-                Trace.WriteLine("keeprunning: " + running);               
+                Trace.WriteLine("keep Running: " + running);               
             }
-            midRun = true;
+            running = true;
         }
     }
 }

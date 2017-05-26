@@ -32,7 +32,7 @@ namespace PresentationLayer
             int price = int.Parse(priceInput.Text);
             int amount = int.Parse(amountInput.Text);
             int commodity = int.Parse(commodityInput.Text);
-            int response = UserOptions.SendSellRequest(price, commodity, amount);
+            int response = UserOptions.SendBuyRequest(price, commodity, amount);
             if (response != -1) Result.Content = "Your id is: " + response;
             else Result.Content = Result.Content = "Error has been occured";
 

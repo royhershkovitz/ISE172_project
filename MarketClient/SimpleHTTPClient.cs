@@ -60,7 +60,7 @@ public class SimpleHTTPClient
             }
             try
             {
-                Trace.WriteLine(response);
+                Trace.WriteLine("Json response: "+response);
                 return JsonConvert.DeserializeObject<T>(response, new JsonSerializerSettings
                 {
                     Error = delegate {
