@@ -1,16 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 using AlgoTrading;
 
 namespace PresentationLayer
@@ -34,11 +23,15 @@ namespace PresentationLayer
         }
 
         private void Send_Click(object sender, RoutedEventArgs e)
-        {            
-            bool check = UserOptions.SendCancelBuySellRequest(int.Parse(idInput.Text));
-            if (check) Result.Content = "Canceled Succesfully!";
-            else Result.Content = "Wrong id";
-
+        {
+            int id = Parser.ReadIntString(idInput, Result);
+            bool check = false;
+            if (id != -1)//check if the input is legal
+            {
+                check = UserOptions.SendCancelBuySellRequest(int.Parse(idInput.Text));
+                if (check) Result.Content = "Canceled Succesfully!";
+                else Result.Content = "Wrong id";
+            }
         }
 
         //delete all the user active requests

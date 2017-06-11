@@ -1,19 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 using AlgoTrading;
-using MarketClient;
-
 
 namespace PresentationLayer
 {
@@ -28,9 +15,8 @@ namespace PresentationLayer
             this.WindowTitle = this.Title;
             MarketClientOptions UserOptions = new MarketClientOptions();
             AlgoTrading.Data.QueryUserRequestsRequest response = (AlgoTrading.Data.QueryUserRequestsRequest)UserOptions.SendQueryUserRequests();
-            Result.Text = response.ToString();
-            
-            
+            if (response != null) Result.Text = response.ToString();
+            else Result.Text = "Error has been occured";
         }
 
         private void Back_Click(object sender, RoutedEventArgs e)

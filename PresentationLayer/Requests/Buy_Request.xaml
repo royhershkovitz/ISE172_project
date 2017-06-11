@@ -17,7 +17,7 @@
         <TextBox x:Name="commodityInput" HorizontalAlignment="Left" Height="23" Margin="142,296,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155" />
         <Button x:Name="B_Send" Content="Send" HorizontalAlignment="Left" Margin="142,400,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold" FontSize="14" Click="B_Send_Click"/>
         <Button x:Name="B_Back" Content="Back" HorizontalAlignment="Left" Margin="473,400,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold" FontSize="14" Click="B_Back_Click"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="31" Margin="450,229,0,0" Stroke="Black" VerticalAlignment="Top" Width="149"/>
-        <Label x:Name="Result" Content="" HorizontalAlignment="Left" Margin="462,234,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="12" Width="127"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="31" Margin="424,229,0,0" Stroke="Black" VerticalAlignment="Top" Width="206"/>
+        <Label x:Name="Result" Content="" HorizontalAlignment="Left" Margin="430,229,0,0" VerticalAlignment="Top" FontWeight="Bold" Width="194" FontSize="12" Height="31"/>
     </Grid>
 </Page>

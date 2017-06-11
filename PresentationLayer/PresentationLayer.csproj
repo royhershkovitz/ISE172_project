@@ -81,10 +81,10 @@
     <Compile Include="AI.xaml.cs">
       <DependentUpon>AI.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Buy_Request.xaml.cs">
+    <Compile Include="Requests\Buy_Request.xaml.cs">
       <DependentUpon>Buy_Request.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Cancel_Request.xaml.cs">
+    <Compile Include="Requests\Cancel_Request.xaml.cs">
       <DependentUpon>Cancel_Request.xaml</DependentUpon>
     </Compile>
     <Compile Include="Credits.xaml.cs">
@@ -96,36 +96,37 @@
     <Compile Include="MainMenu.xaml.cs">
       <DependentUpon>MainMenu.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Query_All_Market_Request.xaml.cs">
+    <Compile Include="Requests\Parser.cs" />
+    <Compile Include="Requests\Query_All_Market_Request.xaml.cs">
       <DependentUpon>Query_All_Market_Request.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Query_Market_Request.xaml.cs">
+    <Compile Include="Requests\Query_Market_Request.xaml.cs">
       <DependentUpon>Query_Market_Request.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Query_Sell_Buy_Request.xaml.cs">
+    <Compile Include="Requests\Query_Sell_Buy_Request.xaml.cs">
       <DependentUpon>Query_Sell_Buy_Request.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Query_User_Request.xaml.cs">
+    <Compile Include="Requests\Query_User_Request.xaml.cs">
       <DependentUpon>Query_User_Request.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Query_User_Requests_Request.xaml.cs">
+    <Compile Include="Requests\Query_User_Requests_Request.xaml.cs">
       <DependentUpon>Query_User_Requests_Request.xaml</DependentUpon>
     </Compile>
     <Compile Include="Requests.xaml.cs">
       <DependentUpon>Requests.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Sell_Requests.xaml.cs">
+    <Compile Include="Requests\Sell_Requests.xaml.cs">
       <DependentUpon>Sell_Requests.xaml</DependentUpon>
     </Compile>
     <Page Include="AI.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Buy_Request.xaml">
+    <Page Include="Requests\Buy_Request.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Cancel_Request.xaml">
+    <Page Include="Requests\Cancel_Request.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -153,23 +154,23 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Query_All_Market_Request.xaml">
+    <Page Include="Requests\Query_All_Market_Request.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Query_Market_Request.xaml">
+    <Page Include="Requests\Query_Market_Request.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Query_Sell_Buy_Request.xaml">
+    <Page Include="Requests\Query_Sell_Buy_Request.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Query_User_Request.xaml">
+    <Page Include="Requests\Query_User_Request.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Query_User_Requests_Request.xaml">
+    <Page Include="Requests\Query_User_Requests_Request.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -177,7 +178,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Sell_Requests.xaml">
+    <Page Include="Requests\Sell_Requests.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

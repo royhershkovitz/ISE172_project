@@ -280,3 +280,4 @@ __pycache__/
 # tools/**
 # !tools/packages.config
 
+PresentationLayer/bin/logs/Log.txt

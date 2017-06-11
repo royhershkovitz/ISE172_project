@@ -142,6 +142,6 @@ namespace AlgoTrading
             }
 
             return output;
-        }       
+        }
     }
 }
