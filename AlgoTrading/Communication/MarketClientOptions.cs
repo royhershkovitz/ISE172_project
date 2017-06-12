@@ -10,12 +10,8 @@ using System.Diagnostics;
 namespace AlgoTrading
 {
     public class MarketClientOptions : IMarketClient
-    {
-
-        private SimpleHTTPClient client = new SimpleHTTPClient();
-        
+    {          
         //private string token = "OSZUIiYeNQHAbfPULVVVqTEXCO9Bc6hLH/EtXzmcqf2OIyiQP2Y2vu1gjvAqvPhN/FoFbLV0vcdYpS8nRzfrHL3JvDPFIAIufmZSD42WDlw9lbeZ7QrUYYDNsILCALIRxCpc8FxsbAYqzRi/wWcvBC971Zel2+MXb5r+8c3F5Uk=";
-        private string token = MarketClient.Utils.SimpleCtyptoLibrary.CreateToken(User, PrivateKey);
         private const string Url = "http://ise172.ise.bgu.ac.il";//:8008";
         public const string User = "user30";
         public const string PrivateKey = @"-----BEGIN RSA PRIVATE KEY-----
@@ -33,6 +29,7 @@ namespace AlgoTrading
                                             zKT296H3cD0+fFOWemuBAkEApKUOEddKJFp51eTuxoIRTGyqFnBIuVhzsa17GiQ8
                                             0cIu7c2z1VplPld/GQOD1R+7RwQwVsG6TmXWID2C5j/4yA==
                                             -----END RSA PRIVATE KEY-----";
+        private SimpleHTTPClient client = new SimpleHTTPClient(User, PrivateKey);
         //Important: Declare an instance for log4net, define before use log
         //private static readonly log4net.ILog Log = LogHelper.getLogger();// just if you dont want to define one, by yourseld
         private double sec = 0.1;
@@ -57,7 +54,7 @@ namespace AlgoTrading
            string id = null;
            try
            {
-                id = client.SendPostRequest(Url, User, token, item);
+                id = client.SendPostRequest(Url, item);
            }
            catch (Exception e)
            {      
@@ -84,7 +81,7 @@ namespace AlgoTrading
            string id = null;
            try
            {
-               id = client.SendPostRequest(Url, User, token, item);
+               id = client.SendPostRequest(Url, item);
            }
            catch (Exception e)
            {
@@ -111,7 +108,7 @@ namespace AlgoTrading
             MarketItemQuery response = null;
             try
             {
-                response = client.SendPostRequest<QueryRequest, MarketItemQuery>(Url, User, token, item);
+                response = client.SendPostRequest<QueryRequest, MarketItemQuery>(Url, item);
             }
             catch (Exception e)
             {
@@ -131,7 +128,7 @@ namespace AlgoTrading
             MarketUserData response = null;
             try
             {
-                response = client.SendPostRequest<QueryUser, MarketUserData>(Url, User, token, item);
+                response = client.SendPostRequest<QueryUser, MarketUserData>(Url, item);
             }
             catch (Exception e)
             {
@@ -151,7 +148,7 @@ namespace AlgoTrading
            MarketCommodityOffer response = null;
            try
            {
-               response = client.SendPostRequest<QueryMarket, MarketCommodityOffer>(Url, User, token, item);
+               response = client.SendPostRequest<QueryMarket, MarketCommodityOffer>(Url, item);
            }
            catch (Exception e)
            {
@@ -171,7 +168,7 @@ namespace AlgoTrading
              string response = null;            
              try
              {
-                 response = client.SendPostRequest(Url, User, token, item);
+                 response = client.SendPostRequest(Url, item);
              }
              catch (Exception e)
              {
@@ -200,7 +197,7 @@ namespace AlgoTrading
             List<QueryUserUnit> list = new List<QueryUserUnit>();
             try
             {
-                list = client.SendPostRequest<QueryUserRequests, List<QueryUserUnit>>(Url, User, token, item);
+                list = client.SendPostRequest<QueryUserRequests, List<QueryUserUnit>>(Url, item);
                 response.SetList(list);
                 Log.Info("SendQueryUserRequests been preformed");                
             }
@@ -223,7 +220,7 @@ namespace AlgoTrading
             List<MarketUnit> list = new List<MarketUnit>();
             try
             {
-                list = client.SendPostRequest<QueryMarketRequest, List<MarketUnit>>(Url, User, token, item);
+                list = client.SendPostRequest<QueryMarketRequest, List<MarketUnit>>(Url, item);
                 response.SetList(list);
                 Log.Info("SendQueryMarketRequest been preformed");                
             }
@@ -261,7 +258,7 @@ namespace AlgoTrading
             MarketUserData response = null;
             try
             {
-                response = client.SendPostRequest<QueryUser, MarketUserData>(Url, User, token, item);
+                response = client.SendPostRequest<QueryUser, MarketUserData>(Url, item);
                 Log.Info("Asked funds");
             }
             catch (Exception e)

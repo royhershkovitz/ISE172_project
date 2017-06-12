@@ -4,10 +4,6 @@ namespace MarketClient.Utils
 {
     public class MarketException : Exception
     {
-        public MarketException()
-        {
-        }
-
         public MarketException(string message) : base(message)
         {
             if (message == "No price or commodity type/amount" | message == "Bad commodity" | message == "Bad amount" | message == "No query id" | message == "No commodity" |
