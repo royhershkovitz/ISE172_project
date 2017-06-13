@@ -1,0 +1,9 @@
+G:\c#\ISE\11\PDFopensourceExample\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+G:\c#\ISE\11\PDFopensourceExample\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+G:\c#\ISE\11\PDFopensourceExample\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+G:\c#\ISE\11\PDFopensourceExample\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+G:\c#\ISE\11\PDFopensourceExample\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+G:\c#\ISE\11\PDFopensourceExample\ConsoleApplication1\bin\Debug\LiveCharts.dll
+G:\c#\ISE\11\PDFopensourceExample\ConsoleApplication1\bin\Debug\LiveCharts.pdb
+G:\c#\ISE\11\PDFopensourceExample\ConsoleApplication1\bin\Debug\LiveCharts.xml
+G:\c#\ISE\11\PDFopensourceExample\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
