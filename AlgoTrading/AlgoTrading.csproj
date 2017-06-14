@@ -87,7 +87,7 @@
     <Compile Include="Data\DataTypes\MarketUnit.cs" />
     <Compile Include="Data\DataTypes\MarketAll.cs" />
     <Compile Include="Logic\myAIAlgorithem.cs" />
-    <Compile Include="Communication\MarketClientOptions.cs" />
+    <Compile Include="Data\MarketClientOptions.cs" />
     <Compile Include="Data\DataTypes\MarketCommodityOffer.cs" />
     <Compile Include="Data\DataTypes\MarketItemQuery.cs" />
     <Compile Include="Data\DataTypes\MarketUserData.cs" />

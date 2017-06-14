@@ -3,15 +3,13 @@ using System.Collections.Generic;
 using MarketClient;
 using System.Threading;
 using AlgoTrading.Data;
-using System.IO;
-using System.Text;
 using System.Diagnostics;
 
 namespace AlgoTrading
 {
     public class MarketClientOptions : IMarketClient
     {          
-        //private string token = "OSZUIiYeNQHAbfPULVVVqTEXCO9Bc6hLH/EtXzmcqf2OIyiQP2Y2vu1gjvAqvPhN/FoFbLV0vcdYpS8nRzfrHL3JvDPFIAIufmZSD42WDlw9lbeZ7QrUYYDNsILCALIRxCpc8FxsbAYqzRi/wWcvBC971Zel2+MXb5r+8c3F5Uk=";
+        //without nonce//private string token = "OSZUIiYeNQHAbfPULVVVqTEXCO9Bc6hLH/EtXzmcqf2OIyiQP2Y2vu1gjvAqvPhN/FoFbLV0vcdYpS8nRzfrHL3JvDPFIAIufmZSD42WDlw9lbeZ7QrUYYDNsILCALIRxCpc8FxsbAYqzRi/wWcvBC971Zel2+MXb5r+8c3F5Uk=";
         private const string Url = "http://ise172.ise.bgu.ac.il";//:8008";
         public const string User = "user30";
         public const string PrivateKey = @"-----BEGIN RSA PRIVATE KEY-----
@@ -179,9 +177,8 @@ namespace AlgoTrading
             bool check = false;
              if (ServerResponseCheck(response))
              {
-                check = response == "Ok";
-                Data.History.HistoryWriter.CancelOldRequest(id);
-                Log.Info("Action " + id + ", been canceled = " + check);
+                check = response == "Ok";               
+                Log.Info("Action " + id + ", been canceled = " + check + ", deleted from history file? " + Data.History.HistoryWriter.CancelOldRequest(id));
                 //if(check)
                     //invoice_buy.Remove(id.ToString());        
              }

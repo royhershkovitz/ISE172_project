@@ -1,29 +1,32 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
-using System.Linq;
 using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 
 namespace AlgoTrading.Data.History
 {
     public class HistoryWriter
     {
         private static readonly double Sec = 0.1;
-        private static readonly string Path = "../Logs/UserActionsLog.csv";
+        private static string Path = "../Logs/UserActionsLog.csv";
 
+        public static void setPath(string newPath)
+        {
+            Path = newPath;
+        }
 
         // add the string 'information' to the file
         public static void AddSpecipicDataToHistory(string type, int id, bool isAMA, string details)
         {
             //Trace.WriteLine("Add to history "+id + "," + type + "," + details + "," + isAMA + ",valid");
-            AddToHistory(id+","+type+","+ details+","+isAMA+",valid");
+            lock (Path)
+            {
+                AddToHistory(id + "," + type + "," + details + "," + isAMA + ",valid");
+            }
         }
 
         // add the string 'information' to the file
-        public static void AddToHistory(string information)
+        private static void AddToHistory(string information)
         {
             log4net.ILog Log = LogHelper.GetLogger();            
             try
@@ -61,36 +64,39 @@ namespace AlgoTrading.Data.History
 
         // read the text from file
         public static string ReadMyHistory()
-        {
+        {            
             log4net.ILog Log = LogHelper.GetLogger();
             string output = "";
-            try
+            lock (Path)
             {
-                // Delete the file if it exists.
-                if (File.Exists(Path))
+                try
                 {
-                    // Open the stream and read it back.
-                    using (StreamReader sR = File.OpenText(Path))
+                    // Delete the file if it exists.
+                    if (File.Exists(Path))
                     {
-                        string ourText = "";
-                        while ((ourText = sR.ReadLine()) != null)
-                            output = output + ourText + "\n";
+                        // Open the stream and read it back.
+                        using (StreamReader sR = File.OpenText(Path))
+                        {
+                            string ourText = "";
+                            while ((ourText = sR.ReadLine()) != null)
+                                output = output + ourText + "\n";
+                        }
+                        Log.Info("read UserActionsLog.csv");
+                        Thread.Sleep(TimeSpan.FromSeconds(Sec));
                     }
-                    Log.Info("read UserActionsLog.csv");
-                    Thread.Sleep(TimeSpan.FromSeconds(Sec));
                 }
-            }
 
-            catch (Exception ex)
-            {
-                Log.Fatal("Failed to read history, program crushed, Exception: " + ex + ", Message: " + ex.Message);                
-                Thread.Sleep(TimeSpan.FromSeconds(Sec)); // Sleep some secs after writing on HardDrive
+                catch (Exception ex)
+                {
+                    Log.Fatal("Failed to read history, program crushed, Exception: " + ex + ", Message: " + ex.Message);
+                    Thread.Sleep(TimeSpan.FromSeconds(Sec)); // Sleep some secs after writing on HardDrive
+                }
             }
             return output;
         }
 
         // change the data with this id from valid to invalid
-        public static void CancelOldRequest(int id)
+        public static bool CancelOldRequest(int id)
         {
             log4net.ILog Log = LogHelper.GetLogger();
             string history = ReadMyHistory();
@@ -119,7 +125,7 @@ namespace AlgoTrading.Data.History
                     //System.Diagnostics.Trace.WriteLine(i+"___"+ history.Substring(i));
                     found = false;
                     stID = "valid";
-                    while (!found & i < history.Length - stID.Length)
+                    while (!found & i < history.Length - stID.Length && history[i] != '\n')
                     {
                         //System.Diagnostics.Trace.Write(history[i]+"-");
                         if (history[i] == stID[0])
@@ -148,6 +154,7 @@ namespace AlgoTrading.Data.History
             }
             if(!found)
                 Log.Error("Didn't find the id " + id);
+            return found;
         }
     }
 }

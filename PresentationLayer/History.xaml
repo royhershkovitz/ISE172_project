@@ -14,6 +14,7 @@
                 CanUserResizeColumns="True"
                 CanUserResizeRows="False"
                 CanUserSortColumns="True"
+                IsReadOnly="True"
                 AlternatingRowBackground="Coral"  AlternationCount="2">
             <DataGrid.GroupStyle>
                 <GroupStyle>

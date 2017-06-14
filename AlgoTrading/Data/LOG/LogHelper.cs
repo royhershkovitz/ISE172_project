@@ -3,14 +3,14 @@ using log4net;
 
 namespace AlgoTrading
 {
-    internal class LogHelper
+    public class LogHelper
     {
         public static log4net.ILog GetLogger([CallerFilePath]string filename = "")
         {
             return log4net.LogManager.GetLogger(filename);
         }
 
-        internal static ILog GetMethodLogger(string data)
+        public static ILog GetMethodLogger(string data)
         {
             return log4net.LogManager.GetLogger(data);
         }

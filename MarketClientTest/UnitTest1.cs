@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using MarketClient.Utils;
-using TestClientOptions;
+using AlgoTrading;
 
 namespace MarketClientTest
 {
@@ -39,40 +39,23 @@ namespace MarketClientTest
         static void Main(string[] args)
         {
             UnitTest1 test = new UnitTest1();
-            Console.WriteLine("1");
+            Console.WriteLine("UnitTest1");
             test.TestSimpleHTTPPost();
-            Console.WriteLine("2");
-            test.TestObjectBasedHTTPPost();
-            Console.WriteLine("3");
-            Console.Read();
-            TestAMA test2 = new TestAMA();
-            //test2.Init();
-            Console.WriteLine("1");
-            test2.TestAlgorithem();
-            Console.WriteLine("2");
-            Console.Read();
-            TestClientOptions test3 = new TestClientOptions();
+            Console.WriteLine("TestSimpleHTTPPost");
+            //test.TestObjectBasedHTTPPost();
+            Console.WriteLine("end UnitTest1");
             //test3.Init();
-            Console.WriteLine("1");
-            test3.SendSellRequest();
-            Console.WriteLine("2");
-            test3.SendBuyRequest();
-            Console.WriteLine("3");
-            test3.SendCancelBuySellRequest();
-            Console.WriteLine("4");
-            test3.SendQueryBuySellRequest();
-            Console.WriteLine("5");
-            test3.SendQueryUserRequest();
-            Console.WriteLine("6");
-            test3.SendQueryUserRequests();
-            Console.WriteLine("7");
-            test3.SendQueryMarketRequest();
-            Console.WriteLine("8");
-            test3.DeleteEveryActiveRequest();
-            Console.WriteLine("9");
-            test3.DeleteEveryAMAActiveRequest();
-            Console.WriteLine("end test");
+            TestParser test2 = new TestParser();
+            Console.WriteLine("test2");
+            test2.TestParse();
+            Console.WriteLine("end test2");
+            //test3.Init();
+            TestHistory test3 = new TestHistory();
+            Console.WriteLine("test3");
+            test3.TestHisory();
+            Console.WriteLine("end test3");
             Console.Read();
+
         }
 
         [TestMethod]
@@ -84,9 +67,9 @@ namespace MarketClientTest
             var request = new{
                 type = "queryUser",
             };
-            string response = client.SendPostRequest(Url, request);
+            string response = SimpleCtyptoLibrary.decrypt(client.SendPostRequest(Url, request), PrivateKey);
             Trace.Write($"Server response is: {response}");
-            Console.WriteLine($"Server response is: { response}");
+            Console.WriteLine($"Server response is: {response}");
         }
 
         [TestMethod]
@@ -96,7 +79,6 @@ namespace MarketClientTest
             // this site doenst accept authentication, it only returns objects.
             string url = "http://ip.jsontest.com/";
             SimpleHTTPClient client = new SimpleHTTPClient(null, null);
-            //IpAddress ip = new IpAddress {Ip = "8.8.8.8"};
             IpAddress ip = new IpAddress { Ip = "8.8.8" };
             IpAddress response = client.SendPostRequest<IpAddress,IpAddress>(url, ip);
             Assert.IsNotNull(response);

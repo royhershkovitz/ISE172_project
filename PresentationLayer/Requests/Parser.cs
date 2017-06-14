@@ -1,33 +1,48 @@
 ﻿using System.Windows.Controls;
+using AlgoTrading;
 
 namespace PresentationLayer
 {
-    static class Parser
+    public static class Parser
     {
-        //run until the user insert int-string (only numbers)
+        // get a TextBox and a label    
+        // if the text is string that stroes int chars - retruen the parsed value, 
+        // else delete the 'userInput' text box and write in the userOutput the problem
         public static int ReadIntString(TextBox userInput, Label userOutput)
         {
             int Output = -1;
-            string input = TirmSpaces(userInput.Text);
-            if (!CheckedIntInput(input))
-            {
-                userInput.Text = "";
-                if(userOutput != null)
-                    userOutput.Content = "Please insert just integer chars";
-            }
+            if (userInput.Text == "")
+                userOutput.Content = "some fields are empty";
             else
             {
-                try
-                {
-                    Output = int.Parse(input);
-                }
-                catch
+                Output = ReadIntString(userInput.Text);
+                if (Output == -1)
                 {
                     userInput.Text = "";
                     if (userOutput != null)
                         userOutput.Content = "Please insert just integer chars";
                 }
+            }            
+            return Output;
+        }
+
+        //parse int string with non int chars
+        public static int ReadIntString(string userInput)
+        {
+            int Output = -1;
+            string input = TirmSpaces(userInput);
+            if (CheckedIntInput(input))
+            {
+              try
+              {
+                    Output = int.Parse(input);
+              }
+              catch
+              {
+                    LogHelper.GetLogger().Fatal("This input did not ditected : " + input);
+              }
             }
+            //System.Diagnostics.Trace.WriteLine(Output + " " + input);
             return Output;
         }
 
@@ -53,6 +68,8 @@ namespace PresentationLayer
         private static bool CheckedIntInput(string input)
         {
             bool output = true;
+            if (input.Length == 0)
+                output = false;
             int i = 0;
             while (i < input.Length & output)
             {
