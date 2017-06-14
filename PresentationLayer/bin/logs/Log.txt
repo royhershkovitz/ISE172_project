@@ -439,3 +439,31 @@
  User - DESKTOP-KC699US\user 
  Method - [MainWindow.cs..ctor : 17] 
   
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-06-14 17:23:23,260 
+ Date - 20:23:23,260 
+ Timestamp - 112 
+ User - DESKTOP-KC699US\user 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-06-14 17:38:34,088 
+ Date - 20:38:34,088 
+ Timestamp - 230 
+ User - DESKTOP-KC699US\user 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-06-14 17:38:44,570 
+ Date - 20:38:44,570 
+ Timestamp - 10711 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 53] 
+  
+3) - Level - INFO,  Message -  User add buy request, id: 12454587, details: price 1, 1, 1 
+ UTC Date - 2017-06-14 17:38:44,675 
+ Date - 20:38:44,675 
+ Timestamp - 10816 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.SendBuyRequest : 68] 
+  

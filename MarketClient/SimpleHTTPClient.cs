@@ -43,8 +43,6 @@ public class SimpleHTTPClient
     public T2 SendPostRequest<T1,T2>(string url, T1 item) where T2 : class 
         {
             var response = SendPostRequest(url, item);
-            //Trace.WriteLine("before dec " + response);
-            response = SimpleCtyptoLibrary.decrypt(response, privateKey);
             //Trace.WriteLine("after dec " + response);
             return response == null ? null : FromJson<T2>(response);
         }
@@ -82,7 +80,8 @@ public class SimpleHTTPClient
                 //Trace.WriteLine("passed sending "+result.ToString());
                 var responseContent = result.Content.ReadAsStringAsync().Result;
                 //Trace.WriteLine("passed2 " + responseContent);
-                return responseContent;
+                //Trace.WriteLine("before dec " + response);
+                return SimpleCtyptoLibrary.decrypt(responseContent, privateKey);
             }
         }
 
