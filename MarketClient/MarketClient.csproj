@@ -52,6 +52,8 @@
     <Compile Include="DataEntries\IMarketUnit.cs" />
     <Compile Include="DataEntries\IQueryUserRequestsRequest.cs" />
     <Compile Include="DataEntries\IQueryUserUnit.cs" />
+    <Compile Include="myNonceSet.cs" />
+    <Compile Include="Node.cs" />
     <Compile Include="SimpleHTTPClient.cs" />
     <Compile Include="Utils\MarketException.cs" />
     <Compile Include="DataEntries\IMarketCommodityOffer.cs" />

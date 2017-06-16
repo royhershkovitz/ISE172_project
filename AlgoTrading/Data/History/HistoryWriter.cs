@@ -9,12 +9,7 @@ namespace AlgoTrading.Data.History
     {
         private static readonly double Sec = 0.1;
         private static string Path = "../Logs/UserActionsLog.csv";
-
-        public static void setPath(string newPath)
-        {
-            Path = newPath;
-        }
-
+        
         // add the string 'information' to the file
         public static void AddSpecipicDataToHistory(string type, int id, bool isAMA, string details)
         {
@@ -28,6 +23,7 @@ namespace AlgoTrading.Data.History
         // add the string 'information' to the file
         private static void AddToHistory(string information)
         {
+            Console.WriteLine(Path);
             log4net.ILog Log = LogHelper.GetLogger();            
             try
             {
@@ -45,14 +41,13 @@ namespace AlgoTrading.Data.History
                     // Create the file.
                     using (FileStream fs = File.Create(Path))
                     {
-                        Byte[] info = new UTF8Encoding(true).GetBytes(information+"\n");
+                        Byte[] info = new UTF8Encoding(true).GetBytes(information);
                         // Add some information to the file.
                         fs.Write(info, 0, info.Length);
                     }
                 }
                 Log.Info("edit UserActionsLog.csv");
                 Thread.Sleep(TimeSpan.FromSeconds(Sec));
-
             }
 
             catch (Exception ex)
@@ -125,7 +120,13 @@ namespace AlgoTrading.Data.History
                     //System.Diagnostics.Trace.WriteLine(i+"___"+ history.Substring(i));
                     found = false;
                     stID = "valid";
-                    while (!found & i < history.Length - stID.Length && history[i] != '\n')
+                    int tBegin = i;
+                    while (i < history.Length && history[i] != '\n')                    
+                        i++;
+                    int end = i;
+                    i = tBegin;
+
+                    while (!found & i < end)
                     {
                         //System.Diagnostics.Trace.Write(history[i]+"-");
                         if (history[i] == stID[0])
@@ -133,7 +134,10 @@ namespace AlgoTrading.Data.History
                             if (history.Substring(i, stID.Length).Equals(stID))
                             {
                                 found = true;
-                                history = history.Substring(0, i) + "in" + history.Substring(i);
+                                if (history.Substring(i - 2, 2).Equals("in"))
+                                    Log.Error("Attemp to delete the same id again");
+                                else
+                                    history = history.Substring(0, i) + "in" + history.Substring(i);
                             }
                         }
                         i++;

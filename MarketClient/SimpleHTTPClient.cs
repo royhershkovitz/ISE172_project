@@ -9,6 +9,7 @@ public class SimpleHTTPClient
     {
     private string user;
     private string privateKey;
+    private myNonceSet setOfNonce = new myNonceSet();
     //define the user
     public SimpleHTTPClient(string initUser, string initPrivateKey)
     {
@@ -22,11 +23,14 @@ public class SimpleHTTPClient
     //returns a random number for nonce uses
     public string GenerateNonce()
     {
+        int output = 0;
         lock (randLock)
         {
-            //A simple implementation of a random number between 123400 and 9999999
-            return random.Next(123400, 9999999).ToString();
+            output = random.Next(1, Int32.MaxValue);
+            while (!setOfNonce.Add(output))
+                output = random.Next(1, Int32.MaxValue);
         }
+        return output.ToString();
     }
 
     /// <summary>

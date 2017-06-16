@@ -1,17 +1,88 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using AlgoTrading.Data.History;
+using System.IO;
 
 namespace MarketClientTest
 {
     public class TestHistory
     {
+        private string path = @"../Logs/UserActionsLog.csv";
+        [TestMethod]
+        public void TestAdding(string type, int id, bool isAMA, string details)
+        {
+            //check add first object
+            HistoryWriter.AddSpecipicDataToHistory(type, id, isAMA, details);//For example "take", -1, false, "toys"
+            System.Threading.Thread.Sleep(100);
+            bool found = false;
+            string history = HistoryWriter.ReadMyHistory();
+            string stID = id.ToString();
+            //Console.WriteLine("2 " + history);
+            int i = 0;
+            while (!found & i < history.Length - stID.Length)
+            {
+                if (history[i] == stID[0])
+                    if (history.Substring(i, stID.Length).Equals(stID))
+                        found = true;
+                i++;
+            }
+            Assert.IsTrue(found);
+
+            //format checking
+            i--;//indexing
+            int begin = i;
+            Console.Write("<");
+            while (i < history.Length && history[i] != '\n')
+            {
+                Console.Write(history[i]);
+                i++;
+            }
+            Console.WriteLine(">\n<" + history.Substring(begin, i - begin) + ">");
+            Console.WriteLine(id + "," + type + "," + details + "," + isAMA + ",valid");
+            Assert.IsTrue(String.Equals(id + "," + type + "," + details + "," + isAMA + ",valid", history.Substring(begin, i - begin)));
+        }
 
         [TestMethod]
-        public void TestHisory()
-        {
-            AlgoTrading.Data.History.HistoryWriter.setPath(@"C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\PresentationLayer\bin\logs\UserActionsLog.csv");
+        public void TestCancel(string type, int id, bool isAMA, string details)
+        { 
+            //Cancel test
+            HistoryWriter.CancelOldRequest(id);
+
+            string history = HistoryWriter.ReadMyHistory();
+            int i = 0;
             bool found = false;
-            string history = AlgoTrading.Data.History.HistoryWriter.ReadMyHistory();
+            string stID = id.ToString();
+            while (!found & i < history.Length - stID.Length)
+            {
+                if (history[i] == stID[0])
+                    if (history.Substring(i, stID.Length).Equals(stID))
+                        found = true;
+                i++;
+            }
+            Assert.IsTrue(found);
+
+            //format checking
+            i--;
+            int begin = i;
+            Console.Write("<");
+            while (i < history.Length && history[i] != '\n')
+            {
+                Console.Write(history[i]);
+                i++;
+            }
+            Console.WriteLine(">\n<" + history.Substring(begin, i - begin) + ">");
+            Console.WriteLine(id + "," + type + "," + details + "," + isAMA + ",invalid");
+            Assert.IsTrue(String.Equals(id + "," + type + "," + details + "," + isAMA + ",invalid", history.Substring(begin, i - begin)));
+        }        
+
+        public void deleteHistory()
+        {
+            File.Delete(path);
+        }
+    }
+}
+/* bool found = false;
+            string history = HistoryWriter.ReadMyHistory();
             //Console.WriteLine("1 "+history);
             string stID = "-1";
             int i = 0;
@@ -26,65 +97,4 @@ namespace MarketClientTest
                 }
                 i++;
             }
-            Assert.IsFalse(found);
-            //check add
-            AlgoTrading.Data.History.HistoryWriter.AddSpecipicDataToHistory("take", -1, false, "toys");
-            System.Threading.Thread.Sleep(100);
-            found = false;
-            history = AlgoTrading.Data.History.HistoryWriter.ReadMyHistory(); 
-            stID = "-1";
-            //Console.WriteLine("2 " + history);
-            i = 0;
-            while (!found & i < history.Length - stID.Length)
-            {
-                if (history[i] == stID[0])
-                    if (history.Substring(i, stID.Length).Equals(stID))
-                        found = true;
-                i++;
-            }
-            Assert.IsTrue(found);
-
-            //format checking
-            i--;//indexing
-            int begin = i;
-            Console.Write("<");
-            while (i < history.Length && history[i]!='\n')
-            {
-                Console.Write(history[i]);
-                i++;
-            }
-            Console.WriteLine(">\n<"+history.Substring(begin, i- begin)+">");
-            Console.WriteLine("-1,take,toys,False,valid");
-            Assert.IsTrue(String.Equals("-1,take,toys,False,valid", history.Substring(begin, i- begin)));
-
-            //Cancel test
-            AlgoTrading.Data.History.HistoryWriter.CancelOldRequest(-1);
-
-            history = AlgoTrading.Data.History.HistoryWriter.ReadMyHistory();
-            stID = "-1";
-            i = 0;
-            found = false;
-            while (!found & i < history.Length - stID.Length)
-            {
-                if (history[i] == stID[0])                
-                    if (history.Substring(i, stID.Length).Equals(stID))
-                        found = true;
-                i++;
-            }
-            Assert.IsTrue(found);
-
-            //format checking
-            i--;
-            begin = i;
-            Console.Write("<");
-            while (i < history.Length && history[i] != '\n')
-            {
-                Console.Write(history[i]);
-                i++;
-            }
-            Console.WriteLine(">\n<" + history.Substring(begin, i - begin) + ">");
-            Console.WriteLine("-1,take,toys,False,invalid");
-            Assert.IsTrue(String.Equals("-1,take,toys,False,invalid", history.Substring(begin, i - begin)));
-        }
-    }
-}
+            Assert.IsFalse(found);*/

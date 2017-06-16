@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using MarketClient.Utils;
-using AlgoTrading;
 
 namespace MarketClientTest
 {
@@ -44,16 +42,27 @@ namespace MarketClientTest
             Console.WriteLine("TestSimpleHTTPPost");
             //test.TestObjectBasedHTTPPost();
             Console.WriteLine("end UnitTest1");
-            //test3.Init();
+
             TestParser test2 = new TestParser();
             Console.WriteLine("test2");
             test2.TestParse();
             Console.WriteLine("end test2");
-            //test3.Init();
+           
             TestHistory test3 = new TestHistory();
             Console.WriteLine("test3");
-            test3.TestHisory();
+            test3.TestAdding("take", -1, false, "toys");
+            test3.TestCancel("take", -1, false, "toys");
+            test3.TestAdding("give", -2, true, "Books");
+            test3.TestAdding("take", -3, false, "toys");
+            test3.TestCancel("give", -2, true, "Books");
+            test3.TestCancel("give", -2, true, "Books");
+            test3.deleteHistory();//delete the file
             Console.WriteLine("end test3");
+
+            TestNonceSet test4 = new TestNonceSet();
+            Console.WriteLine("test4");
+            test4.TestSet();
+            Console.WriteLine("end test4");
             Console.Read();
 
         }
@@ -67,7 +76,7 @@ namespace MarketClientTest
             var request = new{
                 type = "queryUser",
             };
-            string response = SimpleCtyptoLibrary.decrypt(client.SendPostRequest(Url, request), PrivateKey);
+            string response = client.SendPostRequest(Url, request);
             Trace.Write($"Server response is: {response}");
             Console.WriteLine($"Server response is: {response}");
         }
