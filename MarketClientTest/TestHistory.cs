@@ -81,20 +81,3 @@ namespace MarketClientTest
         }
     }
 }
-/* bool found = false;
-            string history = HistoryWriter.ReadMyHistory();
-            //Console.WriteLine("1 "+history);
-            string stID = "-1";
-            int i = 0;
-            while (!found & i < history.Length - stID.Length)
-            {
-                //System.Diagnostics.Trace.Write(history[i]+"-");
-                if (history[i] == stID[0])
-                {
-                    //System.Diagnostics.Trace.Write("+"+history.Substring(i, stID.Length) +"*"+ i+"/"+ (i+ stID.Length) + "*");
-                    if (history.Substring(i, stID.Length).Equals(stID))
-                        found = true;
-                }
-                i++;
-            }
-            Assert.IsFalse(found);*/

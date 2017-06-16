@@ -56,7 +56,7 @@ namespace MarketClientTest
             test3.TestAdding("take", -3, false, "toys");
             test3.TestCancel("give", -2, true, "Books");
             test3.TestCancel("give", -2, true, "Books");
-            test3.deleteHistory();//delete the file
+            //test3.deleteHistory();//delete the file
             Console.WriteLine("end test3");
 
             TestNonceSet test4 = new TestNonceSet();
