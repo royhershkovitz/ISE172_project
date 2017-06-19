@@ -467,3 +467,339 @@
  User - DESKTOP-KC699US\user 
  Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.SendBuyRequest : 68] 
   
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-06-18 22:32:14,743 
+ Date - 01:32:14,743 
+ Timestamp - 86 
+ User - DESKTOP-KC699US\user 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-06-18 22:32:22,335 
+ Date - 01:32:22,335 
+ Timestamp - 7678 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 26] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-06-18 22:38:57,554 
+ Date - 01:38:57,554 
+ Timestamp - 77 
+ User - DESKTOP-KC699US\user 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-06-18 22:38:59,479 
+ Date - 01:38:59,479 
+ Timestamp - 2001 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 26] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-06-18 22:40:55,954 
+ Date - 01:40:55,954 
+ Timestamp - 76 
+ User - DESKTOP-KC699US\user 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-06-18 22:41:10,863 
+ Date - 01:41:10,863 
+ Timestamp - 96 
+ User - DESKTOP-KC699US\user 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-06-18 22:41:12,535 
+ Date - 01:41:12,535 
+ Timestamp - 1768 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 26] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-06-18 22:53:59,310 
+ Date - 01:53:59,310 
+ Timestamp - 92 
+ User - DESKTOP-KC699US\user 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-06-18 22:54:01,207 
+ Date - 01:54:01,207 
+ Timestamp - 1989 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 26] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-06-18 22:54:52,910 
+ Date - 01:54:52,910 
+ Timestamp - 80 
+ User - DESKTOP-KC699US\user 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-06-18 22:54:55,258 
+ Date - 01:54:55,258 
+ Timestamp - 2428 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 26] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-06-18 22:56:51,619 
+ Date - 01:56:51,619 
+ Timestamp - 85 
+ User - DESKTOP-KC699US\user 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-06-18 22:56:53,491 
+ Date - 01:56:53,491 
+ Timestamp - 1956 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 26] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-06-18 22:59:25,132 
+ Date - 01:59:25,132 
+ Timestamp - 81 
+ User - DESKTOP-KC699US\user 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-06-18 22:59:29,112 
+ Date - 01:59:29,112 
+ Timestamp - 4060 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 26] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-06-19 09:55:46,390 
+ Date - 12:55:46,390 
+ Timestamp - 130 
+ User - DESKTOP-KC699US\user 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-06-19 09:55:50,748 
+ Date - 12:55:50,748 
+ Timestamp - 4489 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 26] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-06-19 10:19:07,904 
+ Date - 13:19:07,904 
+ Timestamp - 194 
+ User - DESKTOP-KC699US\user 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-06-19 10:19:12,970 
+ Date - 13:19:12,970 
+ Timestamp - 5260 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 26] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-06-19 10:20:23,534 
+ Date - 13:20:23,534 
+ Timestamp - 185 
+ User - DESKTOP-KC699US\user 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-06-19 10:20:26,295 
+ Date - 13:20:26,295 
+ Timestamp - 2946 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 26] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-06-19 10:22:07,671 
+ Date - 13:22:07,671 
+ Timestamp - 230 
+ User - DESKTOP-KC699US\user 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-06-19 10:24:18,643 
+ Date - 13:24:18,643 
+ Timestamp - 131201 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 26] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-06-19 10:28:51,354 
+ Date - 13:28:51,354 
+ Timestamp - 90 
+ User - DESKTOP-KC699US\user 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-06-19 10:28:54,601 
+ Date - 13:28:54,601 
+ Timestamp - 3337 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 26] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-06-19 10:29:29,910 
+ Date - 13:29:29,910 
+ Timestamp - 132 
+ User - DESKTOP-KC699US\user 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-06-19 10:29:32,828 
+ Date - 13:29:32,828 
+ Timestamp - 3050 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 26] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-06-19 10:34:02,505 
+ Date - 13:34:02,505 
+ Timestamp - 86 
+ User - DESKTOP-KC699US\user 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-06-19 10:34:17,843 
+ Date - 13:34:17,843 
+ Timestamp - 91 
+ User - DESKTOP-KC699US\user 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-06-19 10:34:27,373 
+ Date - 13:34:27,373 
+ Timestamp - 9621 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 26] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-06-19 10:38:59,196 
+ Date - 13:38:59,196 
+ Timestamp - 331 
+ User - DESKTOP-KC699US\user 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-06-19 10:39:06,042 
+ Date - 13:39:06,042 
+ Timestamp - 7178 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 26] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-06-19 10:42:21,697 
+ Date - 13:42:21,697 
+ Timestamp - 832 
+ User - DESKTOP-KC699US\user 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-06-19 10:42:34,229 
+ Date - 13:42:34,229 
+ Timestamp - 13364 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 26] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-06-19 10:45:06,567 
+ Date - 13:45:06,567 
+ Timestamp - 386 
+ User - DESKTOP-KC699US\user 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-06-19 10:45:17,202 
+ Date - 13:45:17,202 
+ Timestamp - 11021 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 26] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-06-19 10:48:39,430 
+ Date - 13:48:39,430 
+ Timestamp - 1092 
+ User - DESKTOP-KC699US\user 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-06-19 10:48:51,288 
+ Date - 13:48:51,288 
+ Timestamp - 12950 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 26] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-06-19 10:52:22,573 
+ Date - 13:52:22,573 
+ Timestamp - 304 
+ User - DESKTOP-KC699US\user 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-06-19 10:52:27,810 
+ Date - 13:52:27,810 
+ Timestamp - 5541 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 26] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-06-19 10:57:11,146 
+ Date - 13:57:11,146 
+ Timestamp - 143 
+ User - DESKTOP-KC699US\user 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-06-19 10:57:13,773 
+ Date - 13:57:13,773 
+ Timestamp - 2770 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 26] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-06-19 11:01:01,228 
+ Date - 14:01:01,228 
+ Timestamp - 270 
+ User - DESKTOP-KC699US\user 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-06-19 11:01:03,856 
+ Date - 14:01:03,856 
+ Timestamp - 2898 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 26] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-06-19 11:03:50,695 
+ Date - 14:03:50,695 
+ Timestamp - 116 
+ User - DESKTOP-KC699US\user 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-06-19 11:03:52,919 
+ Date - 14:03:52,919 
+ Timestamp - 2340 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 26] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-06-19 11:12:19,765 
+ Date - 14:12:19,765 
+ Timestamp - 115 
+ User - DESKTOP-KC699US\user 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-06-19 11:12:23,835 
+ Date - 14:12:23,835 
+ Timestamp - 4184 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 26] 
+  

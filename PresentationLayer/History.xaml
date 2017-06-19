@@ -26,8 +26,7 @@
                                         <Expander>
                                             <Expander.Header>
                                                 <StackPanel Orientation="Horizontal">
-                                                    <TextBlock Text="{Binding Path=Type}"/>
-                                                    <TextBlock Text=" - "/>
+                                                    <TextBlock Text=" "/>
                                                     <TextBlock Text="{Binding Path=Name}"/>
                                                     <TextBlock Text=", " />
                                                     <TextBlock Text="{Binding Path=ItemCount}"/>
@@ -54,6 +53,6 @@
         <CheckBox Content="Is ama" HorizontalAlignment="Left" Margin="570,223,0,0" VerticalAlignment="Top" IsChecked="{Binding Path=_IsAma}"/>
         <CheckBox Content="Validation" HorizontalAlignment="Left" Margin="570,243,0,0" VerticalAlignment="Top" IsChecked="{Binding Path=_validation}"/>
         <Button Content="Apply grouping" FontSize="12" HorizontalAlignment="Left" Margin="553,279,0,0" VerticalAlignment="Top" Width="100" Height="33" Click="ApplyGrouping"/>
-
+        <Button Content="Export as PDF" FontSize="12" HorizontalAlignment="Left" Margin="565,404,0,0" VerticalAlignment="Top" Width="85" Height="33" Click="ExportAsPDF" RenderTransformOrigin="0.447,0.455"/>
     </Grid>
 </Page>

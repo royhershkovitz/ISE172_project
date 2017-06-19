@@ -1,8 +1,11 @@
-﻿using System.Collections.Generic;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
 using AlgoTrading.Data.History;
 using System.Windows.Data;
+using iTextSharp.text.pdf;
+using System.IO;
+using iTextSharp.text;
+using System;
 
 namespace PresentationLayer
 {
@@ -47,7 +50,37 @@ namespace PresentationLayer
             if (_validation)
                 _historyList.GroupDescriptions.Add(new PropertyGroupDescription("Validation"));
             //System.Diagnostics.Trace.WriteLine(_type + " " + _price + " " + _commodity + " " + _amount + " " + _IsAma + " " + _validation);
-
         }
-    }
+
+        private void ExportAsPDF(object sender, RoutedEventArgs e)
+        {
+            Microsoft.Win32.SaveFileDialog dlg = new Microsoft.Win32.SaveFileDialog();
+            dlg.FileName = "HistoryFile"; // Default file name
+            dlg.DefaultExt = ".pdf"; // Default file extension
+            dlg.Filter = "PDF documents (.pdf)|*.pdf"; // Filter files by extension 
+
+            // Show open file dialog box
+            Nullable<bool> result = dlg.ShowDialog();
+
+            // Process open file dialog box results 
+            if (result == true)
+            {
+                // Open document
+                string res = dlg.FileName;
+
+                var doc1 = new Document();
+                PdfWriter.GetInstance(doc1, new FileStream(res, FileMode.Create));
+
+                doc1.Open();
+                var Header = new Paragraph("History file\n", FontFactory.GetFont("David", 22, Font.UNDERLINE, new BaseColor(160, 200, 210)));
+                Header.Alignment = (int) HorizontalAlignment.Center;
+                doc1.Add(Header);
+                doc1.Add(new Paragraph("ID-Type-IsAma-Price-Commodity-Amount-Validation", FontFactory.GetFont("David", 14)));
+                foreach (HistoryUnit HU in _historyList)
+                    doc1.Add(new Paragraph(HU.ToString(), FontFactory.GetFont("David", 12)));
+                doc1.Close();
+            }
+            MessageBox.Show("File has been exported as PDF Successfully");
+        }
+    }    
 }

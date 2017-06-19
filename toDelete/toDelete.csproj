@@ -4,16 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{371E8EA8-CE7A-4AB2-85E5-EAC135DF4A26}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{EF1E5142-F901-4080-9CEE-EDC43AE3B6E4}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MarketClient</RootNamespace>
-    <AssemblyName>MarketClient</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <RootNamespace>toDelete</RootNamespace>
+    <AssemblyName>toDelete</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile />
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,6 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -31,13 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="BouncyCastle.Crypto">
-      <HintPath>.\BouncyCastle.Crypto.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>.\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -48,25 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataEntries\IMarketAll.cs" />
-    <Compile Include="DataEntries\IMarketUnit.cs" />
-    <Compile Include="DataEntries\IQueryUserRequestsRequest.cs" />
-    <Compile Include="DataEntries\IQueryUserUnit.cs" />
-    <Compile Include="myNonceSet.cs" />
-    <Compile Include="Node.cs" />
-    <Compile Include="SimpleHTTPClient.cs" />
-    <Compile Include="SQL.cs" />
-    <Compile Include="Utils\MarketException.cs" />
-    <Compile Include="DataEntries\IMarketCommodityOffer.cs" />
-    <Compile Include="IMarketClient.cs" />
-    <Compile Include="DataEntries\IMarketItemQuery.cs" />
-    <Compile Include="DataEntries\IMarketUserData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Utils\SimpleCtyptoLibrary.cs" />
+    <Compile Include="SQL.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="BouncyCastle.Crypto.dll" />
-    <Content Include="Newtonsoft.Json.dll" />
+    <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
