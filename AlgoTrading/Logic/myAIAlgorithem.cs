@@ -20,6 +20,7 @@ namespace AlgoTrading.Logic
         // The budget for each commodity
         private double[] partialBudget = new double[commudities.Length];
         private static readonly int _maxAmount = 15;
+        private static readonly double Secs = 0.1;
 
         //This function is for the use of other classes to stop the algorithm
         public void StopAlgorithemAI()
@@ -34,13 +35,12 @@ namespace AlgoTrading.Logic
             while (running)
             {
                 getCurrAVG();
-                for (int index = 0; index < commuditiesAVGvalues.Length; index++)
+                for (int index = 0; index < commuditiesAVGvalues.Length & running; index++)
                 {
                     int avg = (int)Math.Floor(commuditiesAVGvalues[index]);
                     int maxSell = (int)Math.Floor(partialBudget[index] / avg);
                     if (maxSell >= _maxAmount)
                         maxSell = _maxAmount;
-                    Trace.WriteLine(index+" "+maxSell + " "+ avg);
                     if (maxSell > 0)
                     {
                         UserOptions.SendBuyRequest(avg - 2, commudities[index], maxSell);
@@ -55,13 +55,13 @@ namespace AlgoTrading.Logic
             running = true;
         }
 
-        // pause the program for 8.2 action
+        // pause the program for 8.2 secs for 18 actions
         private void pause()
         {
             if (running)
             {
                 Trace.WriteLine("sleep");
-                Thread.Sleep(TimeSpan.FromSeconds(10 - 0.1 * actions));//10-0.1*18 = 8.2
+                Thread.Sleep(TimeSpan.FromSeconds(10 - Secs * actions));//10-0.1*18 = 8.2
                 actions = topActions;
             }
             Trace.WriteLine("keep Running: " + running);
@@ -73,7 +73,7 @@ namespace AlgoTrading.Logic
             if (actions > 0)
             {
                 actions--;
-                Thread.Sleep(TimeSpan.FromSeconds(0.1));
+                Thread.Sleep(TimeSpan.FromSeconds(Secs));
             }
             else
                 pause();
@@ -94,7 +94,7 @@ namespace AlgoTrading.Logic
         }
 
         //Ask the server for current AVG of the tracked commodity
-        public void getCurrAVG()
+        private void getCurrAVG()
         {
             String connectionString = @"Data Source=ise172.ise.bgu.ac.il;Initial Catalog=history;User ID=labuser;Password=wonsawheightfly";
             SqlConnection myConnection = new SqlConnection(connectionString);
@@ -115,9 +115,16 @@ namespace AlgoTrading.Logic
             }
             catch (Exception e)
             {
-                Trace.WriteLine(e.ToString());
+                try
+                {
+                    myConnection.Close();
+                    Trace.WriteLine("close connection");
+                }
+                catch { Trace.WriteLine("Fail close connection");  }
+                Trace.WriteLine("Catched SQL exception " + e.Message);
+                running = false;
             }
-            Trace.WriteLine("close connection AVG");
+            Trace.WriteLine("End AVG");
         }
     }//if the price raise up - raise selling prices
 }

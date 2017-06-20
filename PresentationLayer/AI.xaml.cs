@@ -62,7 +62,7 @@ namespace PresentationLayer
                 }
             }
         }
-        private log4net.ILog _log;
+        private static log4net.ILog _log;
 
         //Constructor
         public AI()
@@ -133,13 +133,13 @@ namespace PresentationLayer
                 Thread.Sleep(TimeSpan.FromSeconds(0.01));
                 _ama.StopAlgorithemAI();
                 Trace.WriteLine("StopState?: " + _run.ThreadState);
-                //_run.Interrupt();
-                _myTimer.Enabled = false;
-                _timeElapsed = 0;
-                _status = " Aborted";
-                Trace.WriteLine("AI aborted");
-                Trace.WriteLine("StopState?: " + _run.ThreadState);
+                //_run.Interrupt();                
             }
+            _myTimer.Enabled = false;
+            _timeElapsed = 0;
+            _status = " Aborted";
+            Trace.WriteLine("AI aborted");
+            Trace.WriteLine("StopState?: " + _run.ThreadState);
         }
 
         //updating the funds value
@@ -159,6 +159,11 @@ namespace PresentationLayer
             }
             myFunds.Text = tValue.ToString() + ", investment " + invested;
             revnue.Text = "approximately revenue: " + _revenue;
+            if (_run.IsAlive)
+            {
+                Stop(null, null);
+                _status = "Connection problem";
+            }
         }
 
 

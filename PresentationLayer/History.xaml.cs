@@ -27,12 +27,14 @@ namespace PresentationLayer
             DataContext = this;
             _historyList = new ListCollectionView(HistoryDataBase.GetAllHistory());
         }
-    
+        
+        //retrurns to the previous page
         private void Back_Click(object sender, RoutedEventArgs e)
         {
             ((Window)Parent).Content = new MainMenu(); 
         }
 
+        //groups the information by the chosen opportunities
         private void ApplyGrouping(object sender, RoutedEventArgs e)
         {
             //System.Diagnostics.Trace.WriteLine(_type + " " + _price + " " + _commodity + " " + _amount + " " + _IsAma + " " + _validation);

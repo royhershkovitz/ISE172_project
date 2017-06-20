@@ -551,3 +551,598 @@
  User - DESKTOP-KC699US\user 
  Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.GetFunds : 271] 
   
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-06-20 19:54:09,512 
+ Date - 22:54:09,512 
+ Timestamp - 104 
+ User - DESKTOP-KC699US\user 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  Asked funds 
+ UTC Date - 2017-06-20 19:54:16,562 
+ Date - 22:54:16,562 
+ Timestamp - 7153 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.GetFunds : 271] 
+  
+3) - Level - INFO,  Message -  AI started 
+ UTC Date - 2017-06-20 19:54:16,576 
+ Date - 22:54:16,576 
+ Timestamp - 7167 
+ User - DESKTOP-KC699US\user 
+ Method - [.Start : 115] 
+  
+4) - Level - INFO,  Message -  Asked funds 
+ UTC Date - 2017-06-20 19:54:27,632 
+ Date - 22:54:27,632 
+ Timestamp - 18223 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.GetFunds : 271] 
+  
+5) - Level - INFO,  Message -  AI Aborted 
+ UTC Date - 2017-06-20 19:54:27,737 
+ Date - 22:54:27,737 
+ Timestamp - 18328 
+ User - DESKTOP-KC699US\user 
+ Method - [.Stop : 132] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-06-20 19:59:34,769 
+ Date - 22:59:34,769 
+ Timestamp - 111 
+ User - DESKTOP-KC699US\user 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  Asked funds 
+ UTC Date - 2017-06-20 20:00:00,953 
+ Date - 23:00:00,953 
+ Timestamp - 26295 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.GetFunds : 271] 
+  
+3) - Level - INFO,  Message -  AI started 
+ UTC Date - 2017-06-20 20:00:00,964 
+ Date - 23:00:00,964 
+ Timestamp - 26306 
+ User - DESKTOP-KC699US\user 
+ Method - [.Start : 115] 
+  
+4) - Level - INFO,  Message -  Asked funds 
+ UTC Date - 2017-06-20 20:00:12,020 
+ Date - 23:00:12,020 
+ Timestamp - 37362 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.GetFunds : 271] 
+  
+5) - Level - INFO,  Message -  AI Aborted 
+ UTC Date - 2017-06-20 20:00:12,125 
+ Date - 23:00:12,125 
+ Timestamp - 37467 
+ User - DESKTOP-KC699US\user 
+ Method - [.Stop : 132] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-06-20 20:03:06,310 
+ Date - 23:03:06,310 
+ Timestamp - 78 
+ User - DESKTOP-KC699US\user 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  Asked funds 
+ UTC Date - 2017-06-20 20:03:09,305 
+ Date - 23:03:09,305 
+ Timestamp - 3072 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.GetFunds : 271] 
+  
+3) - Level - INFO,  Message -  AI started 
+ UTC Date - 2017-06-20 20:03:09,313 
+ Date - 23:03:09,313 
+ Timestamp - 3081 
+ User - DESKTOP-KC699US\user 
+ Method - [.Start : 115] 
+  
+4) - Level - INFO,  Message -  Asked funds 
+ UTC Date - 2017-06-20 20:03:20,383 
+ Date - 23:03:20,383 
+ Timestamp - 14151 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.GetFunds : 271] 
+  
+5) - Level - INFO,  Message -  AI Aborted 
+ UTC Date - 2017-06-20 20:03:20,488 
+ Date - 23:03:20,488 
+ Timestamp - 14256 
+ User - DESKTOP-KC699US\user 
+ Method - [.Stop : 132] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-06-20 20:06:30,185 
+ Date - 23:06:30,185 
+ Timestamp - 73 
+ User - DESKTOP-KC699US\user 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  Asked funds 
+ UTC Date - 2017-06-20 20:06:32,370 
+ Date - 23:06:32,370 
+ Timestamp - 2257 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.GetFunds : 271] 
+  
+3) - Level - INFO,  Message -  AI started 
+ UTC Date - 2017-06-20 20:06:32,379 
+ Date - 23:06:32,379 
+ Timestamp - 2267 
+ User - DESKTOP-KC699US\user 
+ Method - [.Start : 115] 
+  
+4) - Level - INFO,  Message -  Asked funds 
+ UTC Date - 2017-06-20 20:06:43,439 
+ Date - 23:06:43,439 
+ Timestamp - 13326 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.GetFunds : 271] 
+  
+5) - Level - INFO,  Message -  AI Aborted 
+ UTC Date - 2017-06-20 20:06:43,544 
+ Date - 23:06:43,544 
+ Timestamp - 13431 
+ User - DESKTOP-KC699US\user 
+ Method - [.Stop : 132] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-06-20 20:08:40,918 
+ Date - 23:08:40,918 
+ Timestamp - 85 
+ User - DESKTOP-KC699US\user 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  Asked funds 
+ UTC Date - 2017-06-20 20:08:45,969 
+ Date - 23:08:45,969 
+ Timestamp - 5136 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.GetFunds : 271] 
+  
+3) - Level - INFO,  Message -  AI started 
+ UTC Date - 2017-06-20 20:08:45,983 
+ Date - 23:08:45,983 
+ Timestamp - 5150 
+ User - DESKTOP-KC699US\user 
+ Method - [.Start : 115] 
+  
+4) - Level - INFO,  Message -  Asked funds 
+ UTC Date - 2017-06-20 20:08:57,061 
+ Date - 23:08:57,061 
+ Timestamp - 16227 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.GetFunds : 271] 
+  
+5) - Level - INFO,  Message -  AI Aborted 
+ UTC Date - 2017-06-20 20:08:57,274 
+ Date - 23:08:57,274 
+ Timestamp - 16440 
+ User - DESKTOP-KC699US\user 
+ Method - [.Stop : 132] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-06-20 20:09:51,213 
+ Date - 23:09:51,213 
+ Timestamp - 97 
+ User - DESKTOP-KC699US\user 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  Asked funds 
+ UTC Date - 2017-06-20 20:09:54,762 
+ Date - 23:09:54,762 
+ Timestamp - 3646 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.GetFunds : 271] 
+  
+3) - Level - INFO,  Message -  AI started 
+ UTC Date - 2017-06-20 20:09:54,771 
+ Date - 23:09:54,771 
+ Timestamp - 3654 
+ User - DESKTOP-KC699US\user 
+ Method - [.Start : 115] 
+  
+4) - Level - INFO,  Message -  Asked funds 
+ UTC Date - 2017-06-20 20:10:05,823 
+ Date - 23:10:05,823 
+ Timestamp - 14706 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.GetFunds : 271] 
+  
+5) - Level - INFO,  Message -  AI Aborted 
+ UTC Date - 2017-06-20 20:10:05,927 
+ Date - 23:10:05,927 
+ Timestamp - 14811 
+ User - DESKTOP-KC699US\user 
+ Method - [.Stop : 132] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-06-20 20:10:47,714 
+ Date - 23:10:47,714 
+ Timestamp - 79 
+ User - DESKTOP-KC699US\user 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  Asked funds 
+ UTC Date - 2017-06-20 20:10:51,173 
+ Date - 23:10:51,173 
+ Timestamp - 3538 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.GetFunds : 271] 
+  
+3) - Level - INFO,  Message -  AI started 
+ UTC Date - 2017-06-20 20:10:51,182 
+ Date - 23:10:51,182 
+ Timestamp - 3547 
+ User - DESKTOP-KC699US\user 
+ Method - [.Start : 115] 
+  
+4) - Level - INFO,  Message -  Asked funds 
+ UTC Date - 2017-06-20 20:11:02,251 
+ Date - 23:11:02,251 
+ Timestamp - 14615 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.GetFunds : 271] 
+  
+5) - Level - INFO,  Message -  AI Aborted 
+ UTC Date - 2017-06-20 20:11:02,356 
+ Date - 23:11:02,356 
+ Timestamp - 14720 
+ User - DESKTOP-KC699US\user 
+ Method - [.Stop : 132] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-06-20 20:11:24,947 
+ Date - 23:11:24,947 
+ Timestamp - 96 
+ User - DESKTOP-KC699US\user 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  Asked funds 
+ UTC Date - 2017-06-20 20:11:27,644 
+ Date - 23:11:27,644 
+ Timestamp - 2792 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.GetFunds : 271] 
+  
+3) - Level - INFO,  Message -  AI started 
+ UTC Date - 2017-06-20 20:11:27,664 
+ Date - 23:11:27,664 
+ Timestamp - 2812 
+ User - DESKTOP-KC699US\user 
+ Method - [.Start : 115] 
+  
+4) - Level - INFO,  Message -  Asked funds 
+ UTC Date - 2017-06-20 20:11:38,734 
+ Date - 23:11:38,734 
+ Timestamp - 13882 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.GetFunds : 271] 
+  
+5) - Level - INFO,  Message -  AI Aborted 
+ UTC Date - 2017-06-20 20:11:38,838 
+ Date - 23:11:38,838 
+ Timestamp - 13986 
+ User - DESKTOP-KC699US\user 
+ Method - [.Stop : 132] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-06-20 20:12:10,939 
+ Date - 23:12:10,939 
+ Timestamp - 81 
+ User - DESKTOP-KC699US\user 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  Asked funds 
+ UTC Date - 2017-06-20 20:12:14,158 
+ Date - 23:12:14,158 
+ Timestamp - 3299 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.GetFunds : 271] 
+  
+3) - Level - INFO,  Message -  AI started 
+ UTC Date - 2017-06-20 20:12:14,166 
+ Date - 23:12:14,166 
+ Timestamp - 3308 
+ User - DESKTOP-KC699US\user 
+ Method - [.Start : 115] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-06-20 20:12:49,276 
+ Date - 23:12:49,276 
+ Timestamp - 83 
+ User - DESKTOP-KC699US\user 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  Asked funds 
+ UTC Date - 2017-06-20 20:12:52,288 
+ Date - 23:12:52,288 
+ Timestamp - 3095 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.GetFunds : 271] 
+  
+3) - Level - INFO,  Message -  AI started 
+ UTC Date - 2017-06-20 20:12:52,300 
+ Date - 23:12:52,300 
+ Timestamp - 3107 
+ User - DESKTOP-KC699US\user 
+ Method - [.Start : 115] 
+  
+4) - Level - INFO,  Message -  Asked funds 
+ UTC Date - 2017-06-20 20:13:03,345 
+ Date - 23:13:03,345 
+ Timestamp - 14152 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.GetFunds : 271] 
+  
+5) - Level - INFO,  Message -  AI Aborted 
+ UTC Date - 2017-06-20 20:13:03,451 
+ Date - 23:13:03,451 
+ Timestamp - 14258 
+ User - DESKTOP-KC699US\user 
+ Method - [.Stop : 132] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-06-20 20:13:16,224 
+ Date - 23:13:16,224 
+ Timestamp - 88 
+ User - DESKTOP-KC699US\user 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  Asked funds 
+ UTC Date - 2017-06-20 20:13:19,350 
+ Date - 23:13:19,350 
+ Timestamp - 3214 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.GetFunds : 271] 
+  
+3) - Level - INFO,  Message -  AI started 
+ UTC Date - 2017-06-20 20:13:19,358 
+ Date - 23:13:19,358 
+ Timestamp - 3222 
+ User - DESKTOP-KC699US\user 
+ Method - [.Start : 115] 
+  
+4) - Level - INFO,  Message -  Asked funds 
+ UTC Date - 2017-06-20 20:13:30,414 
+ Date - 23:13:30,414 
+ Timestamp - 14278 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.GetFunds : 271] 
+  
+5) - Level - INFO,  Message -  AI Aborted 
+ UTC Date - 2017-06-20 20:13:30,518 
+ Date - 23:13:30,518 
+ Timestamp - 14382 
+ User - DESKTOP-KC699US\user 
+ Method - [.Stop : 132] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-06-20 20:13:48,078 
+ Date - 23:13:48,078 
+ Timestamp - 97 
+ User - DESKTOP-KC699US\user 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  Asked funds 
+ UTC Date - 2017-06-20 20:13:51,596 
+ Date - 23:13:51,596 
+ Timestamp - 3615 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.GetFunds : 271] 
+  
+3) - Level - INFO,  Message -  AI started 
+ UTC Date - 2017-06-20 20:13:51,606 
+ Date - 23:13:51,606 
+ Timestamp - 3625 
+ User - DESKTOP-KC699US\user 
+ Method - [.Start : 115] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-06-20 20:14:32,095 
+ Date - 23:14:32,095 
+ Timestamp - 94 
+ User - DESKTOP-KC699US\user 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  Asked funds 
+ UTC Date - 2017-06-20 20:14:35,371 
+ Date - 23:14:35,371 
+ Timestamp - 3369 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.GetFunds : 271] 
+  
+3) - Level - INFO,  Message -  AI started 
+ UTC Date - 2017-06-20 20:14:35,379 
+ Date - 23:14:35,379 
+ Timestamp - 3378 
+ User - DESKTOP-KC699US\user 
+ Method - [.Start : 115] 
+  
+4) - Level - INFO,  Message -  AI Aborted 
+ UTC Date - 2017-06-20 20:14:40,054 
+ Date - 23:14:40,054 
+ Timestamp - 8053 
+ User - DESKTOP-KC699US\user 
+ Method - [.Stop : 132] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-06-20 20:15:19,165 
+ Date - 23:15:19,165 
+ Timestamp - 74 
+ User - DESKTOP-KC699US\user 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  Asked funds 
+ UTC Date - 2017-06-20 20:15:22,592 
+ Date - 23:15:22,592 
+ Timestamp - 3500 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.GetFunds : 271] 
+  
+3) - Level - INFO,  Message -  AI started 
+ UTC Date - 2017-06-20 20:15:22,600 
+ Date - 23:15:22,600 
+ Timestamp - 3508 
+ User - DESKTOP-KC699US\user 
+ Method - [.Start : 115] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-06-20 20:15:38,606 
+ Date - 23:15:38,606 
+ Timestamp - 79 
+ User - DESKTOP-KC699US\user 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-06-20 20:15:53,850 
+ Date - 23:15:53,850 
+ Timestamp - 160 
+ User - DESKTOP-KC699US\user 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-06-20 20:16:10,220 
+ Date - 23:16:10,220 
+ Timestamp - 100 
+ User - DESKTOP-KC699US\user 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  Asked funds 
+ UTC Date - 2017-06-20 20:16:13,564 
+ Date - 23:16:13,564 
+ Timestamp - 3444 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.GetFunds : 271] 
+  
+3) - Level - INFO,  Message -  AI started 
+ UTC Date - 2017-06-20 20:16:13,575 
+ Date - 23:16:13,575 
+ Timestamp - 3455 
+ User - DESKTOP-KC699US\user 
+ Method - [.Start : 115] 
+  
+4) - Level - INFO,  Message -  Asked funds 
+ UTC Date - 2017-06-20 20:16:24,661 
+ Date - 23:16:24,661 
+ Timestamp - 14542 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.GetFunds : 271] 
+  
+5) - Level - INFO,  Message -  AI Aborted 
+ UTC Date - 2017-06-20 20:16:24,766 
+ Date - 23:16:24,766 
+ Timestamp - 14646 
+ User - DESKTOP-KC699US\user 
+ Method - [.Stop : 132] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-06-20 20:16:50,544 
+ Date - 23:16:50,544 
+ Timestamp - 94 
+ User - DESKTOP-KC699US\user 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  Asked funds 
+ UTC Date - 2017-06-20 20:16:54,896 
+ Date - 23:16:54,896 
+ Timestamp - 4447 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.GetFunds : 271] 
+  
+3) - Level - INFO,  Message -  AI started 
+ UTC Date - 2017-06-20 20:16:54,906 
+ Date - 23:16:54,906 
+ Timestamp - 4457 
+ User - DESKTOP-KC699US\user 
+ Method - [.Start : 115] 
+  
+4) - Level - INFO,  Message -  Asked funds 
+ UTC Date - 2017-06-20 20:17:05,956 
+ Date - 23:17:05,956 
+ Timestamp - 15506 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.GetFunds : 271] 
+  
+5) - Level - INFO,  Message -  AI Aborted 
+ UTC Date - 2017-06-20 20:17:06,061 
+ Date - 23:17:06,061 
+ Timestamp - 15611 
+ User - DESKTOP-KC699US\user 
+ Method - [.Stop : 132] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-06-20 20:17:41,469 
+ Date - 23:17:41,469 
+ Timestamp - 146 
+ User - DESKTOP-KC699US\user 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  Asked funds 
+ UTC Date - 2017-06-20 20:17:46,521 
+ Date - 23:17:46,521 
+ Timestamp - 5198 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.GetFunds : 271] 
+  
+3) - Level - INFO,  Message -  AI started 
+ UTC Date - 2017-06-20 20:17:46,532 
+ Date - 23:17:46,532 
+ Timestamp - 5210 
+ User - DESKTOP-KC699US\user 
+ Method - [.Start : 115] 
+  
+4) - Level - INFO,  Message -  Asked funds 
+ UTC Date - 2017-06-20 20:17:57,606 
+ Date - 23:17:57,606 
+ Timestamp - 16283 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.GetFunds : 271] 
+  
+5) - Level - INFO,  Message -  AI Aborted 
+ UTC Date - 2017-06-20 20:17:57,712 
+ Date - 23:17:57,712 
+ Timestamp - 16389 
+ User - DESKTOP-KC699US\user 
+ Method - [.Stop : 132] 
+  
+6) - Level - INFO,  Message -  AI Aborted 
+ UTC Date - 2017-06-20 20:18:00,517 
+ Date - 23:18:00,517 
+ Timestamp - 19194 
+ User - DESKTOP-KC699US\user 
+ Method - [.Stop : 132] 
+  
+7) - Level - INFO,  Message -  AI started 
+ UTC Date - 2017-06-20 20:18:03,658 
+ Date - 23:18:03,658 
+ Timestamp - 22335 
+ User - DESKTOP-KC699US\user 
+ Method - [.Start : 115] 
+  
+8) - Level - INFO,  Message -  Asked funds 
+ UTC Date - 2017-06-20 20:18:13,732 
+ Date - 23:18:13,732 
+ Timestamp - 32409 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.GetFunds : 271] 
+  
+9) - Level - INFO,  Message -  AI started 
+ UTC Date - 2017-06-20 20:18:13,737 
+ Date - 23:18:13,737 
+ Timestamp - 32414 
+ User - DESKTOP-KC699US\user 
+ Method - [.Start : 115] 
+  
+10) - Level - INFO,  Message -  AI Aborted 
+ UTC Date - 2017-06-20 20:18:14,522 
+ Date - 23:18:14,522 
+ Timestamp - 33199 
+ User - DESKTOP-KC699US\user 
+ Method - [.Stop : 132] 
+  
