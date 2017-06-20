@@ -4,20 +4,27 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PresentationLayer"
-        Background="AliceBlue"
         mc:Ignorable="d"
         Title="CancelRequest" Height="500" Width="700">
+
+    <Page.Background>
+        <ImageBrush ImageSource="/Images/white.jpg" />
+
+    </Page.Background>
+
+
     <Grid>
-        <TextBox x:Name="idInput" HorizontalAlignment="Left" Height="23" Margin="299,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label x:Name="Q" Content="Enter Id transctaion to cancel:" HorizontalAlignment="Left" Margin="239,52,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
-        <Label Content="response" HorizontalAlignment="Left" Margin="309,202,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="47" Margin="212,236,0,0" Stroke="Black" VerticalAlignment="Top" Width="293"/>
-        <Button x:Name="Send" Content="Send" HorizontalAlignment="Left" Margin="320,155,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold" Click="Send_Click"/>
-        <Button x:Name="delete" Content="delete all the active requests" HorizontalAlignment="Left" Margin="25,409,0,0" VerticalAlignment="Top" Width="191" FontWeight="Bold" Click="Delete_All_Click" Height="62"/>
-        <Button x:Name="Ama_Delete" Content="delete all the ama active requests" HorizontalAlignment="Left" Margin="477,409,0,0" VerticalAlignment="Top" Width="200" FontWeight="Bold" Height="62" Click="Ama_Delete_Click"/>
-        <Button x:Name="UnAma_Delete" Content="delete all the unama active requests" HorizontalAlignment="Left" Margin="239,409,0,0" VerticalAlignment="Top" Width="214" FontWeight="Bold" Height="62" Click="UnAma_Delete_Click"/>
-        <Label x:Name="Result" Content="" HorizontalAlignment="Left" Margin="259,236,0,0" VerticalAlignment="Top" Width="214" Height="47"/>
-        <Button x:Name="Back" Content="Back" HorizontalAlignment="Left" Margin="543,326,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold" Click="Back_Click"/>
+        <TextBox x:Name="idInput" HorizontalAlignment="Left" Height="23" Margin="290,147,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="Q" Content="Enter Id transctaion to cancel:" HorizontalAlignment="Left" Margin="187,92,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24"/>
+        <Label Content="Response:" HorizontalAlignment="Left" Margin="292,231,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="47" Margin="210,273,0,0" Stroke="Black" VerticalAlignment="Top" Width="293"/>
+        <Button x:Name="Send" Content="Send" HorizontalAlignment="Left" Margin="286,175,0,0" VerticalAlignment="Top" Width="128" FontWeight="Bold" Click="Send_Click" Height="53" FontSize="24"/>
+        <Button x:Name="delete" Content="Delete all the active requests" HorizontalAlignment="Left" Margin="24,354,0,0" VerticalAlignment="Top" Width="191" FontWeight="Bold" Click="Delete_All_Click" Height="62"/>
+        <Button x:Name="Ama_Delete" Content="Delete all the AMA active requests" HorizontalAlignment="Left" Margin="490,354,0,0" VerticalAlignment="Top" Width="200" FontWeight="Bold" Height="62" Click="Ama_Delete_Click"/>
+        <Button x:Name="UnAma_Delete" Content="Delete all User's (unama) active requests" HorizontalAlignment="Left" Margin="234,354,0,0" VerticalAlignment="Top" Width="237" FontWeight="Bold" Height="62" Click="UnAma_Delete_Click"/>
+        <Label x:Name="Result" Content="" HorizontalAlignment="Left" Margin="248,273,0,0" VerticalAlignment="Top" Width="214" Height="47"/>
+        <Button x:Name="Back" Content="Back" HorizontalAlignment="Left" Margin="296,434,0,0" VerticalAlignment="Top" Width="114" FontWeight="Bold" Click="Back_Click" Height="44"/>
+        <Label Content="Cancel Request" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Script MT Bold" FontSize="60" Margin="171,6,0,0"/>
 
     </Grid>
 </Page>

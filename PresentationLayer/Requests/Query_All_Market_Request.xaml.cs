@@ -16,8 +16,7 @@ namespace PresentationLayer
             MarketClientOptions UserOptions = new MarketClientOptions();
             AlgoTrading.Data.MarketAll response = (AlgoTrading.Data.MarketAll)UserOptions.SendQueryMarketRequest();
             if (response != null) Result.Text = response.ToString();
-            else Result.Text = "Error has been occured";
-        
+            else Result.Text = UserOptions.latestServerResponse;
         }
 
         private void Back_Click(object sender, RoutedEventArgs e)

@@ -5,19 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PresentationLayer"
         mc:Ignorable="d"
-        Background="AliceBlue"
         Title="BuyRequest" Height="500" Width="700">
+
+    <Page.Background>
+        <ImageBrush ImageSource="/Images/white.jpg" />
+
+    </Page.Background>
+
     <Grid Margin="0,0,0,0">
-        <Label x:Name="question1" Content="Enter a price:" HorizontalAlignment="Left" Margin="142,123,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18"/>
-        <Label x:Name="question2" Content="Enter an amount:" HorizontalAlignment="Left" Margin="141,190,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18"/>
-        <Label x:Name="question3" Content="Enter a commodity:" HorizontalAlignment="Left" Margin="142,257,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18"/>
-        <Label Content="Response" HorizontalAlignment="Left" Margin="450,190,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18"/>
-        <TextBox x:Name="priceInput" HorizontalAlignment="Left" Height="23" Margin="142,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155" />
-        <TextBox x:Name="amountInput" HorizontalAlignment="Left" Height="23" Margin="142,229,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155" />
-        <TextBox x:Name="commodityInput" HorizontalAlignment="Left" Height="23" Margin="142,296,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155" />
-        <Button x:Name="B_Send" Content="Send" HorizontalAlignment="Left" Margin="142,400,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold" FontSize="14" Click="B_Send_Click"/>
-        <Button x:Name="B_Back" Content="Back" HorizontalAlignment="Left" Margin="473,400,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold" FontSize="14" Click="B_Back_Click"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="31" Margin="424,229,0,0" Stroke="Black" VerticalAlignment="Top" Width="206"/>
-        <Label x:Name="Result" Content="" HorizontalAlignment="Left" Margin="430,229,0,0" VerticalAlignment="Top" FontWeight="Bold" Width="194" FontSize="12" Height="31"/>
+        <Label x:Name="question1" Content="Enter a price:" HorizontalAlignment="Left" Margin="99,81,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="36" Height="58" Width="249"/>
+        <Label x:Name="question2" Content="Enter an amount:" HorizontalAlignment="Left" Margin="99,179,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="36"/>
+        <Label x:Name="question3" Content="Enter a commodity:" HorizontalAlignment="Left" Margin="99,265,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="36"/>
+        <Label Content="Response" HorizontalAlignment="Left" Margin="469,123,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="36"/>
+        <TextBox x:Name="priceInput" HorizontalAlignment="Left" Height="23" Margin="99,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155" />
+        <TextBox x:Name="amountInput" HorizontalAlignment="Left" Height="23" Margin="99,236,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155" />
+        <TextBox x:Name="commodityInput" HorizontalAlignment="Left" Height="23" Margin="99,323,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155" />
+        <Button x:Name="B_Send" Content="Send" HorizontalAlignment="Left" Margin="99,366,0,0" VerticalAlignment="Top" Width="180" FontWeight="Bold" FontSize="24" Click="B_Send_Click" Height="60"/>
+        <Button x:Name="B_Back" Content="Back" HorizontalAlignment="Left" Margin="497,379,0,0" VerticalAlignment="Top" Width="142" FontWeight="Bold" FontSize="24" Click="B_Back_Click" Height="47"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="31" Margin="451,186,0,0" Stroke="Black" VerticalAlignment="Top" Width="206"/>
+        <Label x:Name="Result"  Content="" HorizontalAlignment="Left" Margin="457,186,0,0" VerticalAlignment="Top" FontWeight="Bold" Width="194" FontSize="12" Height="31"/>
+        <Label Content="Buy Request" HorizontalAlignment="Left" Margin="198,4,0,0" VerticalAlignment="Top" FontFamily="Script MT Bold" FontSize="60"/>
     </Grid>
 </Page>

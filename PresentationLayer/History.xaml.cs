@@ -52,6 +52,7 @@ namespace PresentationLayer
             //System.Diagnostics.Trace.WriteLine(_type + " " + _price + " " + _commodity + " " + _amount + " " + _IsAma + " " + _validation);
         }
 
+        //save the information as a pdf file
         private void ExportAsPDF(object sender, RoutedEventArgs e)
         {
             Microsoft.Win32.SaveFileDialog dlg = new Microsoft.Win32.SaveFileDialog();

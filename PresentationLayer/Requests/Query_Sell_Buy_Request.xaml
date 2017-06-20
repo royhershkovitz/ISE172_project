@@ -5,16 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PresentationLayer"
         mc:Ignorable="d"
-        Background="AliceBlue"
         Title="QuerySellBuyRequest" Height="500" Width="700">
+
+    <Page.Background>
+        <ImageBrush ImageSource="/Images/white.jpg" />
+
+    </Page.Background>
+
+
     <Grid>
-        <Label x:Name="Q" Content="Enter ID:" HorizontalAlignment="Left" Margin="294,32,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
-        <Label Content="response" HorizontalAlignment="Left" Margin="307,221,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18"/>
-        <TextBox x:Name="idInput" HorizontalAlignment="Left" Height="23" Margin="273,81,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="Send" Content="Send" HorizontalAlignment="Left" Margin="294,109,0,0" VerticalAlignment="Top" Width="75" Click="Send_Click"/>
-        <Button x:Name="Back" Content="Back" HorizontalAlignment="Left" Margin="307,367,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold" FontSize="16" Click="Back_Click"/>
+        <Label x:Name="Q" Content="Enter ID:" HorizontalAlignment="Left" Margin="300,98,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24"/>
+        <Label Content="Response:" HorizontalAlignment="Left" Margin="305,233,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18"/>
+        <TextBox x:Name="idInput" HorizontalAlignment="Left" Height="23" Margin="293,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="Send" Content="Send" HorizontalAlignment="Left" Margin="281,175,0,0" VerticalAlignment="Top" Width="140" Click="Send_Click" Height="41" FontWeight="Bold" FontSize="24"/>
+        <Button x:Name="Back" Content="Back" HorizontalAlignment="Left" Margin="281,416,0,0" VerticalAlignment="Top" Width="133" FontWeight="Bold" FontSize="24" Click="Back_Click" Height="48"/>
         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="90" Margin="28,272,0,0" Stroke="Black" VerticalAlignment="Top" Width="654"/>
-        <Label x:Name="Result" Content="" HorizontalAlignment="Left" Margin="40,282,0,0" VerticalAlignment="Top" Height="70" RenderTransformOrigin="0.5,0.5" Width="629" FontSize="16"/>
+        <Label x:Name="Result" Content="" HorizontalAlignment="Left" Margin="40,282,0,0" VerticalAlignment="Top" Height="70" RenderTransformOrigin="0.5,0.5" Width="629" FontSize="18"/>
+        <Label Content="Query Buy\Sell Request" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="60,4,0,0" FontFamily="Script MT Bold" FontSize="60"/>
 
     </Grid>
 </Page>

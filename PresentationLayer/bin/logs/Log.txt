@@ -1,805 +1,553 @@
-303) - Level - INFO,  Message -  edit UserActionsLog.csv 
- UTC Date - 2017-05-26 13:07:59,411 
- Date - 16:07:59,411 
- Timestamp - 145700 
+46) - Level - INFO,  Message -  Action 13581288, been canceled = True, deleted from history file? True 
+ UTC Date - 2017-06-20 19:14:37,601 
+ Date - 22:14:37,601 
+ Timestamp - 61452 
  User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.SendCancelBuySellRequest : 191] 
   
-304) - Level - INFO,  Message -  User add sell request, id: 8392308, details: price 15, 5, 1 
- UTC Date - 2017-05-26 13:07:59,534 
- Date - 16:07:59,534 
- Timestamp - 145822 
+47) - Level - INFO,  Message -  read UserActionsLog.csv 
+ UTC Date - 2017-06-20 19:14:37,781 
+ Date - 22:14:37,781 
+ Timestamp - 61632 
  User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Communication\MarketClientOptions.cs.SendSellRequest : 100] 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.ReadMyHistory : 79] 
   
-305) - Level - INFO,  Message -  edit UserActionsLog.csv 
- UTC Date - 2017-05-26 13:07:59,662 
- Date - 16:07:59,662 
- Timestamp - 145951 
+48) - Level - ERROR,  Message -  Attemp to delete the same id again 
+ UTC Date - 2017-06-20 19:14:37,884 
+ Date - 22:14:37,884 
+ Timestamp - 61735 
  User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.CancelOldRequest : 138] 
   
-306) - Level - INFO,  Message -  User add sell request, id: 8392309, details: price 15, 6, 1 
- UTC Date - 2017-05-26 13:07:59,764 
- Date - 16:07:59,764 
- Timestamp - 146052 
+49) - Level - INFO,  Message -  Action 13581326, been canceled = True, deleted from history file? True 
+ UTC Date - 2017-06-20 19:14:37,897 
+ Date - 22:14:37,897 
+ Timestamp - 61748 
  User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Communication\MarketClientOptions.cs.SendSellRequest : 100] 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.SendCancelBuySellRequest : 191] 
   
-307) - Level - INFO,  Message -  edit UserActionsLog.csv 
- UTC Date - 2017-05-26 13:07:59,883 
- Date - 16:07:59,883 
- Timestamp - 146171 
+50) - Level - INFO,  Message -  read UserActionsLog.csv 
+ UTC Date - 2017-06-20 19:14:38,072 
+ Date - 22:14:38,072 
+ Timestamp - 61923 
  User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.ReadMyHistory : 79] 
   
-308) - Level - INFO,  Message -  User add sell request, id: 8392311, details: price 15, 7, 1 
- UTC Date - 2017-05-26 13:07:59,984 
- Date - 16:07:59,984 
- Timestamp - 146273 
+51) - Level - ERROR,  Message -  Attemp to delete the same id again 
+ UTC Date - 2017-06-20 19:14:38,175 
+ Date - 22:14:38,175 
+ Timestamp - 62026 
  User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Communication\MarketClientOptions.cs.SendSellRequest : 100] 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.CancelOldRequest : 138] 
   
-309) - Level - INFO,  Message -  edit UserActionsLog.csv 
- UTC Date - 2017-05-26 13:08:00,100 
- Date - 16:08:00,100 
- Timestamp - 146388 
+52) - Level - INFO,  Message -  Action 13581360, been canceled = True, deleted from history file? True 
+ UTC Date - 2017-06-20 19:14:38,190 
+ Date - 22:14:38,190 
+ Timestamp - 62041 
  User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.SendCancelBuySellRequest : 191] 
   
-310) - Level - INFO,  Message -  User add sell request, id: 8392312, details: price 15, 8, 1 
- UTC Date - 2017-05-26 13:08:00,201 
- Date - 16:08:00,201 
- Timestamp - 146490 
+53) - Level - INFO,  Message -  read UserActionsLog.csv 
+ UTC Date - 2017-06-20 19:14:38,352 
+ Date - 22:14:38,352 
+ Timestamp - 62203 
  User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Communication\MarketClientOptions.cs.SendSellRequest : 100] 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.ReadMyHistory : 79] 
   
-311) - Level - INFO,  Message -  AI Aborted 
- UTC Date - 2017-05-26 13:08:01,061 
- Date - 16:08:01,061 
- Timestamp - 147350 
+54) - Level - ERROR,  Message -  Attemp to delete the same id again 
+ UTC Date - 2017-06-20 19:14:38,455 
+ Date - 22:14:38,455 
+ Timestamp - 62307 
  User - DESKTOP-KC699US\user 
- Method - [.Stop : 125] 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.CancelOldRequest : 138] 
   
-312) - Level - INFO,  Message -  AI Aborted 
- UTC Date - 2017-05-26 13:08:07,080 
- Date - 16:08:07,080 
- Timestamp - 153368 
+55) - Level - INFO,  Message -  Action 13582127, been canceled = True, deleted from history file? True 
+ UTC Date - 2017-06-20 19:14:38,467 
+ Date - 22:14:38,467 
+ Timestamp - 62318 
  User - DESKTOP-KC699US\user 
- Method - [.Stop : 125] 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.SendCancelBuySellRequest : 191] 
   
-313) - Level - INFO,  Message -  AI started 
- UTC Date - 2017-05-26 13:08:11,444 
- Date - 16:08:11,444 
- Timestamp - 157733 
+56) - Level - INFO,  Message -  read UserActionsLog.csv 
+ UTC Date - 2017-06-20 19:14:38,624 
+ Date - 22:14:38,624 
+ Timestamp - 62475 
  User - DESKTOP-KC699US\user 
- Method - [.Start : 108] 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.ReadMyHistory : 79] 
   
-314) - Level - INFO,  Message -  edit UserActionsLog.csv 
- UTC Date - 2017-05-26 13:08:11,532 
- Date - 16:08:11,532 
- Timestamp - 157821 
+57) - Level - ERROR,  Message -  Attemp to delete the same id again 
+ UTC Date - 2017-06-20 19:14:38,727 
+ Date - 22:14:38,727 
+ Timestamp - 62578 
  User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.CancelOldRequest : 138] 
   
-315) - Level - INFO,  Message -  User add buy request, id: 8392350, details: price 1, 0, 1 
- UTC Date - 2017-05-26 13:08:11,634 
- Date - 16:08:11,634 
- Timestamp - 157922 
+58) - Level - INFO,  Message -  Action 13582161, been canceled = True, deleted from history file? True 
+ UTC Date - 2017-06-20 19:14:38,738 
+ Date - 22:14:38,738 
+ Timestamp - 62589 
  User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Communication\MarketClientOptions.cs.SendBuyRequest : 73] 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.SendCancelBuySellRequest : 191] 
   
-316) - Level - INFO,  Message -  edit UserActionsLog.csv 
- UTC Date - 2017-05-26 13:08:11,764 
- Date - 16:08:11,764 
- Timestamp - 158053 
+59) - Level - INFO,  Message -  read UserActionsLog.csv 
+ UTC Date - 2017-06-20 19:14:47,016 
+ Date - 22:14:47,016 
+ Timestamp - 70867 
  User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.ReadMyHistory : 79] 
   
-317) - Level - INFO,  Message -  User add buy request, id: 8392352, details: price 1, 1, 1 
- UTC Date - 2017-05-26 13:08:11,866 
- Date - 16:08:11,866 
- Timestamp - 158154 
+60) - Level - ERROR,  Message -  Attemp to delete the same id again 
+ UTC Date - 2017-06-20 19:14:47,118 
+ Date - 22:14:47,118 
+ Timestamp - 70970 
  User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Communication\MarketClientOptions.cs.SendBuyRequest : 73] 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.CancelOldRequest : 138] 
   
-318) - Level - INFO,  Message -  edit UserActionsLog.csv 
- UTC Date - 2017-05-26 13:08:11,979 
- Date - 16:08:11,979 
- Timestamp - 158267 
+61) - Level - INFO,  Message -  Action 13582194, been canceled = True, deleted from history file? True 
+ UTC Date - 2017-06-20 19:14:47,129 
+ Date - 22:14:47,129 
+ Timestamp - 70981 
  User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.SendCancelBuySellRequest : 191] 
   
-319) - Level - INFO,  Message -  User add buy request, id: 8392354, details: price 1, 2, 1 
- UTC Date - 2017-05-26 13:08:12,081 
- Date - 16:08:12,081 
- Timestamp - 158369 
+62) - Level - INFO,  Message -  read UserActionsLog.csv 
+ UTC Date - 2017-06-20 19:14:47,277 
+ Date - 22:14:47,277 
+ Timestamp - 71129 
  User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Communication\MarketClientOptions.cs.SendBuyRequest : 73] 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.ReadMyHistory : 79] 
   
-320) - Level - INFO,  Message -  edit UserActionsLog.csv 
- UTC Date - 2017-05-26 13:08:12,199 
- Date - 16:08:12,199 
- Timestamp - 158487 
+63) - Level - ERROR,  Message -  Attemp to delete the same id again 
+ UTC Date - 2017-06-20 19:14:47,380 
+ Date - 22:14:47,380 
+ Timestamp - 71232 
  User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.CancelOldRequest : 138] 
   
-321) - Level - INFO,  Message -  User add buy request, id: 8392356, details: price 1, 3, 1 
- UTC Date - 2017-05-26 13:08:12,300 
- Date - 16:08:12,300 
- Timestamp - 158589 
+64) - Level - INFO,  Message -  Action 13582225, been canceled = True, deleted from history file? True 
+ UTC Date - 2017-06-20 19:14:47,392 
+ Date - 22:14:47,392 
+ Timestamp - 71244 
  User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Communication\MarketClientOptions.cs.SendBuyRequest : 73] 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.SendCancelBuySellRequest : 191] 
   
-322) - Level - INFO,  Message -  edit UserActionsLog.csv 
- UTC Date - 2017-05-26 13:08:12,427 
- Date - 16:08:12,427 
- Timestamp - 158715 
+65) - Level - INFO,  Message -  read UserActionsLog.csv 
+ UTC Date - 2017-06-20 19:14:47,554 
+ Date - 22:14:47,554 
+ Timestamp - 71406 
  User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.ReadMyHistory : 79] 
   
-323) - Level - INFO,  Message -  User add buy request, id: 8392357, details: price 1, 4, 1 
- UTC Date - 2017-05-26 13:08:12,529 
- Date - 16:08:12,529 
- Timestamp - 158817 
+66) - Level - ERROR,  Message -  Attemp to delete the same id again 
+ UTC Date - 2017-06-20 19:14:47,656 
+ Date - 22:14:47,656 
+ Timestamp - 71508 
  User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Communication\MarketClientOptions.cs.SendBuyRequest : 73] 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.CancelOldRequest : 138] 
   
-324) - Level - INFO,  Message -  edit UserActionsLog.csv 
- UTC Date - 2017-05-26 13:08:12,647 
- Date - 16:08:12,647 
- Timestamp - 158935 
+67) - Level - INFO,  Message -  Action 13582264, been canceled = True, deleted from history file? True 
+ UTC Date - 2017-06-20 19:14:47,671 
+ Date - 22:14:47,671 
+ Timestamp - 71523 
  User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.SendCancelBuySellRequest : 191] 
   
-325) - Level - INFO,  Message -  User add buy request, id: 8392360, details: price 1, 5, 1 
- UTC Date - 2017-05-26 13:08:12,748 
- Date - 16:08:12,748 
- Timestamp - 159036 
+68) - Level - INFO,  Message -  read UserActionsLog.csv 
+ UTC Date - 2017-06-20 19:14:47,821 
+ Date - 22:14:47,821 
+ Timestamp - 71672 
  User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Communication\MarketClientOptions.cs.SendBuyRequest : 73] 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.ReadMyHistory : 79] 
   
-326) - Level - INFO,  Message -  edit UserActionsLog.csv 
- UTC Date - 2017-05-26 13:08:12,860 
- Date - 16:08:12,860 
- Timestamp - 159149 
+69) - Level - ERROR,  Message -  Attemp to delete the same id again 
+ UTC Date - 2017-06-20 19:14:47,923 
+ Date - 22:14:47,923 
+ Timestamp - 71775 
  User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.CancelOldRequest : 138] 
   
-327) - Level - INFO,  Message -  User add buy request, id: 8392361, details: price 1, 6, 1 
- UTC Date - 2017-05-26 13:08:12,979 
- Date - 16:08:12,979 
- Timestamp - 159267 
+70) - Level - INFO,  Message -  Action 13582296, been canceled = True, deleted from history file? True 
+ UTC Date - 2017-06-20 19:14:47,933 
+ Date - 22:14:47,933 
+ Timestamp - 71785 
  User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Communication\MarketClientOptions.cs.SendBuyRequest : 73] 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.SendCancelBuySellRequest : 191] 
   
-328) - Level - INFO,  Message -  edit UserActionsLog.csv 
- UTC Date - 2017-05-26 13:08:13,108 
- Date - 16:08:13,108 
- Timestamp - 159397 
+71) - Level - INFO,  Message -  read UserActionsLog.csv 
+ UTC Date - 2017-06-20 19:14:48,082 
+ Date - 22:14:48,082 
+ Timestamp - 71934 
  User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.ReadMyHistory : 79] 
   
-329) - Level - INFO,  Message -  User add buy request, id: 8392362, details: price 1, 7, 1 
- UTC Date - 2017-05-26 13:08:13,210 
- Date - 16:08:13,210 
- Timestamp - 159498 
+72) - Level - ERROR,  Message -  Attemp to delete the same id again 
+ UTC Date - 2017-06-20 19:14:48,184 
+ Date - 22:14:48,184 
+ Timestamp - 72036 
  User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Communication\MarketClientOptions.cs.SendBuyRequest : 73] 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.CancelOldRequest : 138] 
   
-330) - Level - INFO,  Message -  edit UserActionsLog.csv 
- UTC Date - 2017-05-26 13:08:13,329 
- Date - 16:08:13,329 
- Timestamp - 159617 
+73) - Level - INFO,  Message -  Action 13582330, been canceled = True, deleted from history file? True 
+ UTC Date - 2017-06-20 19:14:48,194 
+ Date - 22:14:48,194 
+ Timestamp - 72046 
  User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.SendCancelBuySellRequest : 191] 
   
-331) - Level - INFO,  Message -  User add buy request, id: 8392363, details: price 1, 8, 1 
- UTC Date - 2017-05-26 13:08:13,430 
- Date - 16:08:13,430 
- Timestamp - 159718 
+74) - Level - INFO,  Message -  read UserActionsLog.csv 
+ UTC Date - 2017-06-20 19:14:48,346 
+ Date - 22:14:48,346 
+ Timestamp - 72198 
  User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Communication\MarketClientOptions.cs.SendBuyRequest : 73] 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.ReadMyHistory : 79] 
   
-332) - Level - ERROR,  Message -  Program server error: Insufficient commodity 
- UTC Date - 2017-05-26 13:08:13,545 
- Date - 16:08:13,545 
- Timestamp - 159833 
+75) - Level - ERROR,  Message -  Attemp to delete the same id again 
+ UTC Date - 2017-06-20 19:14:48,449 
+ Date - 22:14:48,449 
+ Timestamp - 72301 
  User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Communication\MarketClientOptions.cs.ServerResponseCheck : 251] 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.CancelOldRequest : 138] 
   
-333) - Level - ERROR,  Message -  Program server error: Insufficient commodity 
- UTC Date - 2017-05-26 13:08:13,675 
- Date - 16:08:13,675 
- Timestamp - 159964 
+76) - Level - INFO,  Message -  Action 13582359, been canceled = True, deleted from history file? True 
+ UTC Date - 2017-06-20 19:14:48,460 
+ Date - 22:14:48,460 
+ Timestamp - 72312 
  User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Communication\MarketClientOptions.cs.ServerResponseCheck : 251] 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.SendCancelBuySellRequest : 191] 
   
-334) - Level - ERROR,  Message -  Program server error: Insufficient commodity 
- UTC Date - 2017-05-26 13:08:13,803 
- Date - 16:08:13,803 
- Timestamp - 160091 
+77) - Level - INFO,  Message -  read UserActionsLog.csv 
+ UTC Date - 2017-06-20 19:14:48,615 
+ Date - 22:14:48,615 
+ Timestamp - 72466 
  User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Communication\MarketClientOptions.cs.ServerResponseCheck : 251] 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.ReadMyHistory : 79] 
   
-335) - Level - ERROR,  Message -  Program server error: Insufficient commodity 
- UTC Date - 2017-05-26 13:08:13,916 
- Date - 16:08:13,916 
- Timestamp - 160204 
+78) - Level - ERROR,  Message -  Attemp to delete the same id again 
+ UTC Date - 2017-06-20 19:14:48,718 
+ Date - 22:14:48,718 
+ Timestamp - 72569 
  User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Communication\MarketClientOptions.cs.ServerResponseCheck : 251] 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.CancelOldRequest : 138] 
   
-336) - Level - INFO,  Message -  AI Aborted 
- UTC Date - 2017-05-26 13:08:14,029 
- Date - 16:08:14,029 
- Timestamp - 160317 
+79) - Level - INFO,  Message -  Action 13582395, been canceled = True, deleted from history file? True 
+ UTC Date - 2017-06-20 19:14:48,729 
+ Date - 22:14:48,729 
+ Timestamp - 72580 
  User - DESKTOP-KC699US\user 
- Method - [.Stop : 125] 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.SendCancelBuySellRequest : 191] 
   
-337) - Level - INFO,  Message -  edit UserActionsLog.csv 
- UTC Date - 2017-05-26 13:08:14,049 
- Date - 16:08:14,049 
- Timestamp - 160338 
+80) - Level - INFO,  Message -  read UserActionsLog.csv 
+ UTC Date - 2017-06-20 19:14:48,872 
+ Date - 22:14:48,872 
+ Timestamp - 72723 
  User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.ReadMyHistory : 79] 
   
-338) - Level - INFO,  Message -  User add sell request, id: 8392371, details: price 15, 4, 1 
- UTC Date - 2017-05-26 13:08:14,152 
- Date - 16:08:14,152 
- Timestamp - 160441 
+81) - Level - ERROR,  Message -  Attemp to delete the same id again 
+ UTC Date - 2017-06-20 19:14:48,974 
+ Date - 22:14:48,974 
+ Timestamp - 72825 
  User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Communication\MarketClientOptions.cs.SendSellRequest : 100] 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.CancelOldRequest : 138] 
   
-339) - Level - INFO,  Message -  edit UserActionsLog.csv 
- UTC Date - 2017-05-26 13:08:14,274 
- Date - 16:08:14,274 
- Timestamp - 160563 
+82) - Level - INFO,  Message -  Action 13582434, been canceled = True, deleted from history file? True 
+ UTC Date - 2017-06-20 19:14:48,985 
+ Date - 22:14:48,985 
+ Timestamp - 72836 
  User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.SendCancelBuySellRequest : 191] 
   
-340) - Level - INFO,  Message -  User add sell request, id: 8392372, details: price 15, 5, 1 
- UTC Date - 2017-05-26 13:08:14,376 
- Date - 16:08:14,376 
- Timestamp - 160664 
+83) - Level - INFO,  Message -  read UserActionsLog.csv 
+ UTC Date - 2017-06-20 19:14:49,137 
+ Date - 22:14:49,137 
+ Timestamp - 72988 
  User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Communication\MarketClientOptions.cs.SendSellRequest : 100] 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.ReadMyHistory : 79] 
   
-341) - Level - INFO,  Message -  edit UserActionsLog.csv 
- UTC Date - 2017-05-26 13:08:14,515 
- Date - 16:08:14,515 
- Timestamp - 160803 
+84) - Level - ERROR,  Message -  Attemp to delete the same id again 
+ UTC Date - 2017-06-20 19:14:49,240 
+ Date - 22:14:49,240 
+ Timestamp - 73091 
  User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.CancelOldRequest : 138] 
   
-342) - Level - INFO,  Message -  User add sell request, id: 8392373, details: price 15, 6, 1 
- UTC Date - 2017-05-26 13:08:14,638 
- Date - 16:08:14,638 
- Timestamp - 160926 
+85) - Level - INFO,  Message -  Action 13582467, been canceled = True, deleted from history file? True 
+ UTC Date - 2017-06-20 19:14:49,251 
+ Date - 22:14:49,251 
+ Timestamp - 73102 
  User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Communication\MarketClientOptions.cs.SendSellRequest : 100] 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.SendCancelBuySellRequest : 191] 
   
-343) - Level - INFO,  Message -  edit UserActionsLog.csv 
- UTC Date - 2017-05-26 13:08:14,756 
- Date - 16:08:14,756 
- Timestamp - 161045 
+86) - Level - INFO,  Message -  read UserActionsLog.csv 
+ UTC Date - 2017-06-20 19:14:49,411 
+ Date - 22:14:49,411 
+ Timestamp - 73262 
  User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.ReadMyHistory : 79] 
   
-344) - Level - INFO,  Message -  User add sell request, id: 8392374, details: price 15, 7, 1 
- UTC Date - 2017-05-26 13:08:14,858 
- Date - 16:08:14,858 
- Timestamp - 161146 
+87) - Level - ERROR,  Message -  Attemp to delete the same id again 
+ UTC Date - 2017-06-20 19:14:49,513 
+ Date - 22:14:49,513 
+ Timestamp - 73365 
  User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Communication\MarketClientOptions.cs.SendSellRequest : 100] 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.CancelOldRequest : 138] 
   
-345) - Level - INFO,  Message -  edit UserActionsLog.csv 
- UTC Date - 2017-05-26 13:08:14,983 
- Date - 16:08:14,983 
- Timestamp - 161271 
+88) - Level - INFO,  Message -  Action 13582499, been canceled = True, deleted from history file? True 
+ UTC Date - 2017-06-20 19:14:49,523 
+ Date - 22:14:49,523 
+ Timestamp - 73374 
  User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 50] 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.SendCancelBuySellRequest : 191] 
   
-346) - Level - INFO,  Message -  User add sell request, id: 8392375, details: price 15, 8, 1 
- UTC Date - 2017-05-26 13:08:15,084 
- Date - 16:08:15,084 
- Timestamp - 161373 
+89) - Level - INFO,  Message -  read UserActionsLog.csv 
+ UTC Date - 2017-06-20 19:14:49,674 
+ Date - 22:14:49,674 
+ Timestamp - 73525 
  User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Communication\MarketClientOptions.cs.SendSellRequest : 100] 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.ReadMyHistory : 79] 
   
-347) - Level - INFO,  Message -  History.csv had been read 
- UTC Date - 2017-05-26 13:08:20,303 
- Date - 16:08:20,303 
- Timestamp - 166591 
+90) - Level - ERROR,  Message -  Attemp to delete the same id again 
+ UTC Date - 2017-06-20 19:14:49,776 
+ Date - 22:14:49,776 
+ Timestamp - 73627 
  User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 26] 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.CancelOldRequest : 138] 
+  
+91) - Level - INFO,  Message -  Action 13582532, been canceled = True, deleted from history file? True 
+ UTC Date - 2017-06-20 19:14:49,786 
+ Date - 22:14:49,786 
+ Timestamp - 73637 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.SendCancelBuySellRequest : 191] 
+  
+92) - Level - INFO,  Message -  read UserActionsLog.csv 
+ UTC Date - 2017-06-20 19:14:50,240 
+ Date - 22:14:50,240 
+ Timestamp - 74091 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.ReadMyHistory : 79] 
+  
+93) - Level - ERROR,  Message -  Attemp to delete the same id again 
+ UTC Date - 2017-06-20 19:14:50,342 
+ Date - 22:14:50,342 
+ Timestamp - 74193 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.CancelOldRequest : 138] 
+  
+94) - Level - INFO,  Message -  Action 13582562, been canceled = True, deleted from history file? True 
+ UTC Date - 2017-06-20 19:14:50,353 
+ Date - 22:14:50,353 
+ Timestamp - 74204 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.SendCancelBuySellRequest : 191] 
+  
+95) - Level - INFO,  Message -  read UserActionsLog.csv 
+ UTC Date - 2017-06-20 19:14:50,506 
+ Date - 22:14:50,506 
+ Timestamp - 74358 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.ReadMyHistory : 79] 
+  
+96) - Level - ERROR,  Message -  Attemp to delete the same id again 
+ UTC Date - 2017-06-20 19:14:50,609 
+ Date - 22:14:50,609 
+ Timestamp - 74460 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.CancelOldRequest : 138] 
+  
+97) - Level - INFO,  Message -  Action 13582589, been canceled = True, deleted from history file? True 
+ UTC Date - 2017-06-20 19:14:50,620 
+ Date - 22:14:50,620 
+ Timestamp - 74472 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.SendCancelBuySellRequest : 191] 
+  
+98) - Level - INFO,  Message -  read UserActionsLog.csv 
+ UTC Date - 2017-06-20 19:14:50,784 
+ Date - 22:14:50,784 
+ Timestamp - 74635 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.ReadMyHistory : 79] 
+  
+99) - Level - ERROR,  Message -  Attemp to delete the same id again 
+ UTC Date - 2017-06-20 19:14:50,886 
+ Date - 22:14:50,886 
+ Timestamp - 74737 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.CancelOldRequest : 138] 
+  
+100) - Level - INFO,  Message -  Action 13582590, been canceled = True, deleted from history file? True 
+ UTC Date - 2017-06-20 19:14:50,897 
+ Date - 22:14:50,897 
+ Timestamp - 74748 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.SendCancelBuySellRequest : 191] 
+  
+101) - Level - INFO,  Message -  read UserActionsLog.csv 
+ UTC Date - 2017-06-20 19:14:51,053 
+ Date - 22:14:51,053 
+ Timestamp - 74904 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.ReadMyHistory : 79] 
+  
+102) - Level - ERROR,  Message -  Attemp to delete the same id again 
+ UTC Date - 2017-06-20 19:14:51,156 
+ Date - 22:14:51,156 
+ Timestamp - 75007 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.CancelOldRequest : 138] 
+  
+103) - Level - INFO,  Message -  Action 13582612, been canceled = True, deleted from history file? True 
+ UTC Date - 2017-06-20 19:14:51,166 
+ Date - 22:14:51,166 
+ Timestamp - 75017 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.SendCancelBuySellRequest : 191] 
+  
+104) - Level - INFO,  Message -  read UserActionsLog.csv 
+ UTC Date - 2017-06-20 19:14:51,315 
+ Date - 22:14:51,315 
+ Timestamp - 75166 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.ReadMyHistory : 79] 
+  
+105) - Level - INFO,  Message -  Action 13601069, been canceled = True, deleted from history file? True 
+ UTC Date - 2017-06-20 19:14:51,432 
+ Date - 22:14:51,432 
+ Timestamp - 75283 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.SendCancelBuySellRequest : 191] 
+  
+106) - Level - INFO,  Message -  read UserActionsLog.csv 
+ UTC Date - 2017-06-20 19:14:51,603 
+ Date - 22:14:51,603 
+ Timestamp - 75454 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.ReadMyHistory : 79] 
+  
+107) - Level - ERROR,  Message -  Attemp to delete the same id again 
+ UTC Date - 2017-06-20 19:14:51,707 
+ Date - 22:14:51,707 
+ Timestamp - 75558 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.CancelOldRequest : 138] 
+  
+108) - Level - INFO,  Message -  Action 13604053, been canceled = True, deleted from history file? True 
+ UTC Date - 2017-06-20 19:14:51,719 
+ Date - 22:14:51,719 
+ Timestamp - 75570 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.SendCancelBuySellRequest : 191] 
   
 1) - Level - INFO,  Message -  program launched 
- UTC Date - 2017-06-13 19:32:10,737 
- Date - 22:32:10,737 
- Timestamp - 227 
+ UTC Date - 2017-06-20 19:16:14,773 
+ Date - 22:16:14,773 
+ Timestamp - 163 
  User - DESKTOP-KC699US\user 
  Method - [MainWindow.cs..ctor : 17] 
   
-2) - Level - FATAL,  Message -  This input did not ditected :  
- UTC Date - 2017-06-13 19:32:57,524 
- Date - 22:32:57,524 
- Timestamp - 47014 
+2) - Level - ERROR,  Message -  Program server error: Insufficient commodity 
+ UTC Date - 2017-06-20 19:16:45,375 
+ Date - 22:16:45,375 
+ Timestamp - 30765 
  User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\PresentationLayer\Requests\Parser.cs.ReadIntString : 33] 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.ServerResponseCheck : 257] 
   
-3) - Level - FATAL,  Message -  This input did not ditected :  
- UTC Date - 2017-06-13 19:32:58,598 
- Date - 22:32:58,598 
- Timestamp - 48088 
+3) - Level - ERROR,  Message -  Program server error: Insufficient commodity 
+ UTC Date - 2017-06-20 19:16:48,176 
+ Date - 22:16:48,176 
+ Timestamp - 33566 
  User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\PresentationLayer\Requests\Parser.cs.ReadIntString : 33] 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.ServerResponseCheck : 257] 
   
-4) - Level - FATAL,  Message -  This input did not ditected :  
- UTC Date - 2017-06-13 19:32:58,675 
- Date - 22:32:58,675 
- Timestamp - 48165 
+4) - Level - INFO,  Message -  edit UserActionsLog.csv 
+ UTC Date - 2017-06-20 19:16:50,636 
+ Date - 22:16:50,636 
+ Timestamp - 36026 
  User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\PresentationLayer\Requests\Parser.cs.ReadIntString : 33] 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 49] 
   
-5) - Level - FATAL,  Message -  This input did not ditected :  
- UTC Date - 2017-06-13 19:33:03,397 
- Date - 22:33:03,397 
- Timestamp - 52887 
+5) - Level - INFO,  Message -  User add sell request, id: 13604482, details: price 500, 9, 1 
+ UTC Date - 2017-06-20 19:16:50,740 
+ Date - 22:16:50,740 
+ Timestamp - 36129 
  User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\PresentationLayer\Requests\Parser.cs.ReadIntString : 33] 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.SendSellRequest : 101] 
   
-6) - Level - FATAL,  Message -  This input did not ditected :  
- UTC Date - 2017-06-13 19:33:03,501 
- Date - 22:33:03,501 
- Timestamp - 52990 
+6) - Level - INFO,  Message -  SendQueryUserRequests been preformed 
+ UTC Date - 2017-06-20 19:16:57,864 
+ Date - 22:16:57,864 
+ Timestamp - 43254 
  User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\PresentationLayer\Requests\Parser.cs.ReadIntString : 33] 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.SendQueryUserRequests : 209] 
+  
+7) - Level - INFO,  Message -  read UserActionsLog.csv 
+ UTC Date - 2017-06-20 19:16:58,035 
+ Date - 22:16:58,035 
+ Timestamp - 43425 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.ReadMyHistory : 79] 
+  
+8) - Level - INFO,  Message -  Action 13604482, been canceled = True, deleted from history file? True 
+ UTC Date - 2017-06-20 19:16:58,148 
+ Date - 22:16:58,148 
+ Timestamp - 43538 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.SendCancelBuySellRequest : 191] 
+  
+9) - Level - INFO,  Message -  Asked funds 
+ UTC Date - 2017-06-20 19:17:06,036 
+ Date - 22:17:06,036 
+ Timestamp - 51426 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.GetFunds : 271] 
+  
+10) - Level - INFO,  Message -  AI started 
+ UTC Date - 2017-06-20 19:17:06,042 
+ Date - 22:17:06,042 
+ Timestamp - 51432 
+ User - DESKTOP-KC699US\user 
+ Method - [.Start : 115] 
+  
+11) - Level - INFO,  Message -  Asked funds 
+ UTC Date - 2017-06-20 19:17:17,098 
+ Date - 22:17:17,098 
+ Timestamp - 62488 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.GetFunds : 271] 
+  
+12) - Level - INFO,  Message -  Asked funds 
+ UTC Date - 2017-06-20 19:17:28,146 
+ Date - 22:17:28,146 
+ Timestamp - 73535 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.GetFunds : 271] 
   
 1) - Level - INFO,  Message -  program launched 
- UTC Date - 2017-06-13 19:37:06,791 
- Date - 22:37:06,791 
- Timestamp - 215 
+ UTC Date - 2017-06-20 19:20:21,770 
+ Date - 22:20:21,770 
+ Timestamp - 83 
  User - DESKTOP-KC699US\user 
  Method - [MainWindow.cs..ctor : 17] 
   
-1) - Level - INFO,  Message -  program launched 
- UTC Date - 2017-06-13 19:37:53,685 
- Date - 22:37:53,685 
- Timestamp - 357 
+2) - Level - INFO,  Message -  Asked funds 
+ UTC Date - 2017-06-20 19:20:26,379 
+ Date - 22:20:26,379 
+ Timestamp - 4691 
  User - DESKTOP-KC699US\user 
- Method - [MainWindow.cs..ctor : 17] 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.GetFunds : 271] 
   
-1) - Level - INFO,  Message -  program launched 
- UTC Date - 2017-06-13 19:39:09,737 
- Date - 22:39:09,737 
- Timestamp - 207 
+3) - Level - INFO,  Message -  AI started 
+ UTC Date - 2017-06-20 19:20:26,390 
+ Date - 22:20:26,390 
+ Timestamp - 4703 
  User - DESKTOP-KC699US\user 
- Method - [MainWindow.cs..ctor : 17] 
+ Method - [.Start : 115] 
   
-1) - Level - INFO,  Message -  program launched 
- UTC Date - 2017-06-14 07:39:13,656 
- Date - 10:39:13,656 
- Timestamp - 106 
+4) - Level - INFO,  Message -  Asked funds 
+ UTC Date - 2017-06-20 19:20:37,456 
+ Date - 22:20:37,456 
+ Timestamp - 15768 
  User - DESKTOP-KC699US\user 
- Method - [MainWindow.cs..ctor : 17] 
-  
-1) - Level - INFO,  Message -  program launched 
- UTC Date - 2017-06-14 07:40:26,218 
- Date - 10:40:26,218 
- Timestamp - 81 
- User - DESKTOP-KC699US\user 
- Method - [MainWindow.cs..ctor : 17] 
-  
-2) - Level - INFO,  Message -  History.csv had been read 
- UTC Date - 2017-06-14 07:40:33,423 
- Date - 10:40:33,423 
- Timestamp - 7286 
- User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 26] 
-  
-3) - Level - INFO,  Message -  History.csv had been read 
- UTC Date - 2017-06-14 07:48:11,298 
- Date - 10:48:11,298 
- Timestamp - 465161 
- User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 26] 
-  
-1) - Level - INFO,  Message -  program launched 
- UTC Date - 2017-06-14 07:50:22,997 
- Date - 10:50:22,997 
- Timestamp - 172 
- User - DESKTOP-KC699US\user 
- Method - [MainWindow.cs..ctor : 17] 
-  
-2) - Level - INFO,  Message -  History.csv had been read 
- UTC Date - 2017-06-14 07:50:26,168 
- Date - 10:50:26,168 
- Timestamp - 3344 
- User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 26] 
-  
-1) - Level - INFO,  Message -  program launched 
- UTC Date - 2017-06-14 08:42:50,097 
- Date - 11:42:50,097 
- Timestamp - 94 
- User - DESKTOP-KC699US\user 
- Method - [MainWindow.cs..ctor : 17] 
-  
-2) - Level - INFO,  Message -  History.csv had been read 
- UTC Date - 2017-06-14 08:42:52,238 
- Date - 11:42:52,238 
- Timestamp - 2234 
- User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 26] 
-  
-1) - Level - INFO,  Message -  program launched 
- UTC Date - 2017-06-14 08:53:06,727 
- Date - 11:53:06,727 
- Timestamp - 119 
- User - DESKTOP-KC699US\user 
- Method - [MainWindow.cs..ctor : 17] 
-  
-1) - Level - INFO,  Message -  program launched 
- UTC Date - 2017-06-14 17:23:23,260 
- Date - 20:23:23,260 
- Timestamp - 112 
- User - DESKTOP-KC699US\user 
- Method - [MainWindow.cs..ctor : 17] 
-  
-1) - Level - INFO,  Message -  program launched 
- UTC Date - 2017-06-14 17:38:34,088 
- Date - 20:38:34,088 
- Timestamp - 230 
- User - DESKTOP-KC699US\user 
- Method - [MainWindow.cs..ctor : 17] 
-  
-2) - Level - INFO,  Message -  edit UserActionsLog.csv 
- UTC Date - 2017-06-14 17:38:44,570 
- Date - 20:38:44,570 
- Timestamp - 10711 
- User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryWriter.cs.AddToHistory : 53] 
-  
-3) - Level - INFO,  Message -  User add buy request, id: 12454587, details: price 1, 1, 1 
- UTC Date - 2017-06-14 17:38:44,675 
- Date - 20:38:44,675 
- Timestamp - 10816 
- User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.SendBuyRequest : 68] 
-  
-1) - Level - INFO,  Message -  program launched 
- UTC Date - 2017-06-18 22:32:14,743 
- Date - 01:32:14,743 
- Timestamp - 86 
- User - DESKTOP-KC699US\user 
- Method - [MainWindow.cs..ctor : 17] 
-  
-2) - Level - INFO,  Message -  History.csv had been read 
- UTC Date - 2017-06-18 22:32:22,335 
- Date - 01:32:22,335 
- Timestamp - 7678 
- User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 26] 
-  
-1) - Level - INFO,  Message -  program launched 
- UTC Date - 2017-06-18 22:38:57,554 
- Date - 01:38:57,554 
- Timestamp - 77 
- User - DESKTOP-KC699US\user 
- Method - [MainWindow.cs..ctor : 17] 
-  
-2) - Level - INFO,  Message -  History.csv had been read 
- UTC Date - 2017-06-18 22:38:59,479 
- Date - 01:38:59,479 
- Timestamp - 2001 
- User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 26] 
-  
-1) - Level - INFO,  Message -  program launched 
- UTC Date - 2017-06-18 22:40:55,954 
- Date - 01:40:55,954 
- Timestamp - 76 
- User - DESKTOP-KC699US\user 
- Method - [MainWindow.cs..ctor : 17] 
-  
-1) - Level - INFO,  Message -  program launched 
- UTC Date - 2017-06-18 22:41:10,863 
- Date - 01:41:10,863 
- Timestamp - 96 
- User - DESKTOP-KC699US\user 
- Method - [MainWindow.cs..ctor : 17] 
-  
-2) - Level - INFO,  Message -  History.csv had been read 
- UTC Date - 2017-06-18 22:41:12,535 
- Date - 01:41:12,535 
- Timestamp - 1768 
- User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 26] 
-  
-1) - Level - INFO,  Message -  program launched 
- UTC Date - 2017-06-18 22:53:59,310 
- Date - 01:53:59,310 
- Timestamp - 92 
- User - DESKTOP-KC699US\user 
- Method - [MainWindow.cs..ctor : 17] 
-  
-2) - Level - INFO,  Message -  History.csv had been read 
- UTC Date - 2017-06-18 22:54:01,207 
- Date - 01:54:01,207 
- Timestamp - 1989 
- User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 26] 
-  
-1) - Level - INFO,  Message -  program launched 
- UTC Date - 2017-06-18 22:54:52,910 
- Date - 01:54:52,910 
- Timestamp - 80 
- User - DESKTOP-KC699US\user 
- Method - [MainWindow.cs..ctor : 17] 
-  
-2) - Level - INFO,  Message -  History.csv had been read 
- UTC Date - 2017-06-18 22:54:55,258 
- Date - 01:54:55,258 
- Timestamp - 2428 
- User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 26] 
-  
-1) - Level - INFO,  Message -  program launched 
- UTC Date - 2017-06-18 22:56:51,619 
- Date - 01:56:51,619 
- Timestamp - 85 
- User - DESKTOP-KC699US\user 
- Method - [MainWindow.cs..ctor : 17] 
-  
-2) - Level - INFO,  Message -  History.csv had been read 
- UTC Date - 2017-06-18 22:56:53,491 
- Date - 01:56:53,491 
- Timestamp - 1956 
- User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 26] 
-  
-1) - Level - INFO,  Message -  program launched 
- UTC Date - 2017-06-18 22:59:25,132 
- Date - 01:59:25,132 
- Timestamp - 81 
- User - DESKTOP-KC699US\user 
- Method - [MainWindow.cs..ctor : 17] 
-  
-2) - Level - INFO,  Message -  History.csv had been read 
- UTC Date - 2017-06-18 22:59:29,112 
- Date - 01:59:29,112 
- Timestamp - 4060 
- User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 26] 
-  
-1) - Level - INFO,  Message -  program launched 
- UTC Date - 2017-06-19 09:55:46,390 
- Date - 12:55:46,390 
- Timestamp - 130 
- User - DESKTOP-KC699US\user 
- Method - [MainWindow.cs..ctor : 17] 
-  
-2) - Level - INFO,  Message -  History.csv had been read 
- UTC Date - 2017-06-19 09:55:50,748 
- Date - 12:55:50,748 
- Timestamp - 4489 
- User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 26] 
-  
-1) - Level - INFO,  Message -  program launched 
- UTC Date - 2017-06-19 10:19:07,904 
- Date - 13:19:07,904 
- Timestamp - 194 
- User - DESKTOP-KC699US\user 
- Method - [MainWindow.cs..ctor : 17] 
-  
-2) - Level - INFO,  Message -  History.csv had been read 
- UTC Date - 2017-06-19 10:19:12,970 
- Date - 13:19:12,970 
- Timestamp - 5260 
- User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 26] 
-  
-1) - Level - INFO,  Message -  program launched 
- UTC Date - 2017-06-19 10:20:23,534 
- Date - 13:20:23,534 
- Timestamp - 185 
- User - DESKTOP-KC699US\user 
- Method - [MainWindow.cs..ctor : 17] 
-  
-2) - Level - INFO,  Message -  History.csv had been read 
- UTC Date - 2017-06-19 10:20:26,295 
- Date - 13:20:26,295 
- Timestamp - 2946 
- User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 26] 
-  
-1) - Level - INFO,  Message -  program launched 
- UTC Date - 2017-06-19 10:22:07,671 
- Date - 13:22:07,671 
- Timestamp - 230 
- User - DESKTOP-KC699US\user 
- Method - [MainWindow.cs..ctor : 17] 
-  
-2) - Level - INFO,  Message -  History.csv had been read 
- UTC Date - 2017-06-19 10:24:18,643 
- Date - 13:24:18,643 
- Timestamp - 131201 
- User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 26] 
-  
-1) - Level - INFO,  Message -  program launched 
- UTC Date - 2017-06-19 10:28:51,354 
- Date - 13:28:51,354 
- Timestamp - 90 
- User - DESKTOP-KC699US\user 
- Method - [MainWindow.cs..ctor : 17] 
-  
-2) - Level - INFO,  Message -  History.csv had been read 
- UTC Date - 2017-06-19 10:28:54,601 
- Date - 13:28:54,601 
- Timestamp - 3337 
- User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 26] 
-  
-1) - Level - INFO,  Message -  program launched 
- UTC Date - 2017-06-19 10:29:29,910 
- Date - 13:29:29,910 
- Timestamp - 132 
- User - DESKTOP-KC699US\user 
- Method - [MainWindow.cs..ctor : 17] 
-  
-2) - Level - INFO,  Message -  History.csv had been read 
- UTC Date - 2017-06-19 10:29:32,828 
- Date - 13:29:32,828 
- Timestamp - 3050 
- User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 26] 
-  
-1) - Level - INFO,  Message -  program launched 
- UTC Date - 2017-06-19 10:34:02,505 
- Date - 13:34:02,505 
- Timestamp - 86 
- User - DESKTOP-KC699US\user 
- Method - [MainWindow.cs..ctor : 17] 
-  
-1) - Level - INFO,  Message -  program launched 
- UTC Date - 2017-06-19 10:34:17,843 
- Date - 13:34:17,843 
- Timestamp - 91 
- User - DESKTOP-KC699US\user 
- Method - [MainWindow.cs..ctor : 17] 
-  
-2) - Level - INFO,  Message -  History.csv had been read 
- UTC Date - 2017-06-19 10:34:27,373 
- Date - 13:34:27,373 
- Timestamp - 9621 
- User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 26] 
-  
-1) - Level - INFO,  Message -  program launched 
- UTC Date - 2017-06-19 10:38:59,196 
- Date - 13:38:59,196 
- Timestamp - 331 
- User - DESKTOP-KC699US\user 
- Method - [MainWindow.cs..ctor : 17] 
-  
-2) - Level - INFO,  Message -  History.csv had been read 
- UTC Date - 2017-06-19 10:39:06,042 
- Date - 13:39:06,042 
- Timestamp - 7178 
- User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 26] 
-  
-1) - Level - INFO,  Message -  program launched 
- UTC Date - 2017-06-19 10:42:21,697 
- Date - 13:42:21,697 
- Timestamp - 832 
- User - DESKTOP-KC699US\user 
- Method - [MainWindow.cs..ctor : 17] 
-  
-2) - Level - INFO,  Message -  History.csv had been read 
- UTC Date - 2017-06-19 10:42:34,229 
- Date - 13:42:34,229 
- Timestamp - 13364 
- User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 26] 
-  
-1) - Level - INFO,  Message -  program launched 
- UTC Date - 2017-06-19 10:45:06,567 
- Date - 13:45:06,567 
- Timestamp - 386 
- User - DESKTOP-KC699US\user 
- Method - [MainWindow.cs..ctor : 17] 
-  
-2) - Level - INFO,  Message -  History.csv had been read 
- UTC Date - 2017-06-19 10:45:17,202 
- Date - 13:45:17,202 
- Timestamp - 11021 
- User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 26] 
-  
-1) - Level - INFO,  Message -  program launched 
- UTC Date - 2017-06-19 10:48:39,430 
- Date - 13:48:39,430 
- Timestamp - 1092 
- User - DESKTOP-KC699US\user 
- Method - [MainWindow.cs..ctor : 17] 
-  
-2) - Level - INFO,  Message -  History.csv had been read 
- UTC Date - 2017-06-19 10:48:51,288 
- Date - 13:48:51,288 
- Timestamp - 12950 
- User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 26] 
-  
-1) - Level - INFO,  Message -  program launched 
- UTC Date - 2017-06-19 10:52:22,573 
- Date - 13:52:22,573 
- Timestamp - 304 
- User - DESKTOP-KC699US\user 
- Method - [MainWindow.cs..ctor : 17] 
-  
-2) - Level - INFO,  Message -  History.csv had been read 
- UTC Date - 2017-06-19 10:52:27,810 
- Date - 13:52:27,810 
- Timestamp - 5541 
- User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 26] 
-  
-1) - Level - INFO,  Message -  program launched 
- UTC Date - 2017-06-19 10:57:11,146 
- Date - 13:57:11,146 
- Timestamp - 143 
- User - DESKTOP-KC699US\user 
- Method - [MainWindow.cs..ctor : 17] 
-  
-2) - Level - INFO,  Message -  History.csv had been read 
- UTC Date - 2017-06-19 10:57:13,773 
- Date - 13:57:13,773 
- Timestamp - 2770 
- User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 26] 
-  
-1) - Level - INFO,  Message -  program launched 
- UTC Date - 2017-06-19 11:01:01,228 
- Date - 14:01:01,228 
- Timestamp - 270 
- User - DESKTOP-KC699US\user 
- Method - [MainWindow.cs..ctor : 17] 
-  
-2) - Level - INFO,  Message -  History.csv had been read 
- UTC Date - 2017-06-19 11:01:03,856 
- Date - 14:01:03,856 
- Timestamp - 2898 
- User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 26] 
-  
-1) - Level - INFO,  Message -  program launched 
- UTC Date - 2017-06-19 11:03:50,695 
- Date - 14:03:50,695 
- Timestamp - 116 
- User - DESKTOP-KC699US\user 
- Method - [MainWindow.cs..ctor : 17] 
-  
-2) - Level - INFO,  Message -  History.csv had been read 
- UTC Date - 2017-06-19 11:03:52,919 
- Date - 14:03:52,919 
- Timestamp - 2340 
- User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 26] 
-  
-1) - Level - INFO,  Message -  program launched 
- UTC Date - 2017-06-19 11:12:19,765 
- Date - 14:12:19,765 
- Timestamp - 115 
- User - DESKTOP-KC699US\user 
- Method - [MainWindow.cs..ctor : 17] 
-  
-2) - Level - INFO,  Message -  History.csv had been read 
- UTC Date - 2017-06-19 11:12:23,835 
- Date - 14:12:23,835 
- Timestamp - 4184 
- User - DESKTOP-KC699US\user 
- Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 26] 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.GetFunds : 271] 
   

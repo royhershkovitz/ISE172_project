@@ -8,7 +8,7 @@ using System.Diagnostics;
 namespace AlgoTrading
 {
     public class MarketClientOptions : IMarketClient
-    {          
+    {
         //without nonce//private string token = "OSZUIiYeNQHAbfPULVVVqTEXCO9Bc6hLH/EtXzmcqf2OIyiQP2Y2vu1gjvAqvPhN/FoFbLV0vcdYpS8nRzfrHL3JvDPFIAIufmZSD42WDlw9lbeZ7QrUYYDNsILCALIRxCpc8FxsbAYqzRi/wWcvBC971Zel2+MXb5r+8c3F5Uk=";
         private const string Url = "http://ise172.ise.bgu.ac.il";//:8008";
         public const string User = "user30";
@@ -32,6 +32,10 @@ namespace AlgoTrading
         //private static readonly log4net.ILog Log = LogHelper.getLogger();// just if you dont want to define one, by yourseld
         private double sec = 0.1;
         private bool _isAMA;
+        //Error reporting
+        public String latestServerResponse = "";
+
+
         public MarketClientOptions()
         {
             _isAMA = false;
@@ -47,60 +51,62 @@ namespace AlgoTrading
         // creates a 'BuyRequest' class, and send it to the server, returns the server's response
         public int SendBuyRequest(int price, int commodity, int amount)
         {
-           log4net.ILog Log = LogHelper.GetLogger();
-           BuyRequest item = new BuyRequest(amount, price, commodity);
-           string id = null;
-           try
-           {
+            log4net.ILog Log = LogHelper.GetLogger();
+            BuyRequest item = new BuyRequest(amount, price, commodity);
+            string id = null;
+            try
+            {
                 id = client.SendPostRequest(Url, item);
-           }
-           catch (Exception e)
-           {      
+            }
+            catch (Exception e)
+            {
                 Log.Fatal("Program crushed, Exception: " + e + ", Message: " + e.Message);
                 Thread.Sleep(TimeSpan.FromSeconds(sec)); // Sleep some secs after writing on HardDrive
                 //Console.WriteLine("Exception: " + e + ", Message: " + e.Message);
             }
-           int parsedID = -1;
-           if (ServerResponseCheck(id))
-           {
-               parsedID = int.Parse(id);
-               Data.History.HistoryWriter.AddSpecipicDataToHistory("Buy", parsedID, _isAMA, price + "," + commodity + "," + amount);
-               Log.Info(String.Format("User add buy request, id: {0}, details: price {1}, {2}, {3}", parsedID, price, commodity, amount));               
+            int parsedID = -1;
+            latestServerResponse = id;
+            if (ServerResponseCheck(id))
+            {
+                parsedID = int.Parse(id);
+                Data.History.HistoryWriter.AddSpecipicDataToHistory("Buy", parsedID, _isAMA, price + "," + commodity + "," + amount);
+                Log.Info(String.Format("User add buy request, id: {0}, details: price {1}, {2}, {3}", parsedID, price, commodity, amount));
             }
-           return parsedID;
+            return parsedID;
         }
 
         // gets price, commodity and amont (integer)
         // creates a 'SellRequest' class, and send it to the server, returns the server's response
         public int SendSellRequest(int price, int commodity, int amount)
         {
-           log4net.ILog Log = LogHelper.GetLogger();
-           SellRequest item = new SellRequest(amount, price, commodity);
-           string id = null;
-           try
-           {
-               id = client.SendPostRequest(Url, item);
-           }
-           catch (Exception e)
-           {
+            log4net.ILog Log = LogHelper.GetLogger();
+            SellRequest item = new SellRequest(amount, price, commodity);
+            string id = null;
+            try
+            {
+                id = client.SendPostRequest(Url, item);
+            }
+            catch (Exception e)
+            {
                 Log.Fatal("Program crushed, Exception: " + e + ", Message: " + e.Message);
                 Thread.Sleep(TimeSpan.FromSeconds(sec)); // Sleep some secs after writing on HardDrive
                 //Console.WriteLine("Exception: " + e + ", Message: " + e.Message);
             }
             int parsedID = -1;
-           if (ServerResponseCheck(id))
-           {
-               parsedID = int.Parse(id);
-               Data.History.HistoryWriter.AddSpecipicDataToHistory("Sell", parsedID, _isAMA, price + "," + commodity + "," + amount);
-               Log.Info(String.Format("User add sell request, id: {0}, details: price {1}, {2}, {3}", parsedID, price, commodity, amount));
+            latestServerResponse = id;
+            if (ServerResponseCheck(id))
+            {
+                parsedID = int.Parse(id);
+                Data.History.HistoryWriter.AddSpecipicDataToHistory("Sell", parsedID, _isAMA, price + "," + commodity + "," + amount);
+                Log.Info(String.Format("User add sell request, id: {0}, details: price {1}, {2}, {3}", parsedID, price, commodity, amount));
             }
-           return parsedID;                   
-       }
+            return parsedID;
+        }
 
         // gets an id (integer)
         // creates a 'QueryRequest' class(Query sell/buy request), and send it to the server, returns the server's response
         public MarketClient.DataEntries.IMarketItemQuery SendQueryBuySellRequest(int id)
-       {
+        {
             log4net.ILog Log = LogHelper.GetLogger();
             QueryRequest item = new QueryRequest(id);
             MarketItemQuery response = null;
@@ -110,17 +116,18 @@ namespace AlgoTrading
             }
             catch (Exception e)
             {
+                latestServerResponse = e.Message;
                 Log.Fatal("Program crushed, Exception: " + e + ", Message: " + e.Message);
                 Thread.Sleep(TimeSpan.FromSeconds(sec)); // Sleep some secs after writing on HardDrive
                 //Console.WriteLine("Exception: " + e + ", Message: " + e.Message);
             }
-            return response;          
-       }
+            return response;
+        }
 
         // doens't get anything
         // creates a 'QueryUser' class, and send it to the server, returns the server's response
         public MarketClient.DataEntries.IMarketUserData SendQueryUserRequest()
-       {
+        {
             log4net.ILog Log = LogHelper.GetLogger();
             QueryUser item = new QueryUser();
             MarketUserData response = null;
@@ -130,59 +137,62 @@ namespace AlgoTrading
             }
             catch (Exception e)
             {
+                latestServerResponse = e.Message;
                 Log.Fatal("Program crushed, Exception: " + e + ", Message: " + e.Message);
                 Thread.Sleep(TimeSpan.FromSeconds(sec)); // Sleep some secs after writing on HardDrive
                 //Console.WriteLine("Exception: " + e + ", Message: " + e.Message);
             }
-            return response;           
-       }
+            return response;
+        }
 
         // gets an id (integer)
         // creates a 'QueryMarket' class, and send it to the server, returns the server's response
         public MarketClient.DataEntries.IMarketCommodityOffer SendQueryMarketRequest(int commodity)
-       {
-           log4net.ILog Log = LogHelper.GetLogger();
-           QueryMarket item = new QueryMarket(commodity);
-           MarketCommodityOffer response = null;
-           try
-           {
-               response = client.SendPostRequest<QueryMarket, MarketCommodityOffer>(Url, item);
-           }
-           catch (Exception e)
-           {
+        {
+            log4net.ILog Log = LogHelper.GetLogger();
+            QueryMarket item = new QueryMarket(commodity);
+            MarketCommodityOffer response = null;
+            try
+            {
+                response = client.SendPostRequest<QueryMarket, MarketCommodityOffer>(Url, item);
+            }
+            catch (Exception e)
+            {
+                latestServerResponse = e.Message;
                 Log.Fatal("Program crushed, Exception: " + e + ", Message: " + e.Message);
                 Thread.Sleep(TimeSpan.FromSeconds(sec)); // Sleep some secs after writing on HardDrive
                 //Console.WriteLine("Exception: " + e + ", Message: " + e.Message);
             }
-            return response;          
-       }
+            return response;
+        }
 
         // gets an id (integer)
         // creates a 'CancelRequest' class, and send it to the server, returns the server's response
         public bool SendCancelBuySellRequest(int id)
         {
-             log4net.ILog Log = LogHelper.GetLogger();
-             CancelRequest item = new CancelRequest(id);
-             string response = null;            
-             try
-             {
-                 response = client.SendPostRequest(Url, item);
-             }
-             catch (Exception e)
-             {
+            log4net.ILog Log = LogHelper.GetLogger();
+            CancelRequest item = new CancelRequest(id);
+            string response = null;
+            try
+            {
+                response = client.SendPostRequest(Url, item);
+            }
+            catch (Exception e)
+            {
                 Log.Fatal("Program crushed, Exception: " + e + ", Message: " + e.Message);
                 Thread.Sleep(TimeSpan.FromSeconds(sec)); // Sleep some secs after writing on HardDrive
                 //Console.WriteLine("Exception: " + e + ", Message: " + e.Message);
             }
             bool check = false;
-             if (ServerResponseCheck(response))
-             {
-                check = response == "Ok";               
+            latestServerResponse = id.ToString();
+            if (ServerResponseCheck(response))
+            {
+                check = response == "Ok";
                 Log.Info("Action " + id + ", been canceled = " + check + ", deleted from history file? " + Data.History.HistoryWriter.CancelOldRequest(id));
                 //if(check)
-                    //invoice_buy.Remove(id.ToString());        
-             }
-             return check;     
+                //invoice_buy.Remove(id.ToString());        
+            }
+            return check;
         }
 
         // creates a 'QueryUserRequests' class, and send it to the server, returns the server's response
@@ -196,10 +206,11 @@ namespace AlgoTrading
             {
                 list = client.SendPostRequest<QueryUserRequests, List<QueryUserUnit>>(Url, item);
                 response.SetList(list);
-                Log.Info("SendQueryUserRequests been preformed");                
+                Log.Info("SendQueryUserRequests been preformed");
             }
             catch (Exception e)
             {
+                latestServerResponse = e.Message;
                 Log.Fatal("Program crushed, Exception: " + e + ", Message: " + e.Message);
                 Thread.Sleep(TimeSpan.FromSeconds(sec)); // Sleep some secs after writing on HardDrive
                 //Console.WriteLine("Exception: " + e + ", Message: " + e.Message);                
@@ -219,10 +230,11 @@ namespace AlgoTrading
             {
                 list = client.SendPostRequest<QueryMarketRequest, List<MarketUnit>>(Url, item);
                 response.SetList(list);
-                Log.Info("SendQueryMarketRequest been preformed");                
+                Log.Info("SendQueryMarketRequest been preformed");
             }
             catch (Exception e)
             {
+                latestServerResponse = e.Message;
                 Log.Fatal("Program crushed, Exception: " + e + ", Message: " + e.Message);
                 Thread.Sleep(TimeSpan.FromSeconds(sec)); // Sleep some secs after writing on HardDrive
                 //Console.WriteLine("Exception: " + e + ", Message: " + e.Message);
@@ -273,18 +285,20 @@ namespace AlgoTrading
         public bool DeleteEveryActiveRequest()
         {
             QueryUserRequestsRequest request = ((QueryUserRequestsRequest)SendQueryUserRequests());
-            List<QueryUserUnit> myActiveActions = request._list;            
-            return DeleteTheseActiveRequest(myActiveActions); 
+            Thread.Sleep(TimeSpan.FromSeconds(0.1));
+            List<QueryUserUnit> myActiveActions = request._list;
+            return DeleteTheseActiveRequest(myActiveActions);
         }
 
         //Cancels every AMA active request
         public bool DeleteEveryAMAActiveRequest()
         {
             QueryUserRequestsRequest request = ((QueryUserRequestsRequest)SendQueryUserRequests());
+            Thread.Sleep(TimeSpan.FromSeconds(0.1));
             List<QueryUserUnit> myActiveActions = request._list;
             foreach (QueryUserUnit QUU in myActiveActions)
             {
-                if (QUU.ToString().Contains("false"))
+                if (QUU.ToString().Contains("true"))
                 {
                     myActiveActions.Remove(QUU);
                 }
@@ -296,10 +310,11 @@ namespace AlgoTrading
         public bool DeleteEveryUnAMAActiveRequest()
         {
             QueryUserRequestsRequest request = ((QueryUserRequestsRequest)SendQueryUserRequests());
+            Thread.Sleep(TimeSpan.FromSeconds(0.1));
             List<QueryUserUnit> myActiveActions = request._list;
             foreach (QueryUserUnit QUU in myActiveActions)
             {
-                if (QUU.ToString().Contains("true"))
+                if (QUU.ToString().Contains("false"))
                 {
                     myActiveActions.Remove(QUU);
                 }
@@ -318,15 +333,15 @@ namespace AlgoTrading
                 foreach (QueryUserUnit QUU in myActiveActions)
                 {
                     output = output & SendCancelBuySellRequest(QUU.id);// check if we delete every one of them
+                    Thread.Sleep(TimeSpan.FromSeconds(0.1));
+                    tActions++;
                     Trace.WriteLine(tActions + ", deleted " + QUU.id + "? " + output);
-                    Thread.Sleep(TimeSpan.FromSeconds(0.01));
                     if (tActions == 19)//server cooldown
                     {
                         Trace.WriteLine("waiting");
+                        Thread.Sleep(TimeSpan.FromSeconds(10 - tActions * sec));
                         tActions = 0;
-                        Thread.Sleep(TimeSpan.FromSeconds(10-19*sec));
                     }
-                    tActions++;
                 }
             }
             catch (Exception e)
@@ -338,6 +353,5 @@ namespace AlgoTrading
             }
             return output;
         }
-
     }
 }

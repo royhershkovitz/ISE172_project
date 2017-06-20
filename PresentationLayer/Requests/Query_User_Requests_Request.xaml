@@ -5,11 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PresentationLayer"
         mc:Ignorable="d"
-        Background="AliceBlue"
         Title="QueryUserRequestsRequest" Height="500" Width="700">
+
+    <Page.Background>
+        <ImageBrush ImageSource="/Images/white.jpg" />
+
+    </Page.Background>
+
     <Grid Margin="0,0,0,64">
-        <Button x:Name="Back" Content="Back" HorizontalAlignment="Left" Margin="559,424,0,-40" VerticalAlignment="Top" Width="75" Click="Back_Click" ScrollViewer.CanContentScroll="True" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="396" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="662" ScrollViewer.CanContentScroll="True" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
-        <TextBox x:Name="Result" HorizontalAlignment="Left" Height="374" Margin="21,22,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="637" ScrollViewer.CanContentScroll="True"/>
+        <Button x:Name="Back" Content="Back" HorizontalAlignment="Left" Margin="277,427,0,-33" VerticalAlignment="Top" Width="142" Click="Back_Click" ScrollViewer.CanContentScroll="True" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto" Height="42" FontWeight="Bold" FontSize="24"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="396" Margin="17,28,0,0" Stroke="Black" VerticalAlignment="Top" Width="662" ScrollViewer.CanContentScroll="True" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+        <TextBox x:Name="Result" HorizontalAlignment="Left" Height="374" Margin="29,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="637" ScrollViewer.CanContentScroll="True"/>
+        <Label Content="Query User Request Requests" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="171,-8,0,0" FontFamily="Script MT Bold" FontSize="30"/>
     </Grid>
 </Page>

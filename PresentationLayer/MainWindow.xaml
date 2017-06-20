@@ -6,13 +6,4 @@
         xmlns:local="clr-namespace:PresentationLayer"
         mc:Ignorable="d"       
         Title="AlgoTrading" Height="530" Width="720">
-    
-    <!--<Grid>
-        <Frame x:Name ="Main" Height="500" Width="700" VerticalAlignment="Top" />
-        <Label x:Name="ProgramName" Content="Algo-Trading" HorizontalAlignment="Center" FontSize="64" Margin="0,100,0,0" VerticalAlignment="Top" Width="420"/>
-        <Button x:Name="AI" Content="AI" FontSize="24" HorizontalAlignment="Left" Margin="150,220,0,0" VerticalAlignment="Top" Width="220" Height="35" Background="Bisque" AllowDrop="True" Click="AI_Click"/>
-        <Button x:Name="Requests" Content="Requests" FontSize="24" HorizontalAlignment="Left" Margin="150,320,0,0" VerticalAlignment="Top" Width="220" Height="35" Background="Bisque" AllowDrop="True" Click="Requests_Click"/>
-        <Button x:Name="Credits" Content="Credits" FontSize="24" HorizontalAlignment="Left" Margin="150,420,0,0" VerticalAlignment="Top" Width="220" Height="35" Background="Bisque" AllowDrop="True" Click="Credits_Click"/>
-        <Button x:Name="Exit" Content="Exit" FontSize="24" HorizontalAlignment="Left" Margin="150,520,0,0" VerticalAlignment="Top" Width="220" Height="35" Background="Bisque" AllowDrop="True" Click="Exit_Click"/>
-    </Grid>-->
 </Window>

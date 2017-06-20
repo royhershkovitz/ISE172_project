@@ -30,7 +30,7 @@ namespace PresentationLayer
             {
                 check = UserOptions.SendCancelBuySellRequest(int.Parse(idInput.Text));
                 if (check) Result.Content = "Canceled Succesfully!";
-                else Result.Content = "Wrong id";
+                else Result.Content = UserOptions.latestServerResponse;
             }
         }
 

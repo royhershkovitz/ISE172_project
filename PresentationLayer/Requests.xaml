@@ -4,9 +4,17 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PresentationLayer"
-        Background="AliceBlue"
         mc:Ignorable="d"
         Title="Requests" Height="500" Width="700">
+
+    <Page.Background>
+        <ImageBrush ImageSource="Images/white.jpg" />
+
+    </Page.Background>
+
+
+
+
     <Grid VerticalAlignment="Top" Margin="10,10,10,0" Height="480">
         <Label x:Name="L_headLine" Content="Requests" HorizontalAlignment="Left" Margin="187,27,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="100" FontFamily="French Script MT"/>
         <Button x:Name="Buy_Request" Content="Buy Request" HorizontalAlignment="Left" Margin="0,227,0,0" VerticalAlignment="Top" Width="220" Height="65" Click="Buy_Request_Click" FontWeight="Bold" FontSize="16"/>

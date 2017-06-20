@@ -1402,3 +1402,8 @@
 11841756,Buy,500,1,1,False,valid
 11843379,Buy,1,3,3,False,valid
 12454587,Buy,1,1,1,False,valid
+13601069,Buy,1,1,1,False,invalid
+13603371,Buy,1,1,1,False,invalid
+13603573,Buy,500,9,10,False,valid
+13604053,Sell,500,9,1,False,invalid
+13604482,Sell,500,9,1,False,invalid

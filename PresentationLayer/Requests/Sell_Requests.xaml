@@ -5,19 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PresentationLayer"
         mc:Ignorable="d"
-        Background="AliceBlue"
+    
         Title="SellRequest" Height="500" Width="700">
+
+
+    <Page.Background>
+        <ImageBrush ImageSource="/Images/white.jpg" />
+
+    </Page.Background>
+
+
     <Grid Margin="0,0,0,0">
-        <Label Content="Enter a price:" HorizontalAlignment="Left" Margin="142,123,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18"/>
-        <Label Content="Enter an amount:" HorizontalAlignment="Left" Margin="141,190,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18"/>
-        <Label Content="Enter a commodity:" HorizontalAlignment="Left" Margin="142,257,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18"/>
-        <Label Content="Response" HorizontalAlignment="Left" Margin="450,190,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18"/>
-        <TextBox x:Name="Iprice" HorizontalAlignment="Left" Height="23" Margin="142,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155" />
-        <TextBox x:Name="Iamount" HorizontalAlignment="Left" Height="23" Margin="142,229,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155" />
-        <TextBox x:Name="ICommodity" HorizontalAlignment="Left" Height="23" Margin="142,296,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155" />
-        <Button x:Name="B_Send" Content="Send" HorizontalAlignment="Left" Margin="142,400,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold" FontSize="14" Click="Send_Click"/>
-        <Button x:Name="B_Back" Content="Back" HorizontalAlignment="Left" Margin="473,400,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold" FontSize="14" Click="Back_Click"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="31" Margin="424,229,0,0" Stroke="Black" VerticalAlignment="Top" Width="206"/>
-        <Label x:Name="Result" Content="" HorizontalAlignment="Left" Margin="430,229,0,0" VerticalAlignment="Top" FontWeight="Bold" Width="194" FontSize="12" Height="31"/>
+        <Label Content="Enter a price:" HorizontalAlignment="Left" Margin="116,87,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="36"/>
+        <Label Content="Enter an amount:" HorizontalAlignment="Left" Margin="116,172,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="36"/>
+        <Label Content="Enter a commodity:" HorizontalAlignment="Left" Margin="122,263,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="36"/>
+        <Label Content="Response:" HorizontalAlignment="Left" Margin="509,143,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18"/>
+        <TextBox x:Name="Iprice" HorizontalAlignment="Left" Height="23" Margin="122,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155"  />
+        <TextBox x:Name="Iamount" HorizontalAlignment="Left" Height="23" Margin="122,228,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155" />
+        <TextBox x:Name="ICommodity" HorizontalAlignment="Left" Height="23" Margin="122,318,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155"  />
+        <Button x:Name="B_Send" Content="Send" HorizontalAlignment="Left" Margin="122,361,0,0" VerticalAlignment="Top" Width="192" FontWeight="Bold" FontSize="36" Click="Send_Click" Height="64"/>
+        <Button x:Name="B_Back" Content="Back" HorizontalAlignment="Left" Margin="458,361,0,0" VerticalAlignment="Top" Width="192" FontWeight="Bold" FontSize="36" Click="Back_Click" Height="64"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="31" Margin="451,182,0,0" Stroke="Black" VerticalAlignment="Top" Width="206"/>
+        <Label x:Name="Result" Content="" HorizontalAlignment="Left" Margin="458,182,0,0" VerticalAlignment="Top" FontWeight="Bold" Width="194" FontSize="12" Height="31"/>
+        <Label Content="Sell Request" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="195,10,0,0" FontFamily="Script MT Bold" FontSize="60"/>
     </Grid>
 </Page>

@@ -104,8 +104,6 @@
     </Compile>
     <Compile Include="Data\DataTypes\QueryUserUnit.cs" />
     <Compile Include="Data\DataTypes\QueryUserRequestsRequest.cs" />
-    <Compile Include="NunitTest\TestAMA.cs" />
-    <Compile Include="NunitTest\TestClientOptions.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Illuminati.ico" />

@@ -26,7 +26,7 @@ namespace PresentationLayer
             {
                 response = UserOptions.SendBuyRequest(price, commodity, amount);
                 if (response != -1) Result.Content = "Your id is: " + response;
-                else Result.Content = "Error has been occured";
+                else Result.Content = UserOptions.latestServerResponse;
             }
         }
 

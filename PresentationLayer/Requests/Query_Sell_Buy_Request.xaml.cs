@@ -28,7 +28,7 @@ namespace PresentationLayer
             {
                 MarketClient.DataEntries.IMarketItemQuery response = UserOptions.SendQueryBuySellRequest(id);
                 if (response != null) Result.Content = response.ToString();
-                else Result.Content = "Error has been occured";
+                else Result.Content = UserOptions.latestServerResponse;
             }
 
         }

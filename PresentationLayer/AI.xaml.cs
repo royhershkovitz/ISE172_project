@@ -20,17 +20,22 @@ namespace PresentationLayer
         private Thread _run;
         //The algorithm object
         private AlgoTrading.Logic.myAIAlgorithem _ama;
-        //The user client uset - to communicate with the server
+        //The user client user - to communicate with the server
         private MarketClientOptions _UserOptions = new MarketClientOptions();
         //Timer to count the lap time and update the funds
         private System.Timers.Timer _myTimer;
         //A value we will use to calculate the revenue
         private float _startFunds;
-        //An integer we use to store the property data
+        //A value we will use to know the changes in the investments
+        private float _lastInvestment;
+        //An integer we use to store current time
         private int _myTime = -1;
-        //An string we use to store the property data
-        private string _myStatus = String.Empty;
         //An string which represent the status of the class
+        private string _myStatus = String.Empty;
+        //An integer we will use to know if we need to reInvest
+        private static readonly int _maxRevenue = 600;
+        //An integer we will store the revenue of the actions we initiate 
+        private float _revenue = 0;
         public int _timeElapsed
         {
             get { return _myTime; }
@@ -65,8 +70,8 @@ namespace PresentationLayer
             _log = log4net.LogManager.GetLogger("");
             InitializeComponent();
             WindowTitle = Title;
-            DataContext = this;          
-              
+            DataContext = this;
+
             _startFunds = _UserOptions.GetFunds();
             myFunds.Text = _startFunds.ToString();
 
@@ -78,23 +83,25 @@ namespace PresentationLayer
 
             //define the algorithem's thread
             _ama = new AlgoTrading.Logic.myAIAlgorithem();
+            //we take tenth of our funds as an initial budget for investments
+            _ama.fundsPocket(_startFunds / 3);
             _run = new Thread(_ama.RunAlgorithemAI);
             Start(null, null);
         }
 
         //Timer event, update the funds and present the time loop.
         private void OnTimedEvent(Object source, ElapsedEventArgs e)
-        {         
+        {
             Dispatcher.Invoke(() =>
+            {
+                if (_timeElapsed == 0)
                 {
-                    if (_timeElapsed == 0)
-                    {
-                        UpdateFunds();
-                        _timeElapsed = 10;
-                    }
-                    else
-                        _timeElapsed--;
-                });
+                    UpdateFunds();
+                    _timeElapsed = 10;
+                }
+                else
+                    _timeElapsed--;
+            });
         }
 
         //runs the algorithem on thread
@@ -118,9 +125,9 @@ namespace PresentationLayer
         //stopping the algorithem
         private void Stop(object sender, RoutedEventArgs e)
         {
-           Trace.WriteLine("stop stoprun?: " + _run.IsAlive);
-           if (_run.IsAlive)
-           {
+            Trace.WriteLine("stop stoprun?: " + _run.IsAlive);
+            if (_run.IsAlive)
+            {
                 _status = "Please wait..";//why it is unreachable code?
                 _log.Info("AI Aborted");
                 Thread.Sleep(TimeSpan.FromSeconds(0.01));
@@ -128,7 +135,7 @@ namespace PresentationLayer
                 Trace.WriteLine("StopState?: " + _run.ThreadState);
                 //_run.Interrupt();
                 _myTimer.Enabled = false;
-                _timeElapsed = 0;                     
+                _timeElapsed = 0;
                 _status = " Aborted";
                 Trace.WriteLine("AI aborted");
                 Trace.WriteLine("StopState?: " + _run.ThreadState);
@@ -139,9 +146,19 @@ namespace PresentationLayer
         public void UpdateFunds()
         {
             float tValue = _UserOptions.GetFunds();
-            Thread.Sleep(TimeSpan.FromSeconds(0.01));
-            float revenue = tValue-_startFunds;
-            myFunds.Text = tValue.ToString() + ", revenue " + revenue;
+            Thread.Sleep(TimeSpan.FromSeconds(0.1));
+            float invested = tValue - _startFunds;
+            float tRevenue = invested - _lastInvestment;
+            if (tRevenue > 0)//replace with active request
+                _revenue = _revenue + tRevenue;
+            _lastInvestment = invested;
+            if (_revenue > _maxRevenue)
+            {
+                _ama.addFundsToPockets(_maxRevenue);
+                _revenue = _revenue + _maxRevenue;
+            }
+            myFunds.Text = tValue.ToString() + ", investment " + invested;
+            revnue.Text = "approximately revenue: " + _revenue;
         }
 
 
@@ -154,7 +171,7 @@ namespace PresentationLayer
             _run.Abort();
             Trace.WriteLine("AI killed");
             ((Window)Parent).Content = new MainMenu();
-        }       
+        }
 
 
         public event PropertyChangedEventHandler PropertyChanged;

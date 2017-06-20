@@ -5,14 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PresentationLayer"
         mc:Ignorable="d"
-        Background="AliceBlue"
+
         Title="Credits" Height="500" Width="700">
+    <Page.Background>
+        <ImageBrush ImageSource="Images/blue.jpg" />
+
+    </Page.Background>
+
+
     <Grid>
-        <Label x:Name="L_headLine" Content="Team Rocket" HorizontalAlignment="Left" Margin="128,10" VerticalAlignment="Top" FontWeight="Bold" FontSize="72"/>
-        <Label x:Name="L_Yakir" Content="Yakir Green" HorizontalAlignment="Left" Margin="244,126" VerticalAlignment="Top" FontWeight="Bold" FontSize="36"/>
-        <Label x:Name="L_Roy" Content="Roy Hershkovitz" HorizontalAlignment="Left" Margin="207,184" VerticalAlignment="Top" FontWeight="Bold" FontSize="36"/>
-        <Label x:Name="L_Omri" Content="Omri Meshulami" HorizontalAlignment="Left" Margin="201,242,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="36"/>
-        <Button x:Name="B_Back" Content="Back" HorizontalAlignment="Left" Margin="288,319,0,0" VerticalAlignment="Top" Width="108" Height="33" FontWeight="Bold" FontSize="22" Click="B_Back_Click"/>
+        <Label x:Name="L_headLine" Content="Team Rocket" HorizontalAlignment="Left" Margin="80,4,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="100" Foreground="White" FontFamily="Script MT Bold" Height="111" Width="564"/>
+        <Label x:Name="L_Yakir" Content="Yakir Green" HorizontalAlignment="Left" Margin="214,126,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="48" Foreground="White" FontFamily="Script MT Bold" Width="262"/>
+        <Label x:Name="L_Roy" Content="Roy Hershkovitz" HorizontalAlignment="Left" Margin="173,184,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="48" Foreground="White" FontFamily="Script MT Bold" Width="383"/>
+        <Label x:Name="L_Omri" Content="Omri Meshulami" HorizontalAlignment="Left" Margin="170,242,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="48" Foreground="White" FontFamily="Script MT Bold"/>
+        <Button x:Name="B_Back" Content="Back" HorizontalAlignment="Left" Margin="275,359,0,0" VerticalAlignment="Top" Width="126" Height="48" FontWeight="Bold" FontSize="30" Click="B_Back_Click" FontFamily="Script MT Bold"/>
 
     </Grid>
 </Page>

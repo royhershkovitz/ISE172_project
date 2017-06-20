@@ -1,17 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace PresentationLayer
 {
@@ -23,27 +11,37 @@ namespace PresentationLayer
         public MainMenu()
         {
             InitializeComponent();
-            this.WindowTitle = this.Title;
-        }        
+            WindowTitle = Title;
+        }
 
+        //botton fucntion call another page to appear
         private void B_Credits_Click(object sender, RoutedEventArgs e)
         {
-            ((Window)this.Parent).Content = new Credits(); 
+            ((Window)this.Parent).Content = new Credits();
         }
 
+        //botton fucntion call another page to appear
         private void B_Requests_Click(object sender, RoutedEventArgs e)
         {
-            ((Window)this.Parent).Content = new Requests(); 
+            ((Window)this.Parent).Content = new Requests();
         }
 
+        //botton fucntion call another page to appear
         private void B_History_Click(object sender, RoutedEventArgs e)
         {
-            ((Window)this.Parent).Content = new History(); 
+            ((Window)this.Parent).Content = new History();
         }
 
+        //botton fucntion call another page to appear
         private void B_AI_Click(object sender, RoutedEventArgs e)
         {
-            ((Window)this.Parent).Content = new AI(); 
+            ((Window)this.Parent).Content = new AI();
+        }
+
+        //botton fucntion call another page to appear
+        private void B_Stats_Click(object sender, RoutedEventArgs e)
+        {
+            ((Window)this.Parent).Content = new Statistics();
         }
 
     }

@@ -64,6 +64,9 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="system.windows.controls.datavisualization.toolkit">
+      <HintPath>.\system.windows.controls.datavisualization.toolkit.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -121,6 +124,9 @@
     </Compile>
     <Compile Include="Requests\Sell_Requests.xaml.cs">
       <DependentUpon>Sell_Requests.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics.xaml.cs">
+      <DependentUpon>Statistics.xaml</DependentUpon>
     </Compile>
     <Page Include="AI.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -186,6 +192,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Statistics.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -206,6 +216,8 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <Resource Include="Illuminati.ico" />
+    <Resource Include="Images\blue.jpg" />
+    <Resource Include="Images\white.jpg" />
     <Content Include="itextsharp.dll" />
     <Content Include="packages.xml" />
     <None Include="app.config" />
@@ -246,6 +258,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

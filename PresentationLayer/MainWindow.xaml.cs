@@ -18,11 +18,5 @@ namespace PresentationLayer
             InitializeComponent();
             Content = new MainMenu();
         }
-
-        // These function close the progran
-        public void exitProgram()
-        {
-            Close();
-        }
     }
 }

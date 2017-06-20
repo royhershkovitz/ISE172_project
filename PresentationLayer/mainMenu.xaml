@@ -5,15 +5,22 @@
           xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
           xmlns:local="clr-namespace:PresentationLayer"
           mc:Ignorable="d" 
-        Background="AliceBlue"
+
         Title="MainMenu" Height="500" Width="700">
+    <Page.Background>
+        <ImageBrush ImageSource="Images/white.jpg" />
+
+    </Page.Background>
+
     <Grid>
-        <Label x:Name="headline" Content="Algo Trading" HorizontalAlignment="Left" Margin="27,43,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="72" FontFamily="Lucida Handwriting" Height="130" Width="630"/>
-        <Button x:Name="B_History" Content="History" HorizontalAlignment="Left" Margin="250,300,0,0" VerticalAlignment="Top" Width="200" FontWeight="Bold" FontSize="22" Click="B_History_Click"/>
-        <Button x:Name="B_AI" Content="AI" HorizontalAlignment="Left" Margin="250,220,0,0" VerticalAlignment="Top" Width="200" FontWeight="Bold" FontSize="22" Click="B_AI_Click"/>
-        <Button x:Name="B_Requests" Content="Requests" HorizontalAlignment="Left" Margin="250,260,0,0" VerticalAlignment="Top" Width="200" FontWeight="Bold" FontSize="22" Click="B_Requests_Click"/>
-        <Button x:Name="B_Credits" Content="Credits" HorizontalAlignment="Left" Margin="250,340,0,0" VerticalAlignment="Top" Width="200" FontWeight="Bold" FontSize="22" Click="B_Credits_Click"/>
+        <Label x:Name="headline" Content="Algo Trading" HorizontalAlignment="Left" Margin="56,43,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="72" FontFamily="Lucida Handwriting" Height="130" Width="630" Foreground="Black"/>
+        <Button x:Name="B_History" Content="History" HorizontalAlignment="Left" Margin="247,274,0,0" VerticalAlignment="Top" Width="200" FontWeight="Bold" FontSize="22" Click="B_History_Click"/>
+        <Button x:Name="B_AI" Content="AI" HorizontalAlignment="Left" Margin="247,194,0,0" VerticalAlignment="Top" Width="200" FontWeight="Bold" FontSize="22" Click="B_AI_Click"/>
+        <Button x:Name="B_Requests" Content="Requests" HorizontalAlignment="Left" Margin="247,234,0,0" VerticalAlignment="Top" Width="200" FontWeight="Bold" FontSize="22" Click="B_Requests_Click"/>
+        <Button x:Name="B_Credits" Content="Credits" HorizontalAlignment="Left" Margin="247,354,0,0" VerticalAlignment="Top" Width="200" FontWeight="Bold" FontSize="22" Click="B_Credits_Click"/>
+        <Button x:Name="B_Stats" Content="Statistics"  HorizontalAlignment="Left" Height="35" Margin="247,314,0,0" VerticalAlignment="Top" FontSize="22" FontWeight="Bold" Width="200" Click="B_Stats_Click"/>
         <!--<Button x:Name="B_X" Content="X" HorizontalAlignment="Left" Margin="649,10,0,0" VerticalAlignment="Top" Width="22" Height="22" FontWeight="Bold" FontSize="14" RenderTransformOrigin="0.907,0.594" Click="B_X_Click"/>-->
         <Label x:Name="L_copyRights" Content="©All Rights Reserved - Team Rocket" HorizontalAlignment="Left" Margin="10,464,0,0" VerticalAlignment="Top"/>
+
     </Grid>
 </Page>
