@@ -26,16 +26,14 @@ namespace PresentationLayer
         private System.Timers.Timer _myTimer;
         //A value we will use to calculate the revenue
         private float _startFunds;
-        //A value we will use to know the changes in the investments
-        private float _lastInvestment;
         //An integer we use to store current time
         private int _myTime = -1;
         //An string which represent the status of the class
         private string _myStatus = String.Empty;
         //An integer we will use to know if we need to reInvest
         private static readonly int _maxRevenue = 600;
-        //An integer we will store the revenue of the actions we initiate 
-        private float _revenue = 0;
+        //An integer we will store the max invested from our funds 
+        private float _currMaxInvested = 0;
         public int _timeElapsed
         {
             get { return _myTime; }
@@ -84,7 +82,9 @@ namespace PresentationLayer
             //define the algorithem's thread
             _ama = new AlgoTrading.Logic.myAIAlgorithem();
             //we take tenth of our funds as an initial budget for investments
-            _ama.fundsPocket(_startFunds / 3);
+            _currMaxInvested = _startFunds / 3;
+            _ama.fundsPocket(_currMaxInvested);
+
             _run = new Thread(_ama.RunAlgorithemAI);
             Start(null, null);
         }
@@ -147,19 +147,18 @@ namespace PresentationLayer
         {
             float tValue = _UserOptions.GetFunds();
             Thread.Sleep(TimeSpan.FromSeconds(0.1));
-            float invested = tValue - _startFunds;
-            float tRevenue = invested - _lastInvestment;
-            if (tRevenue > 0)//replace with active request
-                _revenue = _revenue + tRevenue;
-            _lastInvestment = invested;
-            if (_revenue > _maxRevenue)
+            float invested = _currMaxInvested - _ama.remainMoneyInPockets();
+            Trace.WriteLine(tValue + " - " + _startFunds + " + " + invested);
+            float revenue = tValue - _startFunds + invested;
+            if (revenue > _maxRevenue)
             {
                 _ama.addFundsToPockets(_maxRevenue);
-                _revenue = _revenue + _maxRevenue;
+                _currMaxInvested = _currMaxInvested + _maxRevenue;//add to the max investment to follow up the new situation
+                _startFunds = _startFunds + _maxRevenue;//Add it to the start funds because we invest money from the _startfunds pool
             }
-            myFunds.Text = tValue.ToString() + ", investment " + invested;
-            revnue.Text = "approximately revenue: " + _revenue;
-            if (_run.IsAlive)
+            myFunds.Text = tValue.ToString() + ", investment " + Math.Round(invested); ;
+            revnue.Text = "revenue: " + Math.Round(revenue); ;
+            if (!_run.IsAlive)//if some error been occurred and make the thread to stop, we stop the timer and tells the user
             {
                 Stop(null, null);
                 _status = "Connection problem";

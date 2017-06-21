@@ -9,6 +9,7 @@ namespace MarketClientTest
     {
         private string path = @"../Logs/UserActionsLog.csv";
         [TestMethod]
+        //Test adding to history
         public void TestAdding(string type, int id, bool isAMA, string details)
         {
             //check add first object
@@ -43,8 +44,9 @@ namespace MarketClientTest
         }
 
         [TestMethod]
+        //Test turning item to invalid
         public void TestCancel(string type, int id, bool isAMA, string details)
-        { 
+        {
             //Cancel test
             HistoryWriter.CancelOldRequest(id);
 
@@ -73,8 +75,9 @@ namespace MarketClientTest
             Console.WriteLine(">\n<" + history.Substring(begin, i - begin) + ">");
             Console.WriteLine(id + "," + type + "," + details + "," + isAMA + ",invalid");
             Assert.IsTrue(String.Equals(id + "," + type + "," + details + "," + isAMA + ",invalid", history.Substring(begin, i - begin)));
-        }        
+        }
 
+        //Delete the file we use in the test
         public void deleteHistory()
         {
             File.Delete(path);

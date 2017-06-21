@@ -13,7 +13,7 @@ public class myNonceSet
     private Node<int> myLastNode = null;
     //For deleting purpuses
     private Node<int> mySixtyNode = null;
-    /*Add an integer item O(100)~O(1)*/
+    /*Add an integer item to set O(100)~O(1)*/
     public bool Add(int item)
     {
         bool Output = !Contains(item);
@@ -34,7 +34,7 @@ public class myNonceSet
 
             if (Count == 61)
                 mySixtyNode = myLastNode;
-            if (Count == 110)
+            if (Count == 181)//we delete the nonces of the minute before
                 CleanLastSixstyObjects();
         }
         //Console.WriteLine(item + " " + Output);
@@ -42,22 +42,17 @@ public class myNonceSet
     }
 
     /* delete all the first 60 numbers
-        * becasue every seconds only 60 objects can join the set
+        * becasue every minute the server nonces are reset, and every second only 120 objects can join the set and we have > 180
         * O(1)*/
     private void CleanLastSixstyObjects()
     {
         if (mySixtyNode != null)
         {
             myFirstNode = mySixtyNode;
-            Count = Count - 60;            
-            if (Count >= 60)
-            {
-                mySixtyNode = myFirstNode;
-                for (int i = 0; i < 60; i++)
-                    mySixtyNode = mySixtyNode.GetNext();
-            }
-            else
-                mySixtyNode = null;
+            Count = Count - 60;
+            mySixtyNode = myFirstNode;
+            for (int i = 0; i < 60; i++)
+                mySixtyNode = mySixtyNode.GetNext();
         }
     }
 
@@ -73,5 +68,5 @@ public class myNonceSet
             current = current.GetNext();
         }
         return Output;
-    }    
+    }
 }

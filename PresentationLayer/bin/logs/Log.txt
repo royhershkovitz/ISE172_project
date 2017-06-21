@@ -1146,3 +1146,80 @@
  User - DESKTOP-KC699US\user 
  Method - [.Stop : 132] 
   
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-06-21 20:58:27,708 
+ Date - 23:58:27,708 
+ Timestamp - 248 
+ User - DESKTOP-KC699US\user 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-06-21 21:06:47,492 
+ Date - 00:06:47,492 
+ Timestamp - 174 
+ User - DESKTOP-KC699US\user 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  History.csv had been read 
+ UTC Date - 2017-06-21 21:07:04,872 
+ Date - 00:07:04,872 
+ Timestamp - 17553 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\History\HistoryDataBase.cs.GetAllHistory : 25] 
+  
+3) - Level - INFO,  Message -  SendQueryMarketRequest been preformed 
+ UTC Date - 2017-06-21 21:07:44,697 
+ Date - 00:07:44,697 
+ Timestamp - 57379 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.SendQueryMarketRequest : 233] 
+  
+4) - Level - INFO,  Message -  SendQueryUserRequests been preformed 
+ UTC Date - 2017-06-21 21:07:51,182 
+ Date - 00:07:51,182 
+ Timestamp - 63863 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.SendQueryUserRequests : 209] 
+  
+5) - Level - INFO,  Message -  SendQueryUserRequests been preformed 
+ UTC Date - 2017-06-21 21:07:56,391 
+ Date - 00:07:56,391 
+ Timestamp - 69073 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.SendQueryUserRequests : 209] 
+  
+1) - Level - INFO,  Message -  program launched 
+ UTC Date - 2017-06-21 21:08:44,762 
+ Date - 00:08:44,762 
+ Timestamp - 202 
+ User - DESKTOP-KC699US\user 
+ Method - [MainWindow.cs..ctor : 17] 
+  
+2) - Level - INFO,  Message -  Asked funds 
+ UTC Date - 2017-06-21 21:08:49,817 
+ Date - 00:08:49,817 
+ Timestamp - 5257 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.GetFunds : 271] 
+  
+3) - Level - INFO,  Message -  AI started 
+ UTC Date - 2017-06-21 21:08:49,834 
+ Date - 00:08:49,834 
+ Timestamp - 5274 
+ User - DESKTOP-KC699US\user 
+ Method - [.Start : 115] 
+  
+4) - Level - INFO,  Message -  Asked funds 
+ UTC Date - 2017-06-21 21:09:00,947 
+ Date - 00:09:00,947 
+ Timestamp - 16387 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.GetFunds : 271] 
+  
+5) - Level - INFO,  Message -  Asked funds 
+ UTC Date - 2017-06-21 21:09:11,956 
+ Date - 00:09:11,956 
+ Timestamp - 27395 
+ User - DESKTOP-KC699US\user 
+ Method - [C:\Users\user\Documents\Visual Studio 2015\Projects\ISE172_project\AlgoTrading\Data\MarketClientOptions.cs.GetFunds : 271] 
+  

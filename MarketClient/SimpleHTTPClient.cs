@@ -6,7 +6,7 @@ using System.Diagnostics;
 using System;
 
 public class SimpleHTTPClient
-    {
+{
     private string user;
     private string privateKey;
     private myNonceSet setOfNonce = new myNonceSet();
@@ -44,12 +44,12 @@ public class SimpleHTTPClient
     /// <param name="url">address of the server</param>
     /// <param name="item">the data item to send in the reuqest</param>
     /// <returns>the server response parsed as T2 object in json format</returns>
-    public T2 SendPostRequest<T1,T2>(string url, T1 item) where T2 : class 
-        {
-            var response = SendPostRequest(url, item);
-            //Trace.WriteLine("after dec " + response);
-            return response == null ? null : FromJson<T2>(response);
-        }
+    public T2 SendPostRequest<T1, T2>(string url, T1 item) where T2 : class
+    {
+        var response = SendPostRequest(url, item);
+        //Trace.WriteLine("after dec " + response);
+        return response == null ? null : FromJson<T2>(response);
+    }
 
     /// <summary>
     /// Send an object of type T1, @item, parsed as json string embedded with the 
@@ -68,47 +68,48 @@ public class SimpleHTTPClient
      *      
     */
     public string SendPostRequest<T1>(string url, T1 item)
+    {
+        string nonce = GenerateNonce();
+        string token = SimpleCtyptoLibrary.CreateToken(user + "_" + nonce, privateKey);
+        var auth = new { user, nonce, token };
+        JObject jsonItem = JObject.FromObject(item);// create a json object from our item
+        jsonItem.Add("auth", JObject.FromObject(auth));// add the author data
+                                                       //Trace.WriteLine(jsonItem.ToString());
+        StringContent content = new StringContent(jsonItem.ToString());
+        //StringContent content = new StringContent(SimpleCtyptoLibrary.RSASignWithSHA256(jsonItem.ToString(), privateKey));//encrypt
+        //Trace.WriteLine(SimpleCtyptoLibrary.RSASignWithSHA256(jsonItem.ToString(), privateKey));
+        using (var client = new HttpClient())
         {
-            string nonce = GenerateNonce();
-            string token = SimpleCtyptoLibrary.CreateToken(user+"_"+ nonce, privateKey);
-            var auth = new { user, nonce, token };
-            JObject jsonItem = JObject.FromObject(item);// create a json object from our item
-            jsonItem.Add("auth", JObject.FromObject(auth));// add the author data
-            //Trace.WriteLine(jsonItem.ToString());
-            StringContent content = new StringContent(jsonItem.ToString());
-            //StringContent content = new StringContent(SimpleCtyptoLibrary.RSASignWithSHA256(jsonItem.ToString(), privateKey));//encrypt
-            //Trace.WriteLine(SimpleCtyptoLibrary.RSASignWithSHA256(jsonItem.ToString(), privateKey));
-            using (var client = new HttpClient())
-            {
-                var result = client.PostAsync(url, content).Result;//comunicate with the server
-                //Trace.WriteLine("passed sending "+result.ToString());
-                var responseContent = result.Content.ReadAsStringAsync().Result;
-                //Trace.WriteLine("passed2 " + responseContent);
-                //Trace.WriteLine("before dec " + response);
-                return SimpleCtyptoLibrary.decrypt(responseContent, privateKey);
-            }
-        }
-
-        private static T FromJson<T>(string response) where T : class 
-        {
-            if (response == null)
-            {
-                return null;
-            }
-            try
-            {
-                Trace.WriteLine("Json response: "+response);
-                return JsonConvert.DeserializeObject<T>(response, new JsonSerializerSettings
-                {
-                    Error = delegate {
-                        throw new JsonException(response);
-                    }
-                });
-            }
-            catch
-            {
-                throw new MarketException(response);
-            }
+            var result = client.PostAsync(url, content).Result;//comunicate with the server
+                                                               //Trace.WriteLine("passed sending "+result.ToString());
+            var responseContent = result.Content.ReadAsStringAsync().Result;
+            //Trace.WriteLine("passed2 " + responseContent);
+            //Trace.WriteLine("before dec " + response);
+            return SimpleCtyptoLibrary.decrypt(responseContent, privateKey);
         }
     }
+
+    //Try to build an item from the server response
+    private static T FromJson<T>(string response) where T : class
+    {
+        if (response == null)
+        {
+            return null;
+        }
+        try
+        {
+            Trace.WriteLine("Json response: " + response);
+            return JsonConvert.DeserializeObject<T>(response, new JsonSerializerSettings
+            {
+                Error = delegate {
+                    throw new JsonException(response);
+                }
+            });
+        }
+        catch
+        {
+            throw new MarketException(response);
+        }
+    }
+}
 

@@ -20,16 +20,14 @@ namespace AlgoTrading.Data.History
                 foreach (var line in lines)
                 {
                     string[] HitoryLine = line.Split(',');
-                    //Trace.WriteLine("xxxmomxxx: "+ line);
                     result.Add(HistoryUnitFromCsv(HitoryLine));
                 }
                 Log.Info("History.csv had been read");
             }
-            catch(Exception ex)
-            {                
+            catch (Exception ex)
+            {
                 MessageBox.Show("No history has been recorded yet");
                 Log.Fatal("Failed to read history " + ex);
-                //Trace.WriteLine("Fail, GetAllHistory: " + ex);
                 Thread.Sleep(TimeSpan.FromSeconds(0.01));
                 result = null;
             }
@@ -50,7 +48,7 @@ namespace AlgoTrading.Data.History
             HistoryUnit HU = new HistoryUnit()
             {
                 ID = int.Parse(values[0]),
-                Type = values[1],                
+                Type = values[1],
                 Price = int.Parse(values[2]),
                 Commodity = int.Parse(values[3]),
                 Amount = int.Parse(values[4]),

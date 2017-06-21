@@ -55,7 +55,6 @@
     <Compile Include="myNonceSet.cs" />
     <Compile Include="Node.cs" />
     <Compile Include="SimpleHTTPClient.cs" />
-    <Compile Include="SQL.cs" />
     <Compile Include="Utils\MarketException.cs" />
     <Compile Include="DataEntries\IMarketCommodityOffer.cs" />
     <Compile Include="IMarketClient.cs" />

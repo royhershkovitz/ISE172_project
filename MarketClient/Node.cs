@@ -1,11 +1,10 @@
 ﻿using System;
 
-
 public class Node<T>
 {
     private T _info;
     private Node<T> _next;
-       
+
     /*Constructor*/
     public Node(T info)
     {

@@ -10,10 +10,10 @@
         <TextBox Text="{Binding _status}"  Background="AliceBlue" BorderThickness="0" HorizontalAlignment="Left" Height="104" Margin="530,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154" FontSize="36" FontFamily="Script MT Bold"/>
         <Button Content="Run algorithm" HorizontalAlignment="Left" Margin="430,154,0,0" VerticalAlignment="Top" Width="242" Click="Start" Height="84" FontSize="30" FontWeight="Bold" FontFamily="Script MT Bold"/>
         <Button Content="Back" HorizontalAlignment="Left" Margin="304,420,0,0" VerticalAlignment="Top" Width="94" Click="Back" FontFamily="Script MT Bold" Height="42" FontSize="36"/>
-        <TextBox x:Name="myFunds" Background="Transparent" BorderThickness="0" HorizontalAlignment="Center"  VerticalAlignment="Center" Height="41" Margin="360,270,73,189" Text="--" Width="267" RenderTransformOrigin="0.508,-1.81" FontSize="25" FontFamily="Script MT Bold"/>
-        <TextBox x:Name="revnue" Background="Transparent" BorderThickness="0" HorizontalAlignment="Center"  VerticalAlignment="Center" Height="40" Margin="285,307,52,153" Text="&#x9;--" Width="363" RenderTransformOrigin="0.508,-1.81" FontSize="25" FontFamily="Script MT Bold"/>
-        <Label Content="Founds:" HorizontalAlignment="Left" Margin="255,267,0,0" VerticalAlignment="Top" Width="115" FontFamily="Script MT Bold" FontSize="25"/>
-        <Label  Content="Time left:" FontSize="24" HorizontalAlignment="Left" Margin="458,442,0,0" VerticalAlignment="Top" Width="107" Height="37" FontFamily="Script MT Bold"/>
-        <TextBox Text="{Binding _timeElapsed}" FontSize="24" HorizontalAlignment="Left" Margin="565,442,0,0" BorderThickness="0" Background="AliceBlue" VerticalAlignment="Top" Width="107" Height="37" FontFamily="Script MT Bold"/>
+        <TextBox x:Name="myFunds" Background="Transparent" BorderThickness="0" HorizontalAlignment="Center"  VerticalAlignment="Center" Height="41" Margin="265,270,168,193" Text="--" Width="267" RenderTransformOrigin="0.508,-1.81" FontSize="25" FontFamily="Script MT Bold"/>
+        <TextBox x:Name="revnue" Background="Transparent" BorderThickness="0" HorizontalAlignment="Center"  VerticalAlignment="Center" Height="40" Margin="197,311,140,149" Text="&#x9;--" Width="363" RenderTransformOrigin="0.508,-1.81" FontSize="25" FontFamily="Script MT Bold"/>
+        <Label Content="Founds:" HorizontalAlignment="Left" Margin="165,265,0,0" VerticalAlignment="Top" Width="115" FontFamily="Script MT Bold" FontSize="25"/>
+        <Label  Content="Time left:" FontSize="24" HorizontalAlignment="Left" Margin="453,375,0,0" VerticalAlignment="Top" Width="107" Height="37" FontFamily="Script MT Bold"/>
+        <TextBox Text="{Binding _timeElapsed}" FontSize="24" HorizontalAlignment="Left" Margin="560,380,0,0" BorderThickness="0" Background="AliceBlue" VerticalAlignment="Top" Width="107" Height="37" FontFamily="Script MT Bold"/>
     </Grid>
 </Page>

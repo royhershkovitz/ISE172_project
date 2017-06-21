@@ -12,13 +12,15 @@ namespace AlgoTrading.Logic
         private bool running = true;
         private MarketClientOptions UserOptions = new MarketClientOptions(true);
         private static readonly int topActions = 18;
-        private static int actions;
+        private int actions;
         // our tracked commodity
         private static readonly int[] commudities = new int[] { 4, 5, 6 };
         // The tracked commodities AVG
         private static double[] commuditiesAVGvalues = new double[commudities.Length];
         // The budget for each commodity
-        private double[] partialBudget = new double[commudities.Length];
+        private float[] partialBudget = new float[commudities.Length];
+        private static readonly int _sellingFactor = 3;//sellRequest(avg + _sellingFactor)
+        private static readonly int _buyingFactor = 2;//sellRequest(avg - _buyingFactor)
         private static readonly int _maxAmount = 15;
         private static readonly double Secs = 0.1;
 
@@ -28,6 +30,15 @@ namespace AlgoTrading.Logic
             running = false;
         }
 
+        //This function is for calculating the current investment
+        public float remainMoneyInPockets()
+        {
+            float output = 0;
+            foreach (float pocket in partialBudget)
+                output = output + pocket;
+            return output;
+        }
+
         //The algorithem
         public void RunAlgorithemAI()
         {
@@ -35,7 +46,7 @@ namespace AlgoTrading.Logic
             while (running)
             {
                 getCurrAVG();
-                for (int index = 0; index < commuditiesAVGvalues.Length & running; index++)
+                for (int index = 0; index < commuditiesAVGvalues.Length & running; index++)// If AVG cause problems or user request to stops the AI
                 {
                     int avg = (int)Math.Floor(commuditiesAVGvalues[index]);
                     int maxSell = (int)Math.Floor(partialBudget[index] / avg);
@@ -43,10 +54,10 @@ namespace AlgoTrading.Logic
                         maxSell = _maxAmount;
                     if (maxSell > 0)
                     {
-                        UserOptions.SendBuyRequest(avg - 2, commudities[index], maxSell);
-                        partialBudget[index] = partialBudget[index] - maxSell * (avg - 2);
+                        UserOptions.SendBuyRequest(avg - _buyingFactor, commudities[index], maxSell);
+                        partialBudget[index] = partialBudget[index] - maxSell * (avg - _buyingFactor);
                         reduceAction();
-                        UserOptions.SendSellRequest(avg + 2, commudities[index], maxSell);
+                        UserOptions.SendSellRequest(avg + _sellingFactor, commudities[index], maxSell);
                         reduceAction();
                     }
                 }
@@ -61,7 +72,7 @@ namespace AlgoTrading.Logic
             if (running)
             {
                 Trace.WriteLine("sleep");
-                Thread.Sleep(TimeSpan.FromSeconds(10 - Secs * actions));//10-0.1*18 = 8.2
+                Thread.Sleep(TimeSpan.FromSeconds(10 - Secs * actions));//maxActions = 18, 10 - 0.1*18 = 8.2
                 actions = topActions;
             }
             Trace.WriteLine("keep Running: " + running);
@@ -80,17 +91,23 @@ namespace AlgoTrading.Logic
         }
 
         //init the pockets
-        public void fundsPocket(double budget)
+        public void fundsPocket(float budget)
         {
+            Trace.WriteLine(budget);
+            float pocket = budget / commudities.Length;
+            Trace.WriteLine(pocket);
             for (int index = 0; index < commudities.Length; index++)
-                partialBudget[index] = budget / commudities.Length;
+                partialBudget[index] = pocket;
         }
 
         //add budget to the pockets
-        public void addFundsToPockets(double budget)
+        public void addFundsToPockets(float budget)
         {
+            Trace.WriteLine("added to puckets : " + budget);
+            float pocket = budget / commudities.Length;
+            Trace.WriteLine("added per puckets : " + pocket);
             for (int index = 0; index < commudities.Length; index++)
-                partialBudget[index] = partialBudget[index] + budget / commudities.Length;
+                partialBudget[index] = partialBudget[index] + pocket;
         }
 
         //Ask the server for current AVG of the tracked commodity
@@ -120,7 +137,7 @@ namespace AlgoTrading.Logic
                     myConnection.Close();
                     Trace.WriteLine("close connection");
                 }
-                catch { Trace.WriteLine("Fail close connection");  }
+                catch { Trace.WriteLine("Fail close connection"); }
                 Trace.WriteLine("Catched SQL exception " + e.Message);
                 running = false;
             }

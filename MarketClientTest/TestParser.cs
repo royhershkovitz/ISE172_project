@@ -9,6 +9,7 @@ namespace MarketClientTest
     {
 
         [TestMethod]
+        //Test the parser responses to different strings inputs
         public void TestParse()
         {
             //legal and supported inputs
