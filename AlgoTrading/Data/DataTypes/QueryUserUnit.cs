@@ -20,7 +20,7 @@ namespace AlgoTrading.Data
         {
             string dicToString = "";
             foreach (KeyValuePair<string, Object> kvp in Request)
-                dicToString = dicToString + string.Format(", {0}: {1}", kvp.Key, kvp.Value.ToString());
+                dicToString = dicToString + string.Format("{0}: {1}", kvp.Key, kvp.Value.ToString());
             return dicToString;
         }
     }

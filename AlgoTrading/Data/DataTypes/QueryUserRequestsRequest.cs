@@ -18,8 +18,7 @@ namespace AlgoTrading.Data
         {
             string listToString = "";
             for (int i = 0; i < _list.Count; i++)
-                listToString += "ID: " + ((QueryUserUnit)(_list[i])).GetID() + ((QueryUserUnit)(_list[i])).ToString() + "\n";                
-            
+                listToString += "ID: " + ((QueryUserUnit)(_list[i])).GetID() + ((QueryUserUnit)(_list[i])).ToString() + "\n";            
             return listToString;
         }
     }    

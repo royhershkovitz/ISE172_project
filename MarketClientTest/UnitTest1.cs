@@ -63,6 +63,7 @@ namespace MarketClientTest
             Console.WriteLine("test4");
             test4.TestSet();
             Console.WriteLine("end test4");
+            Console.WriteLine("\n\n ----------------------------\n\t~Passed All the tests~\n\n\tpress any key to exit");
             Console.Read();
 
         }

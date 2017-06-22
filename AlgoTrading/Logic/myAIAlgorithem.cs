@@ -126,7 +126,10 @@ namespace AlgoTrading.Logic
                     SqlDataReader reader = myCommand.ExecuteReader();
                     reduceAction();
                     while (reader.Read())
-                        commuditiesAVGvalues[index] = Double.Parse(reader[0].ToString());
+                        if (reader[0] != null)
+                            commuditiesAVGvalues[index] = Double.Parse(reader[0].ToString());
+                        else//if the server reset the data
+                            commuditiesAVGvalues[index] = 10;//initial serevr prices
                     myConnection.Close();
                 }
             }
